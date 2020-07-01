@@ -1,0 +1,9 @@
+book_filename: "MS1NL-boek"
+rmd_files: ["index.Rmd",
+            "h01inleiding.Rmd",
+            "referenties.Rmd"]
+output_dir: "docs"
+language:
+  ui:
+    chapter_name: "Hoofdstuk "
+delete_merged_file: true
