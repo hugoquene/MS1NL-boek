@@ -251,7 +251,7 @@ levensduur. Is het voedingspatroon dan ook de oorzaak van de langere
 levensduur? Dat hoeft bepaald niet het geval te zijn: het is ook
 mogelijk dat dat soort voeding vooral genuttigd wordt door mensen die
 relatief hoog opgeleid en welvarend zijn, en door deze *andere* factoren
-ook relatief langer in leven zijn[^1]. Om vast te kunnen stellen of er
+ook relatief langer in leven zijn[^fn01-1]. Om vast te kunnen stellen of er
 een causaal verband is, moeten we experimenteel onderzoek opzetten en
 uitvoeren.
 
@@ -404,7 +404,7 @@ SPSS (een populair pakket voor statistische analyses) en in R (een wat
 moeilijker, maar ook krachtiger en veelzijdiger pakket, met stijgende
 populariteit). Beide statistische pakketten zijn geïnstalleerd in de computerleerzalen van de Faculteit Geesteswetenschappen. SPSS is beschikbaar via SurfSpot.nl voor een sterk gereduceerde prijs. R is vrijelijk beschikbaar via www.R-project.org. Meer achtergrond over het gebruik van R is te vinden via <https://hugoquene.github.io/emlar2020/>. 
 
-[^1]: Het is zelfs mogelijk dat het onderzochte voedingspatroon de
+[^fn01-1]: Het is zelfs mogelijk dat het onderzochte voedingspatroon de
     oorzaak is van een relatief *kortere* levensduur, maar dat dit
     negatieve effect gemaskeerd wordt door de sterkere, positieve
     effecten van opleidingsniveau en welvaartsniveau op de levensduur.

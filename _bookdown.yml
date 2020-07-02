@@ -1,6 +1,7 @@
 book_filename: "MS1NL-boek"
 rmd_files: ["index.Rmd",
             "h01inleiding.Rmd",
+            "h02onderzoek.Rmd",
             "referenties.Rmd"]
 output_dir: "docs"
 language:

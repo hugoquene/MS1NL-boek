@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.2)  2 JUL 2020 17:11
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.2)  2 JUL 2020 21:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -784,12 +784,7 @@ LaTeX Warning: Reference `ch:ontwerp' on page 9 undefined on input line 165.
 
 [9
 
-] [10]
-
-LaTeX Warning: Reference `sec:falsificatie' on page 11 undefined on input line 
-253.
-
-[11] [12]
+] [10] [11] [12]
 
 LaTeX Warning: Reference `ch:validiteit' on page 13 undefined on input line 334
 .
@@ -808,29 +803,100 @@ zijn
 
 LaTeX Warning: Reference `ch:ontwerp' on page 15 undefined on input line 443.
 
-[15] [16] [17] (./MS1NL-boek.bbl [18])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 559.
+[15] [16] [17] [18]
+Chapter 2.
+
+LaTeX Warning: Reference `ch:validiteit' on page 19 undefined on input line 573
+.
+
 [19
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 559.
+] [20] [21]
+
+LaTeX Warning: Reference `ch:validiteit' on page 22 undefined on input line 710
+.
+
+[22]
+
+LaTeX Warning: Reference `ch:steekproeftrekking' on page 23 undefined on input 
+line 779.
+
+[23] [24]
+Underfull \hbox (badness 1163) in paragraph at lines 902--909
+\TU/lmr/m/n/10 geopperd waarvan de onderzoeker vermoedt dat die algemeen geldig
+ is.
+ []
+
+[25]
+
+LaTeX Warning: Reference `ch:toetsing' on page 26 undefined on input line 921.
+
+[26] [27]
+
+LaTeX Warning: Reference `ch:toetsing' on page 28 undefined on input line 1019.
+
+
+
+LaTeX Warning: Reference `sec:bayesiaans' on page 28 undefined on input line 10
+19.
+
+[28]
+Overfull \hbox (33.83005pt too wide) in alignment at lines 1100--1105
+ [] [] [] 
+ []
+
+
+Overfull \hbox (33.83005pt too wide) in alignment at lines 1105--1109
+ [] [] [] 
+ []
+
+
+Overfull \hbox (33.83005pt too wide) in alignment at lines 1109--1120
+ [] [] [] 
+ []
+
+[29]
+
+LaTeX Warning: Reference `ch:power' on page 30 undefined on input line 1137.
+
+[30] [31]
+
+LaTeX Warning: Reference `ch:steekproeftrekking' on page 32 undefined on input 
+line 1256.
+
+[32]
+
+LaTeX Warning: Reference `ch:validiteit' on page 33 undefined on input line 127
+8.
+
+
+LaTeX Warning: Reference `ch:betrouwbaarheid' on page 33 undefined on input lin
+e 1278.
+
+[33] (./MS1NL-boek.bbl [34] [35
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1321.
+[36]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1321.
 (./MS1NL-boek.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 559.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 559.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1321.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1321.
+
 Package rerunfilecheck Info: File `MS1NL-boek.out' has not changed.
-(rerunfilecheck)             Checksum: A4DDB3E1AFEFC820A35640F32C79F202;1435.
+(rerunfilecheck)             Checksum: A3720FA2C056552E47CCD4628DED2DC4;2590.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 559.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1321.
  ) 
 Here is how much of TeX's memory you used:
- 17032 strings out of 481244
- 300387 string characters out of 5923079
- 725933 words of memory out of 5000000
- 34332 multiletter control sequences out of 15000+600000
- 538829 words of font info for 82 fonts, out of 8000000 for 9000
+ 17082 strings out of 481244
+ 301156 string characters out of 5923079
+ 728933 words of memory out of 5000000
+ 34380 multiletter control sequences out of 15000+600000
+ 538837 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 53i,8n,118p,1137b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,8n,118p,1137b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on MS1NL-boek.pdf (19 pages).
+Output written on MS1NL-boek.pdf (36 pages).
