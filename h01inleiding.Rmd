@@ -1,4 +1,4 @@
-# (PART) Deel 1: Methodologie {-}
+# (PART\*) Deel I: Methodologie {-}
 
 # Inleiding {#ch:inleiding}
 
@@ -15,9 +15,11 @@ onderzoek (bijv. door onderzoeksjournalisten)? Onderzoek dat een
 wetenschapper uitvoert, hoeft nog geen wetenschappelijk onderzoek te
 zijn. Evenmin is journalistiek onderzoek per definitie
 onwetenschappelijk omdat het door een journalist wordt uitgevoerd. In
-dit tekstboek hanteren we de volgende definitie: "(s)cientific
+dit tekstboek hanteren we de volgende definitie [@KL00, p.14]:
+
+> "Scientific
 research is systematic, controlled, empirical, amoral, public, and
-critical investigation of natural phenomena. It is guided by theory and hypotheses about the presumed relations among such phenomena" [@KL00, p.14].
+critical investigation of natural phenomena. It is guided by theory and hypotheses about the presumed relations among such phenomena." 
 
 Wetenschappelijk onderzoek is systematisch en gecontroleerd.
 Wetenschappelijk onderzoek is zodanig ontworpen dat we geloof kunnen
@@ -230,7 +232,7 @@ toonhoogteverloop) dan op grond van toeval te verwachten is.
 
 Dit voorbeeld illustreert dat beschrijvend onderzoek niet ophoudt als de
 gegevens (klankvormen, toonhoogteverloop) beschreven zijn. Vaak zijn
-*verbanden* tussen de verzamelde gegevens ook zeer interessant (zie §\@ref(sec:wetenschappelijk.onderzoek)).
+*verbanden* tussen de verzamelde gegevens ook zeer interessant (zie §\@ref(sec:wetenschappelijk-onderzoek)).
 Zo wordt in opiniepeilingen naar het stemgedrag bij verkiezingen vaak
 een verband gelegd tussen het gepeilde stemgedrag enerzijds, en
 leeftijd, geslacht en opleidingsniveau van de respondent anderzijds. En
