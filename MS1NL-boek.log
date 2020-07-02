@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.2)  2 JUL 2020 17:02
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.2)  2 JUL 2020 17:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -750,21 +750,21 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] (./MS1NL-boek.toc
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 4.
+(Font)              scaled to size 7.0pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 4.
+(Font)              scaled to size 5.0pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 4.
+(Font)              scaled to size 10.00092pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 4.
+(Font)              scaled to size 7.00064pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 4.
+(Font)              scaled to size 5.00046pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 4.
+(Font)              scaled to size 9.99893pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 4.
+(Font)              scaled to size 6.99925pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 4.
+(Font)              scaled to size 4.99947pt on input line 2.
 )
 \tf@toc=\write4
 \openout4 = `MS1NL-boek.toc'.
@@ -776,59 +776,59 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 ] [8]
 Chapter 1.
 
-LaTeX Warning: Reference `ch:integriteit' on page 9 undefined on input line 157
+LaTeX Warning: Reference `ch:integriteit' on page 9 undefined on input line 165
 .
 
 
-LaTeX Warning: Reference `ch:ontwerp' on page 9 undefined on input line 157.
+LaTeX Warning: Reference `ch:ontwerp' on page 9 undefined on input line 165.
 
 [9
 
 ] [10]
 
 LaTeX Warning: Reference `sec:falsificatie' on page 11 undefined on input line 
-245.
+253.
 
 [11] [12]
 
-LaTeX Warning: Reference `ch:validiteit' on page 13 undefined on input line 326
+LaTeX Warning: Reference `ch:validiteit' on page 13 undefined on input line 334
 .
 
 
 LaTeX Warning: Reference `ch:betrouwbaarheid' on page 13 undefined on input lin
-e 329.
+e 337.
 
 [13]
-Underfull \hbox (badness 1622) in paragraph at lines 366--377
+Underfull \hbox (badness 1622) in paragraph at lines 374--385
 \TU/lmr/m/n/10 gegevens (klankvormen, toonhoogteverloop) beschreven zijn. Vaak 
 zijn
  []
 
 [14]
 
-LaTeX Warning: Reference `ch:ontwerp' on page 15 undefined on input line 435.
+LaTeX Warning: Reference `ch:ontwerp' on page 15 undefined on input line 443.
 
 [15] [16] [17] (./MS1NL-boek.bbl [18])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 551.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 559.
 [19
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 551.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 559.
 (./MS1NL-boek.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 551.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 551.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 559.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 559.
 Package rerunfilecheck Info: File `MS1NL-boek.out' has not changed.
-(rerunfilecheck)             Checksum: C355459E9789C79BBA2D611393683AE9;1250.
+(rerunfilecheck)             Checksum: A4DDB3E1AFEFC820A35640F32C79F202;1435.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 551.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 559.
  ) 
 Here is how much of TeX's memory you used:
- 17029 strings out of 481244
- 300356 string characters out of 5923079
+ 17032 strings out of 481244
+ 300387 string characters out of 5923079
  725933 words of memory out of 5000000
- 34329 multiletter control sequences out of 15000+600000
+ 34332 multiletter control sequences out of 15000+600000
  538829 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  53i,8n,118p,1137b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
