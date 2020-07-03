@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Referenties | Methoden en Statistiek 1</title>
+  <title>Hoofdstuk 4 Meetniveau | Methoden en Statistiek 1</title>
   <meta name="description" content="Tekstboek bij de cursus Methoden en Statistiek 1 (opleiding Taalwetenschap, Universiteit Utrecht)" />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Referenties | Methoden en Statistiek 1" />
+  <meta property="og:title" content="Hoofdstuk 4 Meetniveau | Methoden en Statistiek 1" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/MS1NL-boek" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Referenties | Methoden en Statistiek 1" />
+  <meta name="twitter:title" content="Hoofdstuk 4 Meetniveau | Methoden en Statistiek 1" />
   
   <meta name="twitter:description" content="Tekstboek bij de cursus Methoden en Statistiek 1 (opleiding Taalwetenschap, Universiteit Utrecht)" />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="ch-Meetniveau.html"/>
-
+<link rel="prev" href="ch-integriteit.html"/>
+<link rel="next" href="referenties.html"/>
 <script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -140,111 +140,144 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="referenties" class="section level1 unnumbered">
-<h1>Referenties</h1>
+<div id="ch:Meetniveau" class="section level1" number="4">
+<h1><span class="header-section-number">Hoofdstuk 4</span> Meetniveau</h1>
+<div id="inleiding-1" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Inleiding</h2>
+<p>In Hoofdstuk <a href="ch-onderzoek.html#ch:onderzoek">2</a> maakten we al kennis met variabelen:
+eigenschappen die verschillende waarden kunnen aannemen. De waarde van
+een variabele is dus een aanduiding van een eigenschap, of kwaliteit, of
+hoedanigheid, van een object of persoon. Als het gaat om een
+afhankelijke variabele, dan wordt die waarde ook aangeduid als <em>score</em>
+of <em>responsie</em>, vaak aangeduid met symbool <span class="math inline">\(Y\)</span>. De wijze waarop een
+kenmerk wordt uitgedrukt in een (gemeten) waarde, noemen we het
+<em>meetniveau</em> van de variabele; het meetniveau is dus een eigenschap of
+kenmerk van de variabele zelf! We onderscheiden vier meetniveau’s, in
+toenemende niveau’s van informativiteit: nominaal, ordinaal, interval,
+ratio. Bij de eerste twee meetniveau’s worden alleen discrete
+categorieën onderscheiden, zonder of met ordening. Bij de laatste twee
+meetniveau’s worden getalswaarden gebruikt, zonder of met nulpunt. We
+zullen de meetniveau’s hieronder nader bespreken. Inzicht in het
+meetniveau van een variabele is van belang voor de interpretatie van de
+scores op een variabele en — zoals we later zullen zien — voor de
+keuze van de juiste statistische toets om een onderzoeksvraag te
+beantwoorden.</p>
+</div>
+<div id="sec:nominaal" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Nominaal</h2>
+<p>We spreken van een nominale variabele (of nominaal meetniveau) als een
+kenmerk gecategoriseerd wordt in afzonderlijke (discrete) categorieën,
+waarbij er <em>niet</em> een ordening is tussen de categorieën. Bekende
+voorbeelden zijn o.a. de nationaliteit van een proefpersoon, het merk
+van een auto, de kleur van iemands ogen, de smaak van een bak schepijs,
+je woonsituatie (bij gezin van herkomst, op kamers, zelfstandig,
+samenwonend, anders), enz. De scores kunnen alleen gebruikt worden om de
+categorieën te onderscheiden (de uitspraak “vanille is anders dan
+aardbei” is wel zinnig). We kunnen wel tellen hoe vaak iedere categorie
+voorkomt, maar er is geen interpreteerbare rangorde (de uitspraak “vanille
+is groter dan aardbei” is onzinnig), en we kunnen ook niet rekenen met
+de gemeten waarden van een nominale variabele. We kunnen dus wel de
+meest voorkomende nationaliteit vaststellen, maar we kunnen niet de
+gemiddelde nationaliteit uitrekenen.</p>
+</div>
+<div id="sec:ordinaal" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Ordinaal</h2>
+<p>Er is sprake van een ordinale variabele (of van een ordinaal meetniveau)
+als een kenmerk gecategoriseerd wordt in afzonderlijke categorieën,
+waarbij er <em>wel</em> een rangorde is tussen de categorieën. Bij een ordinale
+variabele weten we echter niets over de afstand tussen de verschillende
+categorieën. Bekende voorbeelden zijn o.a. schooltype (VMBO, HAVO, VWO,
+…), antwoord op een schaalvraag (<em>mee eens, neutraal, niet mee eens</em>),
+positie op een ranglijst, volgorde van afvallen bij een talentenjacht,
+kledingmaat (XS, S, M, L, XL, …), of militaire rang (soldaat, majoor,
+generaal, …). Ook hier kunnen we wel tellen hoe vaak iedere categorie
+voorkomt, en we kunnen ook de rangorde zinnig interpreteren (wie als
+laatste afvalt presteert beter dan wie als eerste afvalt, maat L is
+groter dan M, een generaal is de baas van een majoor). We kunnen echter
+niet rekenen met de gemeten waarden van een ordinale variabele. We
+kunnen wel de meest verkochte kledingmaat vaststellen, maar we kunnen
+niet de gemiddelde verkochte kledingmaat uitrekenen<a href="referenties.html#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>.</p>
+</div>
+<div id="sec:interval" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Interval</h2>
+<p>Er is sprake van een interval-variabele (of van een interval-meetniveau)
+als een kenmerk uitgedrukt wordt in een getal op een continue schaal,
+waarbij deze schaal <em>niet</em> een nulpunt heeft. Door de schaal weten we
+bij een interval-variabele ook wat de afstanden of intervallen zijn
+tussen de verschillende waarden. Bekende voorbeelden zijn o.a.
+temperatuur in graden Celcius (het nulpunt is arbitrair), of jaartal
+(idem). We kunnen tellen hoe vaak iedere categorie voorkomt, we kunnen
+de rangorde zinnig interpreteren (het jaar 1999 in onze gregoriaanse
+kalender ging vooraf aan het jaar 2000), en we kunnen ook de intervallen
+zinnig interpreteren (van 1918 tot 1939 is net zo lang als van 1989 tot
+2010). We kunnen wel rekenen met de waarden van een interval-variabele,
+maar de enige zinnige bewerkingen zijn optellen en aftrekken. Daarmee
+kunnen we wel een gemiddelde berekenen, bijv. het gemiddelde jaar waarin de
+personen in een steekproef hun eerste mobiele telefoon begonnen te gebruiken.</p>
+</div>
+<div id="sec:ratio" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Ratio</h2>
+<p>Het vierde en hoogste meetniveau is het ratio-niveau. Er is sprake van
+een ratio-variabele (of van een ratio-meetniveau) als een kenmerk
+uitgedrukt wordt in een getal op een continue schaal, waarbij deze
+schaal <em>wel</em> een nulpunt heeft. Door de schaal weten we bij een
+ratio-variabele wat de afstanden of intervallen zijn tussen de
+verschillende waarden. Bovendien weten we door het nulpunt wat de
+verhoudingen of ratio’s zijn tussen de verschillende waarden. Bekende
+voorbeelden zijn o.a. temperatuur in graden Kelvin (vanaf het absolute
+nulpunt), de responsietijd<a href="referenties.html#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a> in duizendsten van een seconde (ms), je
+lengte in cm, je leeftijd in jaren, het aantal gemaakte fouten in een
+toets, enz. Bij een ratio-variabele kunnen we tellen hoe vaak iedere
+categorie voorkomt, we kunnen de rangorde zinnig interpreteren (iemand
+van 180 cm is langer dan iemand van 179 cm), we kunnen intervallen
+zinnig interpreteren (de toename in leeftijd van 12 naar 18 is tweemaal
+zo groot als de toename van 9 naar 12), en we kunnen ook verhoudingen
+tussen de waarden zelf zinnig interpreteren (een leeftijd van 24 is
+<em>tweemaal</em> zo oud als een leeftijd van 12). We kunnen rekenen met de
+waarden van een interval-variabele, en daarbij kunnen we niet alleen
+optellen en aftrekken maar ook delen en vermenigvuldigen. Ook hier is
+het mogelijk om een gemiddelde te berekenen, bijv. de gemiddelde leeftijd
+waarop de personen in een steekproef hun eerste mobiele telefoon begonnen te gebruiken.</p>
+</div>
+<div id="sec:ordeningvanmeetniveaus" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> Ordening van meetniveaus</h2>
+<p>De meetniveaus zijn hierboven besproken in toenemende informativiteit of
+sterkte. Een nominale variabele bevat het minste informatie en geldt als
+het laagste meetniveau, en een ratio-variabele bevat het meeste
+informatie en geldt als het hoogste meetniveau.</p>
+<p>Het is altijd mogelijk om gegevens gemeten op een hoger meetniveau te
+interpreteren alsof ze op een lager niveau zijn gemeten. Als we
+bijvoorbeeld het maandinkomen van de personen in een steekproef hebben
+gemeten op ratio-niveau (in €), dan kunnen we daar probleemloos een
+ordinale variabele van maken (<em>minder dan modaal, van modaal tot
+tweemaal modaal, meer dan tweemaal modaal</em>). We gooien daarbij
+informatie weg: de oorspronkelijke meting in € bevat meer informatie dan
+de daaruit afgeleide classificatie in drie geordende categorieën.</p>
+<p>Natuurlijk is het omgekeerde niet mogelijk: een variabele van een laag
+meetniveau kunnen we niet interpreteren op een hoger niveau. We zouden
+dan informatie achteraf moeten toevoegen die we niet hebben verzameld
+bij de oorspronkelijke meting van die variabele. Het is dus zaak om de
+relevante variabelen te meten of te observeren op het juiste meetniveau.
+Stel je
+voor dat we de lichaamslengte van volwassen mannen en vrouwen willen
+vergelijken. Als we de lichaamslengte meten op ordinaal meetniveau (met
+drie categorieën <em>kort</em>, <em>middelmatig</em> en <em>lang</em> gelijkelijk
+gedefinieerd voor alle personen), dan kunnen we dus niet de gemiddelde
+lichaamslengte uitrekenen, en we kunnen ook niet een statistische toets
+gebruiken die refereert aan het gemiddelde van de lichaamslengte. Dat
+hoeft geen probleem te zijn, maar het is wel goed om vooraf te
+doordenken wat de consequenties zijn van de keuze voor een bepaald
+meetniveau.</p>
 
-<div id="refs" class="references hanging-indent">
-<div>
-<p>American Psychological Association. 2010. <em>Publication Manual of the American Psychological Association</em>. 6th ed. Washington, D.C.: American Psychological Association.</p>
 </div>
-<div>
-<p>De Groot, A. D. 1961. <em>Methodologie: Grondslagen van Onderzoek En Denken in de Gedragswetenschappen</em>. ’s-Gravenhage: Mouton. <a href="http://www.dbnl.org/tekst/groo004meth01_01/index.php">http://www.dbnl.org/tekst/groo004meth01_01/index.php</a>.</p>
-</div>
-<div>
-<p>Deutsch, Diana. 2006. “The Enigma of Absolute Pitch.” <em>Acoustics Today</em> 2: 11–19.</p>
-</div>
-<div>
-<p>Dingemanse, Mark, Francisco Torreira, and N. J. Enfield. 2013. “Is ‘Huh?’ A Universal Word? Conversational Infrastructure and the Convergent Evolution of Linguistic Items.” <em>PLOS One</em> 8 (11): e78273. <a href="http://dx.doi.org/10.1371/journal.pone.0078273">http://dx.doi.org/10.1371/journal.pone.0078273</a>.</p>
-</div>
-<div>
-<p>Gelman, Andrew, and Jennifer Hill. 2007. <em>Data Analysis Using Regression and Multilevel/Hierarchical Models</em>. Cambridge: Cambridge University Press.</p>
-</div>
-<div>
-<p>Hume, David. 1739. <em>A Treatise on Human Nature</em>.</p>
-</div>
-<div>
-<p>Kerlinger, Fred N., and Howard B. Lee. 2000. <em>Foundations of Behavioral Research</em>. 4th ed. Fort Worth: Harcourt College Publishers.</p>
-</div>
-<div>
-<p>Koring, Loes, Pim Mak, and Eric Reuland. 2012. “The Time Course of Argument Reactivation Revealed: Using the Visual World Paradigm.” <em>Cognition</em> 123 (3): 361–79.</p>
-</div>
-<div>
-<p>Morton, Adam. 2003. <em>A Guide Through the Theory of Knowledge</em>. 3e ed. Malden, MA: Blackwell.</p>
-</div>
-<div>
-<p>Office of Research Integrity. 2012. “Responsible Conduct of Research Training.” <a href="http://ori.hhs.gov/education/products/wsu/rcr_training.html">http://ori.hhs.gov/education/products/wsu/rcr_training.html</a>.</p>
-</div>
-<div>
-<p>Popper, Karl. 1935. <em>Logik Der Forschung. Zur Erkentnistheorie Der Modernen Naturwissenschaft</em>. Wien: Julius Springer.</p>
-</div>
-<div>
-<p>———. 1959. <em>The Logic of Scientific Discovery</em>. London: Routledge.</p>
-</div>
-<div>
-<p>———. 1963. <em>Conjectures and Refutations: The Growth of Scientific Knowledge</em>. London: Routledge; Kegan Paul.</p>
-</div>
-<div>
-<p>Quené, H. 2008. “Multilevel Modeling of Between-Speaker and Within-Speaker Variation in Spontaneous Speech Tempo.” <em>Journal of the Acoustical Society of America</em> 123 (2): 1104–13.</p>
-</div>
-<div>
-<p>Quené, Hugo, Gün R. Semin, and Francesco Foroni. 2012. “Audible Smiles and Frowns Affect Speech Comprehension.” <em>Speech Communication</em> 54 (7): 917–22.</p>
-</div>
-<div>
-<p>Rosenthal, Robert, and Ralph L. Rosnow. 2008. <em>Essentials of Behavioral Research: Methods and Data Analysis</em>. 3e ed. Boston: McGraw Hill.</p>
-</div>
-<div>
-<p>Sanders, Ewoud. 2011. <em>Eerste Hulp Bij E-Onderzoek Voor Studenten in de Geesteswetenschappen: Slimmer Zoeken, Slimmer Documenteren</em>. Early Dutch Books Online. <a href="http://hdl.handle.net/1887/17774">http://hdl.handle.net/1887/17774</a>.</p>
-</div>
-<div>
-<p>Shadish, William R., Thomas D. Cook, and Donald T. Campbell. 2002. <em>Experimental and Quasi-Experimental Designs for Generalized Causal Inference</em>. Belmont, CA: Wadsworth.</p>
-</div>
-<div>
-<p>Universiteitsbibliotheek, Vrije Universiteit Amsterdam. 2015. “Webcursus Informatievaardigheden - Algemeen - Niveau B.” <a href="http://webcursus.ubvu.vu.nl/cursus/default.asp?lettergr=klein&amp;cursus_id=131">http://webcursus.ubvu.vu.nl/cursus/default.asp?lettergr=klein&amp;cursus_id=131</a>.</p>
-</div>
-<div>
-<p>Van den Berg, Margot, Evershed Kwasi Amuzu, Komlan Essizewa, Elvis Yevudey, and Kamaïloudini Tagba. 2017. “Crosslinguistic Effects in Adjectivization Strategies in Suriname, Ghana and Togo.” In <em>Language Contact in Africa and the African Diaspora in the Americas: In Honor of John V. Singler</em>, edited by Cecelia Cutler, Zvjezdana Vrzić, and Philipp Angermeyer, 343–62. s.l.: Benjamins.</p>
-</div>
-<div>
-<p>VSNU. 2018. “Nederlandse Gedragscode Wetenschappelijke Integriteit.” VSNU. <a href="https://www.vsnu.nl/wetenschappelijke_integriteit.html">https://www.vsnu.nl/wetenschappelijke_integriteit.html</a>.</p>
-</div>
-<div>
-<p>Xie, Yihui. 2020. <em>Bookdown: Authoring Books and Technical Documents with R Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a>.</p>
-</div>
-</div>
-</div>
-<div class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Het is zelfs mogelijk dat het onderzochte voedingspatroon de
-oorzaak is van een relatief <em>kortere</em> levensduur, maar dat dit
-negatieve effect gemaskeerd wordt door de sterkere, positieve
-effecten van opleidingsniveau en welvaartsniveau op de levensduur.<a href="ch-inleiding.html#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>Twee beweringen zijn complementair als ze elkaar wederzijds
-uitsluiten, zoals H1 en H0 in dit voorbeeld.<a href="ch-onderzoek.html#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>Vollediger: Als de kans om deze resultaten te vinden, of
-resultaten die nog meer verschillen van de door H0 voorspelde
-resultaten, kleiner is dan 5%, dan wordt H0 verworpen.<a href="ch-onderzoek.html#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p>Een kopie van de brief is te lezen via
-<a href="http://digitallibrary.hsp.org/index.php/Detail/Object/Show/object_id/9285" class="uri">http://digitallibrary.hsp.org/index.php/Detail/Object/Show/object_id/9285</a>;
-voor achtergrond-informatie zie
-<a href="http://www.bbc.co.uk/worldservice/learningenglish/movingwords/shortlist/newton.shtml" class="uri">http://www.bbc.co.uk/worldservice/learningenglish/movingwords/shortlist/newton.shtml</a>.<a href="ch-integriteit.html#fnref4" class="footnote-back">↩︎</a></p></li>
-<li id="fn5"><p>Medewerkers van de UU kunnen SurfDrive
-(<a href="https://www.surfdrive.nl" class="uri">https://www.surfdrive.nl</a>) gebruiken om gegevens veilig en
-makkelijk te bewaren op een beveiligde netwerk-schijf.<a href="ch-integriteit.html#fnref5" class="footnote-back">↩︎</a></p></li>
-<li id="fn6"><p>Als de helft van de respondenten <em>mee eens</em> antwoordt, en de
-andere helft <em>niet mee eens</em>, dan kunnen we niet zinnig concluderen
-dat de responsies gemiddeld <em>neutraal</em> zouden zijn.<a href="ch-Meetniveau.html#fnref6" class="footnote-back">↩︎</a></p></li>
-<li id="fn7"><p>Het nulpunt is het moment van de gebeurtenis waarop de
-proefpersoon moet reageren.<a href="ch-Meetniveau.html#fnref7" class="footnote-back">↩︎</a></p></li>
-</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="ch-Meetniveau.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="ch-integriteit.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="referenties.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -275,7 +308,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/referenties.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/h04meetniveau.Rmd",
 "text": "Edit"
 },
 "history": {

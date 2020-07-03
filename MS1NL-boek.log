@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.2)  3 JUL 2020 11:19
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.2)  3 JUL 2020 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1005,30 +1005,34 @@ Underfull \hbox (badness 2073) in paragraph at lines 1819--1828
 []
  []
 
-(./MS1NL-boek.bbl [44] [45
+[44]
+Chapter 4.
+[45
+
+] [46] [47] (./MS1NL-boek.bbl [48] [49
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1831.
-[46]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1831.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1972.
+[50]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1972.
 (./MS1NL-boek.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1831.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1831.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1972.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1972.
 
 Package rerunfilecheck Info: File `MS1NL-boek.out' has not changed.
-(rerunfilecheck)             Checksum: 59663B95821107B46C3DF1034FB98BA4;3272.
+(rerunfilecheck)             Checksum: 8C00F0F1F4F4AB27376760426A10E689;4019.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1831.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1972.
  ) 
 Here is how much of TeX's memory you used:
- 17111 strings out of 481244
- 301603 string characters out of 5923079
+ 17119 strings out of 481244
+ 301723 string characters out of 5923079
  728933 words of memory out of 5000000
- 34409 multiletter control sequences out of 15000+600000
+ 34417 multiletter control sequences out of 15000+600000
  538837 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  53i,8n,118p,1137b,529s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on MS1NL-boek.pdf (46 pages).
+Output written on MS1NL-boek.pdf (50 pages).
