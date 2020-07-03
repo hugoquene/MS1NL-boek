@@ -4,6 +4,7 @@ rmd_files: ["index.Rmd",
             "h02onderzoek.Rmd",
             "h03integriteit.Rmd",
             "h04meetniveau.Rmd",
+            "h05validiteit.Rmd",
             "referenties.Rmd"]
 output_dir: "docs"
 language:
