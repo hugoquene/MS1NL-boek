@@ -40,6 +40,46 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -4205,6 +4245,349 @@ Na al deze behartenswaardige aanbevelingen wordt het tijd om te
 bespreken hoe we onderzoeksgegevens goed kunnen beschrijven en
 analyseren om onze onderzoeksvragen te beantwoorden. Dat gebeurt in het
 volgende deel van dit boek.
+
+\hypertarget{part-deel-ii-beschrijvende-statistiek}{%
+\part*{Deel II: Beschrijvende statistiek}\label{part-deel-ii-beschrijvende-statistiek}}
+\addcontentsline{toc}{part}{Deel II: Beschrijvende statistiek}
+
+\hypertarget{ch:frequenties}{%
+\chapter{Frequenties}\label{ch:frequenties}}
+
+\hypertarget{inleiding-3}{%
+\section{Inleiding}\label{inleiding-3}}
+
+Bij de analyse van gegevens wordt vaak een onderscheid gemaakt tussen
+kwalitatieve danwel kwantitatieve methoden. Bij de eerste methode worden
+waarnemingen (bijv. antwoorden in interviews) gerepresenteerd in
+woorden, en bij de tweede methode worden waarnemingen (bijv.
+spreekpauzes in interviews) gerepresenteerd in getallen. Naar onze
+mening bestaat het verschil tussen kwalitatieve en kwantitatieve
+methoden dus uit de aard van de representatie van de observaties, en
+daarmee uit de wijze van argumentatie op grond van die observaties. Soms
+is het ook mogelijk om dezelfde gegevens (bijv. interviews) zowel
+kwalitatief als kwantitatief te analyseren. De kwantitatieve methode
+heeft als grote voordelen dat de gegevens relatief eenvoudig samengevat
+kunnen worden (daarover gaat dit deel van de syllabus), en dat het
+relatief makkelijk is om zinvolle conclusies te trekken op basis van de
+observaties.
+
+\hypertarget{sec:frequenties}{%
+\section{Frequenties}\label{sec:frequenties}}
+
+Kwantitatieve gegevens kunnen op allerlei manieren gerapporteerd worden.
+De eenvoudigste manier zou zijn om de ruwe gegevens te rapporteren, bij
+voorkeur gesorteerd naar de waarde van de geobserveerde variabele.
+Nadeel daarvan is dat een eventueel patroon in de observaties niet goed
+zichtbaar wordt.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\textbf{Voorbeeld 8.1}: Studenten \((N=50)\) in een eerstejaars
+cursus rapporteerden de volgende waarden voor hun schoenmaat, een
+variabele van het interval-meetniveau:\\
+36, 36, 37, 37, 37, 37, 37, 37, 38, 38, 38, 38, 38, 38, 39, 39, 39, 39,
+39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 40, 40, 40,
+40, 40, 40, 41, 41, 41, 41, 41, 42, 42, 43, 43, 44, ??.\\
+Eén van de studenten heeft geen antwoord opgegeven; dit ontbrekende
+antwoord is hier aangegeven als ??.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Meestal is het inzichtelijker en efficiënter om de observaties samen te
+vatten en te rapporteren in de vorm van de \emph{frequentie} van elke waarde.
+Die frequentie geeft het \emph{aantal} observaties met een bepaalde waarde,
+of met een waarde in een bepaald interval of klasse. Om de frequentie te
+verkrijgen \emph{tellen} we dus het aantal observaties met een bepaalde
+waarde, of het aantal observaties in een bepaald interval. Deze
+frequenties worden gerapporteerd in een tabel. Zo'n tabel wordt een
+frequentieverdeling genoemd (frequency distribution).
+
+Tabel \ref{tab:klankfreq} geeft als eerste voorbeeld een
+frequentieverdeling van een discrete variabele van \emph{nominaal}
+meetniveau, nl. de fonologische klasse van spraakklanken in het
+Nederlands \citep{LKCG07}.
+
+\begin{table}[t]
+
+\caption{\label{tab:klankfreq}Frequentieverdeling 
+              van fonologische klasse van spraakklanken 
+              in het *Corpus Gesproken Nederlands* 
+              (C=consonant=medeklinker, V=vocaal=klinker).}
+\centering
+\begin{tabular}{llr}
+\toprule
+hoofdklasse & onderklasse & aantal\\
+\midrule
+C & plos & 585999\\
+C & fric & 426097\\
+C & liq & 249275\\
+C & nas & 361742\\
+C & glide & 146344\\
+\addlinespace
+V & lang & 365887\\
+V & kort & 428832\\
+V & schwa & 341260\\
+V & diph & 61638\\
+V & rest & 1146\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Tabel \ref{tab:schoenmaat} geeft als tweede voorbeeld een
+frequentieverdeling van een continue variabele van \emph{interval}
+meetniveau, nl. de al eerder genoemde schoenmaat van eerstejaars
+studenten (Voorbeeld 8.1).
+
+\begin{longtable}[]{@{}lcccccccccc@{}}
+\caption{\label{tab:schoenmaat} Frequentieverdeling van zelfgerapporteerde schoenmaten
+van \(N=50\) studenten in een eerstejaars cursus (zie
+Voorbeeld 8.1 hierboven).}\tabularnewline
+\toprule
+\endhead
+Schoenmaat & 36 & 37 & 38 & 39 & 40 & 41 & 42 & 43 & 44 & ??\tabularnewline
+Aantal & 2 & 6 & 6 & 19 & 6 & 5 & 2 & 2 & 1 & 1\tabularnewline
+\bottomrule
+\end{longtable}
+
+Als een numerieke variabele heel veel verschillende waarden kan
+aannemen, dan wordt de frequentieverdeling op deze manier toch groot en
+onoverzichtelijk. We voegen dan waarden in een bepaald interval bij
+elkaar, en maken daarna een frequentieverdeling over dat geringere
+aantal intervallen of klassen.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\emph{Voorbeeld 8.2}: Toen Koningin Beatrix voor het laatst de Troonrede voorlas,
+op 18 september 2012, pauzeerde ze daarbij \(305\times\). De frequentieverdeling
+van de duur van de pauze (gemeten in seconden) is weergegeven in
+Tabel \ref{tab:troonrede2012pauzes}.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{longtable}[]{@{}cr@{}}
+\caption{\label{tab:troonrede2012pauzes} Frequentieverdeling van de duren van spreekpauzes (in seconden) in de Troonrede van 18 september 2012, voorgelezen door Koningin Beatrix \((N=305)\).}\tabularnewline
+\toprule
+Interval & Aantal\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+Interval & Aantal\tabularnewline
+\midrule
+\endhead
+4.50--4.99 & 1\tabularnewline
+4.00--4.49 & 0\tabularnewline
+3.50--3.99 & 2\tabularnewline
+3.00--3.49 & 7\tabularnewline
+2.50--2.99 & 4\tabularnewline
+2.00--2.49 & 25\tabularnewline
+1.50--1.99 & 32\tabularnewline
+1.00--1.49 & 16\tabularnewline
+0.50--0.99 & 67\tabularnewline
+0.00--0.49 & 151\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{sec:intervallen}{%
+\subsection{Intervallen}\label{sec:intervallen}}
+
+Voor een variabele van nominaal en ordinaal meetniveau gebruiken we
+doorgaans de oorspronkelijke categorieën om de frequentieverdeling te
+maken (zie Tabel @\ref(tab:klankfreq)), al is het wel mogelijk om categorieën samen
+te voegen. Voor een variabele van interval- of ratio-meetniveau kan een
+onderzoeker zelf het aantal intervallen in de frequentieverdeling
+kiezen. Soms is dat niet nodig, bijvoorbeeld omdat de variabele een
+overzichtelijk aantal verschillende discrete waarden heeft (zie
+Tabel @\ref(tab:schoenmaat)). Maar soms sta je als onderzoeker
+voor de keuze hoeveel intervallen te onderscheiden, en hoe de grenzen
+van die intervallen te bepalen (zie Tabel \ref{tab:troonrede2012pauzes}).
+Daarbij gelden dan de volgende aanbevelingen \citep[Ch.2]{Ferg89}:
+
+\begin{itemize}
+\item
+  Zorg dat alle observaties (d.w.z. het gehele bereik) vallen binnen
+  ruwweg 10 tot 20 intervallen.
+\item
+  Zorg dat alle intervallen even breed zijn.
+\item
+  Laat de ondergrens van het eerste of tweede interval samenvallen met
+  de breedte van de intervallen (zie
+  Tabel \ref{tab:troonrede2012pauzes}: ieder interval is 0.50 s
+  breed, en de ondergrens van het tweede interval is ook 0.50).
+\item
+  Orden de intervallen in een frequentieverdeling van beneden naar
+  boven in toenemende volgorde (d.i. van boven naar beneden in
+  afnemende volgorde, Eng. descending), zie
+  Tabel \ref{tab:troonrede2012pauzes}).
+\end{itemize}
+
+Naarmate we de intervallen breder maken, verliezen we meer informatie
+over de precieze verdeling binnen elk interval.
+
+\hypertarget{spss}{%
+\subsection{SPSS}\label{spss}}
+
+\begin{verbatim}
+Analyze > Descriptive Statistics > Frequencies...
+\end{verbatim}
+
+Selecteer variabele (sleep naar paneel ``Variable(s)'').\\
+Vink aan: \texttt{Display\ frequency\ tables}.\\
+Kies \texttt{Format}, kies: \texttt{Order\ by:\ Descending\ values}.\\
+Bevestig met \texttt{OK}.\\
+
+\hypertarget{r}{%
+\subsection{R}\label{r}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{enq2011 \textless{}{-}}\StringTok{ }\KeywordTok{read.table}\NormalTok{( }
+    \DataTypeTok{file=}\KeywordTok{url}\NormalTok{(}\StringTok{"http://www.hugoquene.nl/R/enq2011.txt"}\NormalTok{), }
+    \DataTypeTok{header=}\OtherTok{TRUE}\NormalTok{ )}
+\KeywordTok{table}\NormalTok{( enq2011}\OperatorTok{$}\NormalTok{schoen, }\DataTypeTok{useNA=}\StringTok{"ifany"}\NormalTok{ ) }
+\end{Highlighting}
+\end{Shaded}
+
+De uitvoer van bovenstaande \texttt{table} commando is weergegeven in Tabel \ref{tab:schoenmaat}.
+De code \texttt{NA} (Not Available) wordt in R gebruikt om ontbrekende gegevens aan te duiden.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{table}\NormalTok{( }\KeywordTok{cut}\NormalTok{( troon2012, }\DataTypeTok{breaks=}\KeywordTok{seq}\NormalTok{(}\DataTypeTok{from=}\DecValTok{0}\NormalTok{,}\DataTypeTok{to=}\DecValTok{5}\NormalTok{,}\DataTypeTok{by=}\FloatTok{0.5}\NormalTok{) ) )}
+\end{Highlighting}
+\end{Shaded}
+
+Ontleed deze opdracht van de binnenste haakjes naar buiten:
+(i) \texttt{seq}: maak een reeks (sequence) van 0 tot 5 (eenheden, hier: seconden) in stappen van 0.5 seconden,
+(ii) \texttt{cut}: hak de afhankelijke variabele \texttt{dur} op in intervallen op basis van deze reeks,
+(iii) \texttt{table}: maak een frequentieverdeling van deze intervallen.
+
+De uitvoer van deze opdracht is weergegeven (in aangepaste vorm) in Tabel \ref{tab:troonrede2012pauzes}.
+
+\hypertarget{sec:staafdiagrammen}{%
+\section{Staafdiagrammen}\label{sec:staafdiagrammen}}
+
+Een staafdiagram (Eng. `bar chart') is de grafische weergave van de
+frequentieverdeling van een discrete, categorische variabele (van
+nominaal of ordinaal meetniveau). Een staafdiagram is opgebouwd uit
+rechthoeken. Alle rechthoeken zijn even breed, en de hoogte van de
+rechthoek correspondeert met de frequentie van die categorie. De
+oppervlakte van iedere rechthoek correspondeert dus ook met de
+frequentie van die categorie. In tegenstelling tot een histogram sluiten
+de rechthoeken \emph{niet} op elkaar aan langs de horizontale as, om aan te
+geven dat we te maken hebben met discrete categorieën.
+
+\begin{figure}
+\centering
+\includegraphics{MS1NL-boek_files/figure-latex/klankfreq-barplot-1.pdf}
+\caption{\label{fig:klankfreq-barplot}Staafdiagram van de frequentieverdeling van fonologische klasse van spraakklanken in het Corpus Gesproken Nederlands (C=consonant=medeklinker, V=vocaal=klinker).}
+\end{figure}
+
+Een staafdiagram helpt ons om in één oogopslag de belangrijkste
+kenmerken te bepalen van de verdeling van een discrete variabele: de
+meest kenmerkende (meest voorkomende) waarde, en de spreiding over
+categorieën. Voor de klankfrequenties in het Nederlands
+(Figuur \ref{fig:klankfreq-barplot}) zien we dat bij de medeklinkers de
+plosieven het meeste voorkomen, dat bij de klinkers de korte klinkers
+het meeste voorkomen, dat tweeklanken weinig gebruikt worden (zgn.
+diphthongs, de klinkers in \emph{ei, ui, au}), en dat er meer medeklinkers
+dan klinkers gesproken worden.
+
+Tip: Vermijd schaduwen en andere 3D-effecten in een staafdiagram! De
+breedte en hoogte van een rechthoek wordt daardoor minder goed leesbaar,
+en de zichtbare oppervlakte van een beschaduwde rechthoek of van een
+balk correspondeert niet meer goed met de frequentie.
+
+\hypertarget{sec:histogrammen}{%
+\section{Histogrammen}\label{sec:histogrammen}}
+
+Een histogram is de grafische weergave van een frequentieverdeling van
+een continue, numerieke variabele (van interval- of ratio-meetniveau).
+Een histogram is opgebouwd uit rechthoeken. De breedte van elke
+rechthoek correspondeert met de intervalbreedte (een rechthoek kan ook 1
+eenheid breed zijn) en de hoogte correspondeert met de frequentie van
+dat interval of van die waarde. De oppervlakte van iedere rechthoek
+correspondeert dus met de frequentie. In tegenstelling tot een
+staafdiagram sluiten de rechthoeken op elkaar aan langs de horizontale
+as.
+
+\begin{figure}
+\centering
+\includegraphics{MS1NL-boek_files/figure-latex/troonrede2012-hist-1.pdf}
+\caption{\label{fig:troonrede2012-hist}Histogram van de duren van spreekpauzes (in seconden) in de Troonrede van 18 september 2012, voorgelezen door Koningin Beatrix (N=305).}
+\end{figure}
+
+Een histogram helpt ons om in één oogopslag de belangrijkste kenmerken
+te bepalen van de verdeling van een continue variabele: de meest
+kenmerkende (meest voorkomende) waarde, de mate van spreiding, het
+aantal pieken in de frequentieverdeling, de ligging van die pieken, en
+eventuele uitbijters
+(zie §\ref{sec:uitbijters}).
+Voor de pauzes in de Troonrede van 2012
+(Figuur \ref{fig:troonrede2012-hist}) zien we dat de meeste pauzes
+tussen 0.25 en 0.75 s duren (vermoedelijk zijn dat adempauzes), dat er
+twee pieken zijn in de verdeling (de tweede piek ligt bij 2 s),
+en dat er één extreem lange pauze is (met een duur van bijna 5 s).
+
+Tip: Vermijd schaduwen en andere 3D-effecten in een histogram! De
+breedte en hoogte van een rechthoek wordt daardoor minder goed leesbaar,
+en de zichtbare oppervlakte van een beschaduwde rechthoek of van een
+balk correspondeert niet meer goed met de frequentie.
+
+\hypertarget{spss-1}{%
+\subsection{SPSS}\label{spss-1}}
+
+\begin{verbatim}
+Analyze > Descriptive Statistics > Frequencies...
+\end{verbatim}
+
+Selecteer variabele (sleep naar paneel ``Variable(s)'').\\
+Kies \texttt{Charts}, kies daarna \texttt{Chart\ type:\ Bar\ chart} voor een
+staafdiagram of \texttt{Chart\ type:\ Histogram} voor een histogram (zie
+bovenstaande tekst voor het verschil tussen deze opties).\\
+Bevestig met \texttt{OK}.\\
+
+\hypertarget{r-1}{%
+\subsection{R}\label{r-1}}
+
+Een staafdiagram zoals Figuur \ref{fig:klankfreq-barplot} maak je in R met de volgende commando's:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# lees data}
+\NormalTok{klankfreq \textless{}{-}}\StringTok{ }\KeywordTok{read.table}\NormalTok{( }\DataTypeTok{file=}\StringTok{"data/klankfreq.txt"}\NormalTok{, }\DataTypeTok{header=}\NormalTok{T )}
+\CommentTok{\# maak barplot van kolom \textasciigrave{}aantal\textasciigrave{} in dataset \textasciigrave{}klankfreq\textasciigrave{}}
+\KeywordTok{with}\NormalTok{( klankfreq, }\KeywordTok{barplot}\NormalTok{( aantal, }\DataTypeTok{beside=}\NormalTok{T, }
+                          \DataTypeTok{ylab=}\StringTok{"Aantal"}\NormalTok{,}
+                          \DataTypeTok{main=}\StringTok{"Klankfrequenties in het Nederlands (N=2968220)"}\NormalTok{,}
+                          \DataTypeTok{col=}\KeywordTok{ifelse}\NormalTok{(klankfreq[,}\DecValTok{1}\NormalTok{]}\OperatorTok{==}\StringTok{"V"}\NormalTok{,}\StringTok{"grey40"}\NormalTok{,}\StringTok{"grey20"}\NormalTok{) ) ) {-}\textgreater{}}\StringTok{ }\NormalTok{klankfreq\_barplot}
+\CommentTok{\# maak labels langs onderste horizontale as}
+\KeywordTok{axis}\NormalTok{(}\DataTypeTok{side=}\DecValTok{1}\NormalTok{, }\DataTypeTok{at=}\NormalTok{klankfreq\_barplot, }\DataTypeTok{labels=}\NormalTok{klankfreq}\OperatorTok{$}\NormalTok{hoofdklasse)}
+\KeywordTok{axis}\NormalTok{(}\DataTypeTok{side=}\DecValTok{1}\NormalTok{, }\DataTypeTok{at=}\NormalTok{klankfreq\_barplot, }\DataTypeTok{tick=}\NormalTok{F, }\DataTypeTok{line=}\DecValTok{1}\NormalTok{, }\DataTypeTok{labels=}\NormalTok{klankfreq}\OperatorTok{$}\NormalTok{onderklasse )}
+\CommentTok{\# of eenvoudiger: with(klankfreq, barplot(aantal) ) \# alle defaults }
+\end{Highlighting}
+\end{Shaded}
+
+Een histogram zoals in Figuur \ref{fig:troonrede2012-hist}
+maak je in R met de volgende commando's:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# lees dataset }
+\KeywordTok{load}\NormalTok{(}\DataTypeTok{file=}\StringTok{"data/pauses6.Rda"}\NormalTok{)}
+\CommentTok{\# haal daaruit pauzeduren (kolom 12) voor jaar 2012, in aparte dataset \textasciigrave{}troon2012\textasciigrave{}}
+\NormalTok{troon2012 \textless{}{-}}\StringTok{ }\NormalTok{pauses6[ pauses6}\OperatorTok{$}\NormalTok{jaar}\OperatorTok{==}\DecValTok{2012}\NormalTok{, }\DecValTok{12}\NormalTok{ ] }\CommentTok{\# save col\_12 as single vector}
+\CommentTok{\# maak histogram}
+\KeywordTok{hist}\NormalTok{( troon2012, }
+      \DataTypeTok{breaks=}\KeywordTok{seq}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{5}\NormalTok{, }\DataTypeTok{by=}\FloatTok{0.25}\NormalTok{),}
+      \DataTypeTok{col=}\StringTok{"grey80"}\NormalTok{,}
+      \DataTypeTok{xlab=}\StringTok{"Duur van pauze (s)"}\NormalTok{, }\DataTypeTok{ylab=}\StringTok{"Aantal"}\NormalTok{, }
+      \DataTypeTok{main=}\StringTok{"Troonrede 2012 (N=305 pauzes)"}\NormalTok{ ) {-}\textgreater{}}\StringTok{ }\NormalTok{troonrede2012pauzes\_hist}
+\end{Highlighting}
+\end{Shaded}
 
 \hypertarget{appendix-appendices}{%
 \appendix}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.2)  9 JUL 2020 13:16
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.2)  9 JUL 2020 23:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -329,49 +329,64 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
 \Hy@SectionHShift=\skip52
+) (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count283
+\FV@InFile=\read2
+\FV@TabBox=\box49
+\c@FancyVerbLine=\count284
+\FV@StepNumber=\count285
+\FV@OutFile=\write3
+) (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip53
+\fb@frw=\dimen151
+\fb@frh=\dimen152
+\FrameRule=\dimen153
+\FrameSep=\dimen154
 ) (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip53
-\LTright=\skip54
-\LTpre=\skip55
-\LTpost=\skip56
-\LTchunksize=\count283
-\LTcapwidth=\dimen151
-\LT@head=\box49
-\LT@firsthead=\box50
-\LT@foot=\box51
-\LT@lastfoot=\box52
-\LT@cols=\count284
-\LT@rows=\count285
-\c@LT@tables=\count286
-\c@LT@chunks=\count287
+\LTleft=\skip54
+\LTright=\skip55
+\LTpre=\skip56
+\LTpost=\skip57
+\LTchunksize=\count286
+\LTcapwidth=\dimen155
+\LT@head=\box50
+\LT@firsthead=\box51
+\LT@foot=\box52
+\LT@lastfoot=\box53
+\LT@cols=\count287
+\LT@rows=\count288
+\c@LT@tables=\count289
+\c@LT@chunks=\count290
 \LT@p@ftn=\toks22
 ) (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen152
-\lightrulewidth=\dimen153
-\cmidrulewidth=\dimen154
-\belowrulesep=\dimen155
-\belowbottomsep=\dimen156
-\aboverulesep=\dimen157
-\abovetopsep=\dimen158
-\cmidrulesep=\dimen159
-\cmidrulekern=\dimen160
-\defaultaddspace=\dimen161
-\@cmidla=\count288
-\@cmidlb=\count289
-\@aboverulesep=\dimen162
-\@belowrulesep=\dimen163
-\@thisruleclass=\count290
-\@lastruleclass=\count291
-\@thisrulewidth=\dimen164
+\heavyrulewidth=\dimen156
+\lightrulewidth=\dimen157
+\cmidrulewidth=\dimen158
+\belowrulesep=\dimen159
+\belowbottomsep=\dimen160
+\aboverulesep=\dimen161
+\abovetopsep=\dimen162
+\cmidrulesep=\dimen163
+\cmidrulekern=\dimen164
+\defaultaddspace=\dimen165
+\@cmidla=\count291
+\@cmidlb=\count292
+\@aboverulesep=\dimen166
+\@belowrulesep=\dimen167
+\@thisruleclass=\count293
+\@lastruleclass=\count294
+\@thisrulewidth=\dimen168
 ) (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count292
+\etb@tempcnta=\count295
 ) (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box53
-\fn@width=\dimen165
+\fn@notes=\box54
+\fn@width=\dimen169
 ) (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
@@ -383,8 +398,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 105.
 )
-\Gin@req@height=\dimen166
-\Gin@req@width=\dimen167
+\Gin@req@height=\dimen170
+\Gin@req@width=\dimen171
 ) (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks23
@@ -392,53 +407,53 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headfont=\toks25
 \thm@notefont=\toks26
 \thm@headpunct=\toks27
-\thm@preskip=\skip57
-\thm@postskip=\skip58
-\thm@headsep=\skip59
+\thm@preskip=\skip58
+\thm@postskip=\skip59
+\thm@headsep=\skip60
 \dth@everypar=\toks28
 ) (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip60
-\bibsep=\skip61
+\bibhang=\skip61
+\bibsep=\skip62
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count293
+\c@NAT@ctr=\count296
 ) (./MS1NL-boek.aux)
 \openout1 = `MS1NL-boek.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 84.
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 84.
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 84.
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 84.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 84.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 84.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 84.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 124.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -467,7 +482,7 @@ pt=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 84.
+(Font)              scaled to size 10.0pt on input line 124.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -506,17 +521,18 @@ pt=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 84.
+(Font)              scaled to size 10.0pt on input line 124.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 84.
+(Font)              `operators' in the math version `normal' on input line 124.
+
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
- line 84.
+ line 124.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 84.
+(Font)              `operators' in the math version `bold' on input line 124.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
-t line 84.
+t line 124.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -603,15 +619,15 @@ t=math;language=dflt;"
 (fontspec)             \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 84.
+(Font)              `symbols' in the math version `normal' on input line 124.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
-t line 84.
+t line 124.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 84.
+(Font)              `symbols' in the math version `bold' on input line 124.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
-t line 84.
+t line 124.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -680,19 +696,19 @@ pt=math;language=dflt;"
 (fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 8
-4.
+(Font)              `largesymbols' in the math version `normal' on input line 1
+24.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
-t line 84.
+t line 124.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 84.
-
+(Font)              `largesymbols' in the math version `bold' on input line 124
+.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
-t line 84.
-\AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 84.
+t line 124.
+\AtBeginShipoutBox=\box55
+Package hyperref Info: Link coloring OFF on input line 124.
 (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -702,45 +718,45 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ng.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count294
+\c@section@level=\count297
 )
-LaTeX Info: Redefining \ref on input line 84.
-LaTeX Info: Redefining \pageref on input line 84.
-LaTeX Info: Redefining \nameref on input line 84.
+LaTeX Info: Redefining \ref on input line 124.
+LaTeX Info: Redefining \pageref on input line 124.
+LaTeX Info: Redefining \nameref on input line 124.
 (./MS1NL-boek.out) (./MS1NL-boek.out)
-\@outlinefile=\write3
-\openout3 = `MS1NL-boek.out'.
+\@outlinefile=\write4
+\openout4 = `MS1NL-boek.out'.
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 86.
+(Font)              scaled to size 12.0pt on input line 126.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 86.
+(Font)              scaled to size 8.0pt on input line 126.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 86.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
-6.
+(Font)              scaled to size 6.0pt on input line 126.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+26.
 (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.0011pt on input line 86.
+(Font)              scaled to size 12.0011pt on input line 126.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00073pt on input line 86.
+(Font)              scaled to size 8.00073pt on input line 126.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 86.
+(Font)              scaled to size 6.00055pt on input line 126.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 86.
+(Font)              scaled to size 11.99872pt on input line 126.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 86.
+(Font)              scaled to size 7.99915pt on input line 126.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 86.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
-
+(Font)              scaled to size 5.99936pt on input line 126.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 126
+.
 (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 126
+.
 (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -766,8 +782,8 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 2.
 [3] [4])
-\tf@toc=\write4
-\openout4 = `MS1NL-boek.toc'.
+\tf@toc=\write5
+\openout5 = `MS1NL-boek.toc'.
 
 [5] [6
 
@@ -780,10 +796,10 @@ Chapter 1.
 ] [12] [13] [14]
 
 LaTeX Warning: Reference `ch:betrouwbaarheid' on page 15 undefined on input lin
-e 349.
+e 389.
 
 [15]
-Underfull \hbox (badness 1622) in paragraph at lines 386--397
+Underfull \hbox (badness 1622) in paragraph at lines 426--437
 \TU/lmr/m/n/10 gegevens (klankvormen, toonhoogteverloop) beschreven zijn. Vaak 
 zijn
  []
@@ -793,88 +809,88 @@ Chapter 2.
 [21
 
 ] [22] [23] [24] [25] [26]
-Underfull \hbox (badness 1163) in paragraph at lines 914--921
+Underfull \hbox (badness 1163) in paragraph at lines 954--961
 \TU/lmr/m/n/10 geopperd waarvan de onderzoeker vermoedt dat die algemeen geldig
  is.
  []
 
 [27]
 
-LaTeX Warning: Reference `ch:toetsing' on page 28 undefined on input line 933.
+LaTeX Warning: Reference `ch:toetsing' on page 28 undefined on input line 973.
 
 [28] [29]
 
-LaTeX Warning: Reference `ch:toetsing' on page 30 undefined on input line 1031.
+LaTeX Warning: Reference `ch:toetsing' on page 30 undefined on input line 1071.
 
 
 
 LaTeX Warning: Reference `sec:bayesiaans' on page 30 undefined on input line 10
-31.
+71.
 
 [30]
-Overfull \hbox (33.83005pt too wide) in alignment at lines 1112--1117
+Overfull \hbox (33.83005pt too wide) in alignment at lines 1152--1157
  [] [] [] 
  []
 
 
-Overfull \hbox (33.83005pt too wide) in alignment at lines 1117--1121
+Overfull \hbox (33.83005pt too wide) in alignment at lines 1157--1161
  [] [] [] 
  []
 
 
-Overfull \hbox (33.83005pt too wide) in alignment at lines 1121--1132
+Overfull \hbox (33.83005pt too wide) in alignment at lines 1161--1172
  [] [] [] 
  []
 
 [31]
 
-LaTeX Warning: Reference `ch:power' on page 32 undefined on input line 1149.
+LaTeX Warning: Reference `ch:power' on page 32 undefined on input line 1189.
 
 [32] [33] [34]
 
 LaTeX Warning: Reference `ch:betrouwbaarheid' on page 35 undefined on input lin
-e 1290.
+e 1330.
 
 [35] [36]
 Chapter 3.
 
-Underfull \hbox (badness 3281) in paragraph at lines 1337--1344
+Underfull \hbox (badness 3281) in paragraph at lines 1377--1384
 \TU/lmr/m/n/10 Wetenschappelijk onderzoek heeft de mensheid onmetelijk grote ba
 ten
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 1354--1354
+Underfull \hbox (badness 3375) in paragraph at lines 1394--1394
 [][][]\TU/lmr/m/n/8 Een kopie van de brief is te lezen via []$[][][][] [] [] []
  [][][][][][][][][][][][][][] [] [][][] [] [][][] [] [][][][][] [] [][][] []
  []
 
 
-Underfull \hbox (badness 3826) in paragraph at lines 1365--1373
+Underfull \hbox (badness 3826) in paragraph at lines 1405--1413
 []\TU/lmr/m/n/10 In dit hoofdstuk bespreken we de ethische en morele aspecten v
 an
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 1365--1373
+Underfull \hbox (badness 1057) in paragraph at lines 1405--1413
 \TU/lmr/m/n/10 wetenschappelijk onderzoek. Wetenschap is mensenwerk, en het ver
 eist
  []
 
 
-Underfull \hbox (badness 3000) in paragraph at lines 1365--1373
+Underfull \hbox (badness 3000) in paragraph at lines 1405--1413
 \TU/lmr/m/n/10 een goed ontwikkeld beoordelingsvermogen van de onderzoekers. De
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1365--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1413
 \TU/lmr/m/it/10 Nederlandse Gedragscode Wetenschappelijke Integriteit \TU/lmr/m
 /n/10 ([]VSNU[], []2018[])
  []
 
 
-Underfull \hbox (badness 7273) in paragraph at lines 1365--1373
+Underfull \hbox (badness 7273) in paragraph at lines 1405--1413
 \TU/lmr/m/n/10 ([]$[][][][] [] [] [] [][][] [] [][][][] [] [][] [] [][][][][][]
 [][][][][][][][][][][] [] [][][][][][][][][][][]$[]) beschrijft hoe weten-
  []
@@ -884,76 +900,76 @@ Underfull \hbox (badness 7273) in paragraph at lines 1365--1373
 ] [38]
 
 LaTeX Warning: Reference `sec:ttoets-formules' on page 39 undefined on input li
-ne 1435.
+ne 1475.
 
 
 LaTeX Warning: Reference `sec:ttoets-effectgrootte' on page 39 undefined on inp
-ut line 1436.
+ut line 1476.
 
 
-LaTeX Warning: Reference `ch:power' on page 39 undefined on input line 1445.
+LaTeX Warning: Reference `ch:power' on page 39 undefined on input line 1485.
 
 
 LaTeX Warning: Reference `sec:ttoets-effectgrootte' on page 39 undefined on inp
-ut line 1472.
+ut line 1512.
 
 [39]
 
-LaTeX Warning: Reference `ch:meetniveau' on page 40 undefined on input line 150
+LaTeX Warning: Reference `ch:meetniveau' on page 40 undefined on input line 154
 7.
 
 
 LaTeX Warning: Reference `ch:betrouwbaarheid' on page 40 undefined on input lin
-e 1509.
+e 1549.
 
 [40]
-Underfull \hbox (badness 2173) in paragraph at lines 1582--1593
+Underfull \hbox (badness 2173) in paragraph at lines 1622--1633
 []\TU/lmr/m/n/10 Foto’s en opnames van personen (audio, video, fysiologische ge
 gevens,
  []
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 1582--1593
+Underfull \hbox (badness 1184) in paragraph at lines 1622--1633
 \TU/lmr/m/n/10 opnames worden dus als portretten beschouwd. Bij publicatie kan 
 de
  []
 
 [41]
-Underfull \hbox (badness 1297) in paragraph at lines 1636--1648
+Underfull \hbox (badness 1297) in paragraph at lines 1676--1688
 []\TU/lmr/m/n/10 De zorgvuldigheid vereist ook dat we goed bijhouden wat de geg
 evens
  []
 
 [42]
-Underfull \hbox (badness 1675) in paragraph at lines 1656--1668
+Underfull \hbox (badness 1675) in paragraph at lines 1696--1708
 []\TU/lmr/m/it/10 Voorbeeld 3.3\TU/lmr/m/n/10 : Het bestand []$[][][][] [] [] [
 ] [][][][][][][] [] [][][] [] [][][][][][][]$[] bevat
  []
 
 [43] [44]
-Underfull \hbox (badness 2393) in paragraph at lines 1773--1776
+Underfull \hbox (badness 2393) in paragraph at lines 1813--1816
 []\TU/lmr/m/n/10 het overnemen van gedrukt materiaal zoals boeken, ti-
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 1773--1776
+Underfull \hbox (badness 2119) in paragraph at lines 1813--1816
 \TU/lmr/m/n/10 jdschriften en encyclopedieën zonder aanhalingstekens en
  []
 
 [45]
-Underfull \hbox (badness 1527) in paragraph at lines 1797--1802
+Underfull \hbox (badness 1527) in paragraph at lines 1837--1842
 \TU/lmr/m/n/10 auteurs plagiaat wordt gepleegd, zijn de andere auteurs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1807--1808
+Underfull \hbox (badness 10000) in paragraph at lines 1847--1848
 [][]$[][][][] [] [] [] [][][][][][][][] [] [][] [] [][] [] [][][][][][][][][][]
  [][] [][][][][] [] [][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] []
 
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 1831--1840
+Underfull \hbox (badness 2073) in paragraph at lines 1871--1880
 \TU/lmr/m/n/10 is te vinden via []$[][][][][] [] [] [] [][] [] [][][][][][][][]
 [] [] [][][] [] [][][][] [] [][][][][][][][][][] [] [][] [] [][][][][][][][][] 
 []
@@ -969,25 +985,25 @@ Chapter 5.
 
 ] [52] [53] [54] [55] [56] [57]
 
-LaTeX Warning: Reference `ch:samenhang' on page 58 undefined on input line 2358
+LaTeX Warning: Reference `ch:samenhang' on page 58 undefined on input line 2398
 .
 
 [58] [59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [60] [61]
-Underfull \hbox (badness 2680) in paragraph at lines 2572--2579
+Underfull \hbox (badness 2680) in paragraph at lines 2612--2619
 []\TU/lmr/m/it/10 Voorbeeld 5.7\TU/lmr/m/n/10 : Zoals hierboven aangegeven kan 
 het begrip
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2584--2588
+Underfull \hbox (badness 10000) in paragraph at lines 2624--2628
 
  []
 
 [62] [63]
-Underfull \hbox (badness 1442) in paragraph at lines 2717--2732
+Underfull \hbox (badness 1442) in paragraph at lines 2757--2772
 \TU/lmr/m/n/10 conditie werd het gestructureerde leesonderwijs verzorgd door
  []
 
@@ -996,23 +1012,23 @@ Chapter 6.
 [73
 
 ] [74]
-Underfull \hbox (badness 1092) in paragraph at lines 3223--3241
+Underfull \hbox (badness 1092) in paragraph at lines 3263--3281
 \TU/lmr/m/n/10 toegepast, maar er zijn desalniettemin diverse factoren die de v
 aliditeit
  []
 
 [75]
-Overfull \hbox (7.82867pt too wide) in paragraph at lines 3277--3277
+Overfull \hbox (7.82867pt too wide) in paragraph at lines 3317--3317
 []\TU/lmr/bx/n/14.4 Het één-groep-voormeting-nameting-ontwerp 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3314--3314
+Underfull \hbox (badness 10000) in paragraph at lines 3354--3354
 []\TU/lmr/bx/n/14.4 Het voormeting-nameting-controlegroep-
  []
 
 [76] [77] [78]
-Underfull \hbox (badness 1365) in paragraph at lines 3442--3447
+Underfull \hbox (badness 1365) in paragraph at lines 3482--3487
 \TU/lmr/m/n/10 Het Solomon-vier-groepen-ontwerp wordt veel minder vaak gebruikt
  dan
  []
@@ -1023,37 +1039,37 @@ File: figures/DrakeBenElHeni2003Fig2.png Graphic file (type bmp)
 [82] [83] [84]
 
 LaTeX Warning: Reference `ch:variantieanalyse' on page 85 undefined on input li
-ne 3686.
+ne 3726.
 
 
-Underfull \hbox (badness 6032) in paragraph at lines 3690--3690
+Underfull \hbox (badness 6032) in paragraph at lines 3730--3730
 []\TU/lmr/bx/n/14.4 Afhankelijke- en onafhankelijke-groepen-
  []
 
 
-LaTeX Warning: Reference `ch:samenhang' on page 85 undefined on input line 3722
+LaTeX Warning: Reference `ch:samenhang' on page 85 undefined on input line 3762
 .
 
 [85] [86]
-Underfull \hbox (badness 2790) in paragraph at lines 3829--3839
+Underfull \hbox (badness 2790) in paragraph at lines 3869--3879
 \TU/lmr/m/n/10 iets mis is in de onderzoeksvragen, operationalisatie, onderzoek
 sopzet,
  []
 
 
-Underfull \hbox (badness 3449) in paragraph at lines 3829--3839
+Underfull \hbox (badness 3449) in paragraph at lines 3869--3879
 \TU/lmr/m/n/10 steekproeftrekking, en/of dataverwerking. Die problemen veroorza
 ken
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 3829--3839
+Underfull \hbox (badness 1655) in paragraph at lines 3869--3879
 \TU/lmr/m/n/10 ook in kennis die minder betrouwbaar, valide en robuust is dan m
 o-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3829--3839
+Underfull \hbox (badness 10000) in paragraph at lines 3869--3879
 []$[][][][][] [] [] [] [][][] [] [][][][][][][][] [] [][][] [] [][][][][][] [] 
 [][][][][][][] [] [][][][][][][] [][] [][][][][][][][][][][][][][][][][][][]$[]
 \TU/lmr/m/n/10 )
@@ -1066,40 +1082,93 @@ Chapter 7.
 [91] [92] [93] [94]
 
 LaTeX Warning: Reference `sec:ttoets-effectgrootte' on page 95 undefined on inp
-ut line 4147.
+ut line 4187.
 
 
 LaTeX Warning: Reference `sec:effectgrootte-power' on page 95 undefined on inpu
-t line 4150.
+t line 4190.
 
 [95] [96] [97] [98
 
-]
-Appendix A.
-(./MS1NL-boek.bbl [99] [100] [101
+] [99] [100]
+Chapter 8.
+[101
 
-] [102] [103])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4253.
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4317--4317
+\TU/lmr/m/n/10 in het *Corpus Gesproken Nederlands* (C=consonant=medeklinker,
+ []
+
+[102]
+
+LaTeX Warning: Reference `(' on page 103 undefined on input line 4399.
+
+
+LaTeX Warning: Reference `(' on page 103 undefined on input line 4404.
+
+[103]
+Underfull \hbox (badness 10000) in paragraph at lines 4437--4441
+
+ []
+
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 4447.
 [104]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4253.
+File: MS1NL-boek_files/figure-latex/klankfreq-barplot-1.pdf Graphic file (type 
+pdf)
+<use MS1NL-boek_files/figure-latex/klankfreq-barplot-1.pdf>
+
+Underfull \hbox (badness 6691) in paragraph at lines 4486--4486
+[]\TU/lmr/m/n/10 Figure 8.1: [][]Staafdiagram van de frequentieverdeling van fo
+nologis-
+ []
+
+
+Underfull \hbox (badness 6428) in paragraph at lines 4486--4486
+\TU/lmr/m/n/10 che klasse van spraakklanken in het Corpus Gesproken Nederlands
+ []
+
+[105]
+File: MS1NL-boek_files/figure-latex/troonrede2012-hist-1.pdf Graphic file (type
+ pdf)
+<use MS1NL-boek_files/figure-latex/troonrede2012-hist-1.pdf>
+
+LaTeX Warning: Reference `sec:uitbijters' on page 106 undefined on input line 4
+528.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4547--4552
+
+ []
+
+[106] [107] [108]
+Appendix A.
+(./MS1NL-boek.bbl [109
+
+] [110] [111
+
+] [112] [113])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4636.
+[114]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4636.
 (./MS1NL-boek.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4253.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4253.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4636.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4636.
 
 Package rerunfilecheck Info: File `MS1NL-boek.out' has not changed.
-(rerunfilecheck)             Checksum: 595099C9C2B8440AF00A2737E6D938DA;8225.
+(rerunfilecheck)             Checksum: 59CDB6A41ACCFBF910B8B6DB9BC297B4;9003.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4253.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4636.
  ) 
 Here is how much of TeX's memory you used:
- 17238 strings out of 481244
- 303771 string characters out of 5923079
+ 17751 strings out of 481244
+ 311976 string characters out of 5923079
  728933 words of memory out of 5000000
- 34532 multiletter control sequences out of 15000+600000
- 538837 words of font info for 83 fonts, out of 8000000 for 9000
+ 35030 multiletter control sequences out of 15000+600000
+ 538853 words of font info for 85 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  53i,8n,118p,1137b,529s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on MS1NL-boek.pdf (104 pages).
+Output written on MS1NL-boek.pdf (114 pages).

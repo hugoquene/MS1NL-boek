@@ -7,10 +7,27 @@ rmd_files: ["index.Rmd",
             "h05validiteit.Rmd",
             "h06ontwerp.Rmd",
             "h07steekproeven.Rmd",
+            "h08frequenties.Rmd",
             "a1randomgetallen.Rmd",
             "referenties.Rmd"]
 output_dir: "docs"
 language:
+  label:
+    fig: 'Figuur '
+    tab: 'Tabel '
+    eq: 'Vergelijking '
+    thm: 'Theorema '
+    lem: 'Lemma '
+    cor: 'Corollary '
+    prp: 'Propositioe '
+    cnj: 'Conjecture '
+    def: 'Definitie '
+    exm: 'Voorbeeld '
+    exr: 'Oefening '
+    proof: 'Bewijs. '
+    remark: 'Opmerking. '
+    solution: 'Oplossing. '
   ui:
     chapter_name: "Hoofdstuk "
+    appendix_name: "Appendix "
 delete_merged_file: true
