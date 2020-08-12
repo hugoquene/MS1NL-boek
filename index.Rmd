@@ -1,10 +1,10 @@
 --- 
 title: "Methoden en Statistiek 1"
 author:
-  name: Hugo Quené & Huub van den Bergh
+  name: Hugo Quené \& Huub van den Bergh
   affiliation: Universiteit Utrecht
   email: h.quene@uu.nl
-date: "11 augustus 2020"
+date: "Versie gecompileerd op `r format(Sys.time(), '%d %b %Y')`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book

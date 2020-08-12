@@ -990,7 +990,4 @@ taalmateriaal wel, dat de stimuli willekeurig zijn geselecteerd uit de
 (soms oneindig grote) populatie van al het mogelijke taalmateriaal (zie
 Hoofdstuk \@ref(ch:steekproeftrekking)).
 
-[^fn05-1]: De experimentator is degene die een experiment afneemt bij een
-    proefpersoon. De experimentator kan een andere persoon zijn dan de
-    onderzoekers die de onderzoekshypothesen hebben opgesteld en/of
-    proefpersonen hebben gerecruteerd.
+[^fn05-1]: De experimentator is degene die een experiment afneemt bij een proefpersoon. De experimentator kan een andere persoon zijn dan de onderzoekers die de onderzoekshypothesen hebben opgesteld en/of proefpersonen hebben gerecruteerd.

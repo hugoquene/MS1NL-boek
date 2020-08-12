@@ -129,9 +129,6 @@ hoeft geen probleem te zijn, maar het is wel goed om vooraf te
 doordenken wat de consequenties zijn van de keuze voor een bepaald
 meetniveau.
 
-[^fn04-1]: Als de helft van de respondenten *mee eens* antwoordt, en de
-    andere helft *niet mee eens*, dan kunnen we niet zinnig concluderen
-    dat de responsies gemiddeld *neutraal* zouden zijn.
+[^fn04-1]: Als de helft van de respondenten *mee eens* antwoordt, en de andere helft *niet mee eens*, dan kunnen we niet zinnig concluderen dat de responsies gemiddeld *neutraal* zouden zijn.
 
-[^fn04-2]: Het nulpunt is het moment van de gebeurtenis waarop de
-    proefpersoon moet reageren.
+[^fn04-2]: Het nulpunt is het moment van de gebeurtenis waarop de proefpersoon moet reageren.

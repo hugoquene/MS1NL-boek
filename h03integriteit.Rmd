@@ -472,11 +472,6 @@ Een overzicht van zulke programma's is te vinden via
 Voor dit tekstboek is gebruik gemaakt van Zotero,
 gecombineerd met BibTeX.
 
-[^fn03-1]: Een kopie van de brief is te lezen via
-    <http://digitallibrary.hsp.org/index.php/Detail/Object/Show/object_id/9285>;
-    voor achtergrond-informatie zie
-    <http://www.bbc.co.uk/worldservice/learningenglish/movingwords/shortlist/newton.shtml>.
+[^fn03-1]: Een kopie van de brief is te lezen via <http://digitallibrary.hsp.org/index.php/Detail/Object/Show/object_id/9285>; voor achtergrond-informatie zie <http://www.bbc.co.uk/worldservice/learningenglish/movingwords/shortlist/newton.shtml>.
 
-[^fn03-2]: Medewerkers van de UU kunnen SurfDrive
-    (<https://www.surfdrive.nl>) gebruiken om gegevens veilig en
-    makkelijk te bewaren op een beveiligde netwerk-schijf.
+[^fn03-2]: Medewerkers van de UU kunnen SurfDrive (<https://www.surfdrive.nl>) gebruiken om gegevens veilig en makkelijk te bewaren op een beveiligde netwerk-schijf.

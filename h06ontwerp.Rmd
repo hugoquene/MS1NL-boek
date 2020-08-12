@@ -738,6 +738,4 @@ kan veel ellende in latere stadia van een onderzoek voorkomen.
     onderzoeksverslag. Als er grote problemen optreden, breek dan het
     onderzoek af, en overweeg een verbeterde versie van je onderzoek.
 
-[^fn06-1]: Merk op dat proefpersonen niet aselect zijn toegewezen aan een van
-deze groepen, en dat dit dus strikt genomen een quasi-experimenteel onderzoek is (zie
-Hoofdstuk 1).
+[^fn06-1]: Merk op dat proefpersonen niet aselect zijn toegewezen aan een van  deze groepen, en dat dit dus strikt genomen een quasi-experimenteel onderzoek is (zie Hoofdstuk 1).

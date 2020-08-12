@@ -119,6 +119,8 @@ rangschikken van klein naar groot, dan is de mediaan het middenpunt van
 die gerangschikte reeks. De helft van de observaties is kleiner dan de
 mediaan, en de andere helft is groter dan de mediaan.
 
+[^fn09-1]: In het Engels wordt de streep in het midden van een weg aangeduid als de "median"; deze streep verdeelt de weg in twee even brede helften.
+
 Bij een oneven aantal observaties is de middelste observatie de mediaan.
 Bij een even aantal observaties wordt de mediaan gevormd door het
 gemiddelde van de middelste twee observaties.
@@ -161,6 +163,8 @@ komt de score 2 het meeste voor
 > *Voorbeeld 9.4*: In 2014 was het gemiddelde inkomen per huishouden in Nederland €34200.
 Het modale inkomen (per huishouden) lag tussen €18000 en €20000[^fn09-2]. In
 2014 vielen de meeste huishoudens in Nederland dus in deze inkomens-klasse.
+
+[^fn09-2]: http://www.cbs.nl/nl-NL/menu/themas/inkomen-bestedingen/cijfers/extra/inkomensverdeling.htm
 
 ---
 
@@ -842,33 +846,17 @@ head(zLezen) # eerste paar observaties van variabele zLezen
 ```
 
 
-[^fn09-1]: In het Engels wordt de streep in het midden van een weg aangeduid
-als de "median"; deze streep verdeelt de weg in twee even brede helften.
 
-[^fn09-2]: http://www.cbs.nl/nl-NL/menu/themas/inkomen-bestedingen/cijfers/extra/inkomensverdeling.htm
+[^fn09-3]: Dit is vergelijkbaar met sporten als roeien, zwemmen, wielrennen, schaatsen, e.d., waar ook de tijd over een afgesproken afstand gemeten en vergeleken wordt, en niet de snelheid over een afgesproken tijd.
 
-[^fn09-3]: Dit is vergelijkbaar met sporten als roeien, zwemmen, wielrennen,
-schaatsen, e.d., waar ook de tijd over een afgesproken afstand
-gemeten en vergeleken wordt, en niet de snelheid over een afgesproken tijd.
+[^fn09-4]: In een klassieke boxplot strekken de lijnen zich uit naar het minimum en maximum [@Tukey77] en worden uitbijters niet apart aangeduid.
 
-[^fn09-4]: In een klassieke boxplot strekken de lijnen zich uit naar het
-minimum en maximum [@Tukey77] en worden uitbijters niet apart
-aangeduid.
+[^fn09-5]: We delen door $n-1$ en niet door $n$, om een betere schatting te krijgen van de spreiding in de *populatie*. Op deze manier houden we rekening met het feit dat we één kenmerk van de steekproef (nl. het gemiddelde) gebruiken om de spreiding te bepalen. Als je alleen geïnteresseerd bent in de spreiding in je *steekproef* van observaties, en niet in de populatie, deel dan door $n$.
 
-[^fn09-5]: We delen door $n-1$ en niet door $n$, om een betere schatting te
-    krijgen van de spreiding in de *populatie*. Op deze manier houden we
-    rekening met het feit dat we één kenmerk van de steekproef (nl. het
-    gemiddelde) gebruiken om de spreiding te bepalen. Als je alleen
-    geïnteresseerd bent in de spreiding in je *steekproef* van
-    observaties, en niet in de populatie, deel dan door $n$.
-
-[^fn09-6]: Positieve afwijkingen blijven ongewijzigd, van negatieve
-    afwijkingen wordt het teken omgekeerd.
+[^fn09-6]: Positieve afwijkingen blijven ongewijzigd, van negatieve afwijkingen wordt het teken omgekeerd.
 
 [^fn09-7]: <https://nl.wikipedia.org/wiki/Significant_cijfer>
 
-[^fn09-8]: Deze "odds" geeft aan dat er 23 geslaagden zijn op 6 gezakten,
-    d.i. afgerond 4 geslaagden voor iedere gezakte.
+[^fn09-8]: Deze "odds" geeft aan dat er 23 geslaagden zijn op 6 gezakten, d.i. afgerond 4 geslaagden voor iedere gezakte.
 
-[^fn09-9]: Check: $z = +2 = \frac{(x_i-\overline{x})}{s_x}$, dus
-    $2 s = (x_i-\overline{x})$, dus $x_i = \overline{x}+2s$.
+[^fn09-9]: Check: $z = +2 = \frac{(x_i-\overline{x})}{s_x}$, dus $2 s = (x_i-\overline{x})$, dus $x_i = \overline{x}+2s$.

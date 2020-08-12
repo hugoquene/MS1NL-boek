@@ -720,9 +720,6 @@ aaneenschakeling van problemen, keuzes en beslissingen. De belangrijkste
 keuzes zijn al gemaakt voordat de onderzoeker begint met gegevens
 verzamelen.
 
-[^fn02-1]: Twee beweringen zijn complementair als ze elkaar wederzijds
-    uitsluiten, zoals H1 en H0 in dit voorbeeld.
+[^fn02-1]: Twee beweringen zijn complementair als ze elkaar wederzijds uitsluiten, zoals H1 en H0 in dit voorbeeld.
 
-[^fn02-2]: Vollediger: Als de kans om deze resultaten te vinden, of
-    resultaten die nog meer verschillen van de door H0 voorspelde
-    resultaten, kleiner is dan 5%, dan wordt H0 verworpen.
+[^fn02-2]: Vollediger: Als de kans om deze resultaten te vinden, of resultaten die nog meer verschillen van de door H0 voorspelde resultaten, kleiner is dan 5%, dan wordt H0 verworpen.
