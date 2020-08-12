@@ -8,6 +8,7 @@ rmd_files: ["index.Rmd",
             "h06ontwerp.Rmd",
             "h07steekproeven.Rmd",
             "h08frequenties.Rmd",
+            "h09centrumspreiding.Rmd",
             "a1randomgetallen.Rmd",
             "referenties.Rmd"]
 output_dir: "docs"
@@ -19,7 +20,7 @@ language:
     thm: 'Theorema '
     lem: 'Lemma '
     cor: 'Corollary '
-    prp: 'Propositioe '
+    prp: 'Propositie '
     cnj: 'Conjecture '
     def: 'Definitie '
     exm: 'Voorbeeld '

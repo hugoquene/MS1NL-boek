@@ -4,7 +4,7 @@ author:
   name: Hugo Quené & Huub van den Bergh
   affiliation: Universiteit Utrecht
   email: h.quene@uu.nl
-date: "8 juli 2020"
+date: "11 augustus 2020"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -37,7 +37,7 @@ Tobias Quené
 en Kirsten Schutter
 voor hun adviezen, data, en/of commentaar bij eerdere versies.
 
-Utrecht, december 2016 - juli 2020
+Utrecht, december 2016 - augustus 2020
 
 Hugo Quené, <https://www.hugoquene.nl>
 

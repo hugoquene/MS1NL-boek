@@ -1,6 +1,6 @@
 # Integriteit {#ch:integriteit}
 
-## Inleiding {#sec:integriteit.inleiding}
+## Inleiding {#sec:integriteit-inleiding}
 
 Wetenschappelijk onderzoek heeft de mensheid onmetelijk grote baten
 opgeleverd, zoals betrouwbare computer-technologie, goede medische zorg,
