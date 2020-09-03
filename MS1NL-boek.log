@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.8.11)  12 AUG 2020 16:18
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.3)  3 SEP 2020 23:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -204,7 +204,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 225.
 (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
-File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+File: xetex.def 2020/08/26 v5.0i Graphics/color driver for xetex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -381,7 +381,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count295
 \@thisrulewidth=\dimen168
 ) (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/07/15 v2.5i e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count296
 ) (/Users/Hugo/Library/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
@@ -781,13 +781,13 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 6.99925pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 2.
-[3] [4])
+[3] [4] [5])
 \tf@toc=\write5
 \openout5 = `MS1NL-boek.toc'.
 
-[5] [6
+[6] [7
 
-] [7] [8] [9
+] [8] [9
 
 ] [10]
 Chapter 1.
@@ -1171,28 +1171,14 @@ Underfull \vbox (badness 5741) has occurred while \output is active []
 LaTeX Warning: Reference `sec:ttoets-vrijheidsgraden' on page 119 undefined on 
 input line 5028.
 
-[119]
-
-LaTeX Warning: Reference `sec:normaalverdeling' on page 120 undefined on input 
-line 5074.
-
-
-LaTeX Warning: Reference `sec:normaalverdeling' on page 120 undefined on input 
-line 5096.
-
-[120]
+[119] [120]
 Missing character: There is no   in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no   in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no   in font [lmroman10-regular]:mapping=tex-text;!
 [121]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[122] [123] [124]
-
-LaTeX Warning: Reference `ch:kansverdelingen' on page 125 undefined on input li
-ne 5355.
-
-[125]
+[122] [123] [124] [125]
 Underfull \hbox (badness 10000) in paragraph at lines 5385--5386
 
  []
@@ -1233,33 +1219,145 @@ Overfull \hbox (33.0pt too wide) in paragraph at lines 5550--5550
  []
 
 [128]
+Chapter 10.
+[129
+
+] [130] [131]
+File: MS1NL-boek_files/figure-latex/binomkansverdeling3-1.pdf Graphic file (typ
+e pdf)
+<use MS1NL-boek_files/figure-latex/binomkansverdeling3-1.pdf>
+
+Underfull \hbox (badness 1337) in paragraph at lines 5781--5785
+[]\TU/lmr/m/n/10 De kansverdeling van een binomiale variabele noemen we de bino
+miale
+ []
+
+[132] [133]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 5791.
+
+[134] [135]
+File: MS1NL-boek_files/figure-latex/binomkansverdeling50n500-1.pdf Graphic file
+ (type pdf)
+<use MS1NL-boek_files/figure-latex/binomkansverdeling50n500-1.pdf>
+[136]
+File: MS1NL-boek_files/figure-latex/normaalkansverdeling-1.pdf Graphic file (ty
+pe pdf)
+<use MS1NL-boek_files/figure-latex/normaalkansverdeling-1.pdf>
+[137] [138] [139]
+Overfull \hbox (11.1839pt too wide) in paragraph at lines 6112--6112
+[]\TU/lmr/bx/n/14.4 Heeft mijn variabele een normale kansverdel-
+ []
+
+
+LaTeX Warning: Reference `fig:itunestimeshist' on page 140 undefined on input l
+ine 6117.
+
+File: MS1NL-boek_files/figure-latex/itunestimeshist-1.pdf Graphic file (type pd
+f)
+<use MS1NL-boek_files/figure-latex/itunestimeshist-1.pdf>
+[140]
+File: MS1NL-boek_files/figure-latex/itunestimesqqplot-1.pdf Graphic file (type 
+pdf)
+<use MS1NL-boek_files/figure-latex/itunestimesqqplot-1.pdf>
+
+LaTeX Warning: Reference `fig:itunestimeshist' on page 141 undefined on input l
+ine 6151.
+
+[141]
+Underfull \hbox (badness 4084) in paragraph at lines 6213--6213
+[]\TU/lmr/bx/n/14.4 Wat als mijn variabele niet normaal
+ []
+
+
+LaTeX Warning: Reference `ch:toetsing' on page 142 undefined on input line 6217
+.
+
+
+LaTeX Warning: Reference `ch:power' on page 142 undefined on input line 6217.
+
+
+LaTeX Warning: Reference `ch:variantieanalyse' on page 142 undefined on input l
+ine 6217.
+
+[142]
+
+LaTeX Warning: Reference `ch:chi-kwadraat-toetsen' on page 143 undefined on inp
+ut line 6241.
+
+
+LaTeX Warning: Reference `ch:andere-nonpar-toetsen' on page 143 undefined on in
+put line 6242.
+
+
+LaTeX Warning: Reference `ch:power' on page 143 undefined on input line 6245.
+
+File: MS1NL-boek_files/figure-latex/itunesmeanshist-1.pdf Graphic file (type pd
+f)
+<use MS1NL-boek_files/figure-latex/itunesmeanshist-1.pdf>
+[143]
+Underfull \vbox (badness 3657) has occurred while \output is active []
+
+[144]
+File: MS1NL-boek_files/figure-latex/tkansverdeling-1.pdf Graphic file (type pdf
+)
+<use MS1NL-boek_files/figure-latex/tkansverdeling-1.pdf>
+
+LaTeX Warning: Reference `app:kritieketwaarden' on page 145 undefined on input 
+line 6381.
+
+[145]
+File: MS1NL-boek_files/figure-latex/tempo95CIs-1.pdf Graphic file (type pdf)
+<use MS1NL-boek_files/figure-latex/tempo95CIs-1.pdf>
+
+Underfull \vbox (badness 2073) has occurred while \output is active []
+
+[146] [147]
+
+LaTeX Warning: Reference `app:kritieketwaarden' on page 148 undefined on input 
+line 6417.
+
+
+LaTeX Warning: Reference `sec:ttoets-vrijheidsgraden' on page 148 undefined on 
+input line 6418.
+
+[148]
 Appendix A.
-(./MS1NL-boek.bbl [129
+[149
 
-] [130] [131
+] [150]
+Appendix B.
+File: MS1NL-boek_files/figure-latex/kritiekeZwaarden-hulpfiguur-1.pdf Graphic f
+ile (type pdf)
+<use MS1NL-boek_files/figure-latex/kritiekeZwaarden-hulpfiguur-1.pdf>
+(./MS1NL-boek.bbl [151
 
-] [132] [133])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5596.
-[134]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5596.
+] [152] [153
+
+] [154] [155])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6502.
+[156]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6502.
 (./MS1NL-boek.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5596.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5596.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6502.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6502.
 
 Package rerunfilecheck Info: File `MS1NL-boek.out' has not changed.
-(rerunfilecheck)             Checksum: F647809B8B7CF4886A77C65B04A21558;10333.
+(rerunfilecheck)             Checksum: CFD81EF3277F9EE3B3A07CFA0F98F8B1;12206.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5596.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6502.
  ) 
 Here is how much of TeX's memory you used:
- 17829 strings out of 481666
- 314130 string characters out of 5931750
- 733928 words of memory out of 5000000
- 34682 multiletter control sequences out of 15000+600000
+ 17942 strings out of 481666
+ 318040 string characters out of 5931751
+ 744471 words of memory out of 5000000
+ 34786 multiletter control sequences out of 15000+600000
  541603 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 52i,8n,118p,1137b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,9n,118p,1137b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on MS1NL-boek.pdf (134 pages).
+Output written on MS1NL-boek.pdf (156 pages).

@@ -30,7 +30,7 @@
   
   
 <link rel="prev" href="ch-frequenties.html"/>
-<link rel="next" href="app-randomgetallen.html"/>
+<link rel="next" href="ch-kansverdelingen.html"/>
 <script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -266,8 +266,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.9" data-path="ch-centrumenspreiding.html"><a href="ch-centrumenspreiding.html#spss-2"><i class="fa fa-check"></i><b>9.9</b> SPSS</a></li>
 <li class="chapter" data-level="9.10" data-path="ch-centrumenspreiding.html"><a href="ch-centrumenspreiding.html#r-2"><i class="fa fa-check"></i><b>9.10</b> R</a></li>
 </ul></li>
+<li class="chapter" data-level="10" data-path="ch-kansverdelingen.html"><a href="ch-kansverdelingen.html"><i class="fa fa-check"></i><b>10</b> Kansverdelingen</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="ch-kansverdelingen.html"><a href="ch-kansverdelingen.html#sec:kansen"><i class="fa fa-check"></i><b>10.1</b> Kansen</a></li>
+<li class="chapter" data-level="10.2" data-path="ch-kansverdelingen.html"><a href="ch-kansverdelingen.html#sec:binomiaalverdeling"><i class="fa fa-check"></i><b>10.2</b> Binomiale kansverdeling</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="ch-kansverdelingen.html"><a href="ch-kansverdelingen.html#formules"><i class="fa fa-check"></i><b>10.2.1</b> formules</a></li>
+<li class="chapter" data-level="10.2.2" data-path="ch-kansverdelingen.html"><a href="ch-kansverdelingen.html#r-3"><i class="fa fa-check"></i><b>10.2.2</b> R</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="ch-kansverdelingen.html"><a href="ch-kansverdelingen.html#sec:normaalverdeling"><i class="fa fa-check"></i><b>10.3</b> Normale kansverdeling</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="ch-kansverdelingen.html"><a href="ch-kansverdelingen.html#formules-1"><i class="fa fa-check"></i><b>10.3.1</b> formules</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="ch-kansverdelingen.html"><a href="ch-kansverdelingen.html#sec:isvarnormaalverdeeld"><i class="fa fa-check"></i><b>10.4</b> Heeft mijn variabele een normale kansverdeling?</a>
+<ul>
+<li class="chapter" data-level="10.4.1" data-path="ch-kansverdelingen.html"><a href="ch-kansverdelingen.html#spss-3"><i class="fa fa-check"></i><b>10.4.1</b> SPSS</a></li>
+<li class="chapter" data-level="10.4.2" data-path="ch-kansverdelingen.html"><a href="ch-kansverdelingen.html#r-4"><i class="fa fa-check"></i><b>10.4.2</b> R</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="ch-kansverdelingen.html"><a href="ch-kansverdelingen.html#sec:watalsnietnormaal"><i class="fa fa-check"></i><b>10.5</b> Wat als mijn variabele niet normaal verdeeld is?</a></li>
+<li class="chapter" data-level="10.6" data-path="ch-kansverdelingen.html"><a href="ch-kansverdelingen.html#sec:CentraalLimietTheorema"><i class="fa fa-check"></i><b>10.6</b> Kansverdeling van gemiddelde</a></li>
+<li class="chapter" data-level="10.7" data-path="ch-kansverdelingen.html"><a href="ch-kansverdelingen.html#sec:betrouwbaarheidsinterval.gemiddelde"><i class="fa fa-check"></i><b>10.7</b> Betrouwbaarheidsinterval van het gemiddelde</a>
+<ul>
+<li class="chapter" data-level="10.7.1" data-path="ch-kansverdelingen.html"><a href="ch-kansverdelingen.html#formules-2"><i class="fa fa-check"></i><b>10.7.1</b> formules</a></li>
+</ul></li>
+</ul></li>
 <li class="appendix"><span><b>Appendices</b></span></li>
 <li class="chapter" data-level="A" data-path="app-randomgetallen.html"><a href="app-randomgetallen.html"><i class="fa fa-check"></i><b>A</b> Willekeurige getallen</a></li>
+<li class="chapter" data-level="B" data-path="app-kritiekeZwaarden.html"><a href="app-kritiekeZwaarden.html"><i class="fa fa-check"></i><b>B</b> Standaard-normale kansverdeling</a></li>
 <li class="chapter" data-level="" data-path="referenties.html"><a href="referenties.html"><i class="fa fa-check"></i>Referenties</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Gemaakt met bookdown</a></li>
@@ -779,7 +804,7 @@ getrimde verzameling van observaties.</p>
 (a) als we de ruwe observaties
 willen omzetten naar standaardscores (zie §<a href="ch-centrumenspreiding.html#sec:standaardscores">9.8</a> hieronder),
 (b) als we een variabele
-willen beschrijven die normaal verdeeld is (zie §<a href="#sec:normaalverdeling"><strong>??</strong></a>, en
+willen beschrijven die normaal verdeeld is (zie §<a href="ch-kansverdelingen.html#sec:normaalverdeling">10.3</a>, en
 (c) als we hypotheses willen toetsen met behulp van een normaal verdeelde variabele (zie §@ref(sec:ttoets.onesample) e.v.).</p>
 </div>
 <div id="mad" class="section level3" number="9.5.3">
@@ -798,7 +823,7 @@ Het resultaat noemen we de “median absolute deviation” (MAD):
 \end{equation}\]</span></p>
 <p>Hierbij gebruiken we meestal <span class="math inline">\(k=1.4826\)</span> als constante; door deze schaalfactor komt de MAD
 ruwweg overeen met de standaarddeviatie <span class="math inline">\(s\)</span> indien <span class="math inline">\(x\)</span> normaal verdeeld
-zou zijn (§<a href="#sec:normaalverdeling"><strong>??</strong></a>).</p>
+zou zijn (§<a href="ch-kansverdelingen.html#sec:normaalverdeling">10.3</a>).</p>
 <hr />
 <blockquote>
 <p>Voorbeeld 9.11:
@@ -1083,7 +1108,7 @@ weliswaar op dezelfde schaal gemeten zijn (bijvoorbeeld een schaal van
 <span class="math inline">\(1 \dots 100\)</span>), maar die toch verschillende gemiddelden en/of
 verschillende standaarddeviaties hebben, zoals de scores in
 Tabel <a href="ch-centrumenspreiding.html#tab:cito">9.1</a>.
-In Hoofdstuk <a href="#ch:kansverdelingen"><strong>??</strong></a> zullen we verder werken met z-scores.</p>
+In Hoofdstuk <a href="ch-kansverdelingen.html#ch:kansverdelingen">10</a> zullen we verder werken met z-scores.</p>
 <p>De standaardscore of z-score heeft twee handige eigenschappen die je
 moet onthouden. Ten eerste is het gemiddelde altijd gelijk aan nul:
 <span class="math inline">\(\overline{z}=0\)</span>, en ten tweede is de standaarddeviatie gelijk aan 1:
@@ -1177,9 +1202,6 @@ kolom(men) aan het databestand.<br />
 
 </div>
 </div>
-
-
-
 <h3>Referenties</h3>
 <div id="refs" class="references">
 <div id="ref-Tukey77">
@@ -1209,7 +1231,7 @@ kolom(men) aan het databestand.<br />
         </div>
       </div>
 <a href="ch-frequenties.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="app-randomgetallen.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ch-kansverdelingen.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Appendix A Willekeurige getallen | Methoden en Statistiek 1</title>
+  <title>Appendix B Standaard-normale kansverdeling | Methoden en Statistiek 1</title>
   <meta name="description" content="Tekstboek bij de cursus Methoden en Statistiek 1 (opleiding Taalwetenschap, Universiteit Utrecht)" />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Appendix A Willekeurige getallen | Methoden en Statistiek 1" />
+  <meta property="og:title" content="Appendix B Standaard-normale kansverdeling | Methoden en Statistiek 1" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/MS1NL-boek" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Appendix A Willekeurige getallen | Methoden en Statistiek 1" />
+  <meta name="twitter:title" content="Appendix B Standaard-normale kansverdeling | Methoden en Statistiek 1" />
   
   <meta name="twitter:description" content="Tekstboek bij de cursus Methoden en Statistiek 1 (opleiding Taalwetenschap, Universiteit Utrecht)" />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="ch-kansverdelingen.html"/>
-<link rel="next" href="app-kritiekeZwaarden.html"/>
+<link rel="prev" href="app-randomgetallen.html"/>
+<link rel="next" href="referenties.html"/>
 <script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -314,250 +314,86 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="app:randomgetallen" class="section level1" number="11">
-<h1><span class="header-section-number">Appendix A</span> Willekeurige getallen</h1>
+<div id="app:kritiekeZwaarden" class="section level1" number="12">
+<h1><span class="header-section-number">Appendix B</span> Standaard-normale kansverdeling</h1>
+<!-- kritiekeZwaarden_hulpfiguur.R, no caption, no labels -->
+<p><img src="MS1NL-boek_files/figure-html/kritiekeZwaarden-hulpfiguur-1.png" width="672" /></p>
+<p>De hieronder gegeven kritieke grenswaarde <span class="math inline">\(Z^*\)</span> heeft een overschrijdingskans <span class="math inline">\(p\)</span> onder <span class="math inline">\(H_0\)</span>,
+d.w.z. <span class="math inline">\(P(Z \geq Z^*|H_0)=p\)</span> (blauwe oppervlakte),
+en heeft kans <span class="math inline">\(B\)</span> op een waarde tussen <span class="math inline">\((-Z^*, +Z^*)\)</span>.
+De <span class="math inline">\(Z\)</span>-verdeling is symmetrisch rond <span class="math inline">\(Z=0\)</span>, dus <span class="math inline">\(P(Z &lt; -Z^*) = P(Z &gt; Z^*)\)</span>.</p>
+<hr />
+<p>De eerste tabel geeft de kritieke grenswaarden <span class="math inline">\(Z^*\)</span> voor veel gebruikte overschrijdingskansen <span class="math inline">\(p\)</span> en betrouwbaarheidsintervallen <span class="math inline">\(B\)</span>:</p>
 <table>
-<caption><span id="tab:A1">Tabel A.1: </span>Onderstaande tabel bevat 200 willekeurige getallen tussen 0 en 9999.</caption>
 <tbody>
 <tr class="odd">
-<td align="right">2836</td>
-<td align="right">264</td>
-<td align="right">6789</td>
-<td align="right">1483</td>
-<td align="right">3459</td>
-<td align="right">9200</td>
-<td align="right">4996</td>
-<td align="right">3761</td>
-<td align="right">699</td>
-<td align="right">5622</td>
+<td align="center">p</td>
+<td align="center">0.2</td>
+<td align="center">0.1</td>
+<td align="center">0.05</td>
+<td align="center">0.025</td>
+<td align="center">0.01</td>
+<td align="center">0.005</td>
+<td align="center">0.0025</td>
+<td align="center">0.001</td>
 </tr>
 <tr class="even">
-<td align="right">1943</td>
-<td align="right">6034</td>
-<td align="right">8838</td>
-<td align="right">1349</td>
-<td align="right">8750</td>
-<td align="right">3181</td>
-<td align="right">8799</td>
-<td align="right">4525</td>
-<td align="right">6536</td>
-<td align="right">5111</td>
+<td align="center">B</td>
+<td align="center">60%</td>
+<td align="center">80%</td>
+<td align="center">90%</td>
+<td align="center">95%</td>
+<td align="center">98%</td>
+<td align="center">99%</td>
+<td align="center">99.5%</td>
+<td align="center">99.8%</td>
 </tr>
 <tr class="odd">
-<td align="right">7259</td>
-<td align="right">8030</td>
-<td align="right">5709</td>
-<td align="right">8334</td>
-<td align="right">3526</td>
-<td align="right">2768</td>
-<td align="right">6296</td>
-<td align="right">8335</td>
-<td align="right">6350</td>
-<td align="right">6192</td>
+<td align="center">Z*</td>
+<td align="center">0.8416</td>
+<td align="center">1.282</td>
+<td align="center">1.645</td>
+<td align="center">1.960</td>
+<td align="center">2.326</td>
+<td align="center">2.576</td>
+<td align="center">2.807</td>
+<td align="center">3.090</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>De tweede tabel geeft overschrijdingskansen <span class="math inline">\(p\)</span> en betrouwbaarheidsintervallen <span class="math inline">\(B\)</span> voor afgeronde kritieke grenswaarden <span class="math inline">\(Z^*\)</span>:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center">p</td>
+<td align="center">0.3085</td>
+<td align="center">0.1587</td>
+<td align="center">0.0668</td>
+<td align="center">0.0228</td>
+<td align="center">0.0062</td>
+<td align="center">0.0013</td>
+<td align="center">0.0002</td>
 </tr>
 <tr class="even">
-<td align="right">570</td>
-<td align="right">8266</td>
-<td align="right">9050</td>
-<td align="right">7771</td>
-<td align="right">3</td>
-<td align="right">7983</td>
-<td align="right">1871</td>
-<td align="right">3927</td>
-<td align="right">5549</td>
-<td align="right">1487</td>
+<td align="center">B</td>
+<td align="center">38.29%</td>
+<td align="center">68.27%</td>
+<td align="center">86.64%</td>
+<td align="center">95.45%</td>
+<td align="center">98.76%</td>
+<td align="center">99.73%</td>
+<td align="center">99.95%</td>
 </tr>
 <tr class="odd">
-<td align="right">1241</td>
-<td align="right">2273</td>
-<td align="right">505</td>
-<td align="right">8816</td>
-<td align="right">4786</td>
-<td align="right">533</td>
-<td align="right">9347</td>
-<td align="right">888</td>
-<td align="right">3728</td>
-<td align="right">4135</td>
-</tr>
-<tr class="even">
-<td align="right">6688</td>
-<td align="right">9456</td>
-<td align="right">2880</td>
-<td align="right">4616</td>
-<td align="right">7698</td>
-<td align="right">2955</td>
-<td align="right">9597</td>
-<td align="right">9188</td>
-<td align="right">8932</td>
-<td align="right">5605</td>
-</tr>
-<tr class="odd">
-<td align="right">1325</td>
-<td align="right">1294</td>
-<td align="right">8001</td>
-<td align="right">1814</td>
-<td align="right">5020</td>
-<td align="right">9470</td>
-<td align="right">8702</td>
-<td align="right">4083</td>
-<td align="right">6452</td>
-<td align="right">2863</td>
-</tr>
-<tr class="even">
-<td align="right">6196</td>
-<td align="right">5085</td>
-<td align="right">9961</td>
-<td align="right">5306</td>
-<td align="right">1660</td>
-<td align="right">1809</td>
-<td align="right">8405</td>
-<td align="right">2019</td>
-<td align="right">2710</td>
-<td align="right">1368</td>
-</tr>
-<tr class="odd">
-<td align="right">1577</td>
-<td align="right">5112</td>
-<td align="right">874</td>
-<td align="right">6909</td>
-<td align="right">4126</td>
-<td align="right">8473</td>
-<td align="right">2065</td>
-<td align="right">1511</td>
-<td align="right">4778</td>
-<td align="right">4440</td>
-</tr>
-<tr class="even">
-<td align="right">5778</td>
-<td align="right">1207</td>
-<td align="right">3337</td>
-<td align="right">1888</td>
-<td align="right">1420</td>
-<td align="right">6917</td>
-<td align="right">4160</td>
-<td align="right">2682</td>
-<td align="right">5263</td>
-<td align="right">5926</td>
-</tr>
-<tr class="odd">
-<td align="right">6635</td>
-<td align="right">1887</td>
-<td align="right">8836</td>
-<td align="right">2940</td>
-<td align="right">2404</td>
-<td align="right">7017</td>
-<td align="right">3119</td>
-<td align="right">3699</td>
-<td align="right">2529</td>
-<td align="right">8663</td>
-</tr>
-<tr class="even">
-<td align="right">6813</td>
-<td align="right">5759</td>
-<td align="right">3314</td>
-<td align="right">6929</td>
-<td align="right">5238</td>
-<td align="right">6008</td>
-<td align="right">5900</td>
-<td align="right">8485</td>
-<td align="right">5938</td>
-<td align="right">5642</td>
-</tr>
-<tr class="odd">
-<td align="right">5208</td>
-<td align="right">2391</td>
-<td align="right">8324</td>
-<td align="right">6888</td>
-<td align="right">9449</td>
-<td align="right">2577</td>
-<td align="right">7859</td>
-<td align="right">176</td>
-<td align="right">1650</td>
-<td align="right">8389</td>
-</tr>
-<tr class="even">
-<td align="right">5446</td>
-<td align="right">4412</td>
-<td align="right">9857</td>
-<td align="right">9535</td>
-<td align="right">2794</td>
-<td align="right">7883</td>
-<td align="right">4119</td>
-<td align="right">6439</td>
-<td align="right">8082</td>
-<td align="right">7918</td>
-</tr>
-<tr class="odd">
-<td align="right">2984</td>
-<td align="right">2126</td>
-<td align="right">9506</td>
-<td align="right">2188</td>
-<td align="right">9762</td>
-<td align="right">9775</td>
-<td align="right">4213</td>
-<td align="right">7624</td>
-<td align="right">4520</td>
-<td align="right">1086</td>
-</tr>
-<tr class="even">
-<td align="right">371</td>
-<td align="right">4559</td>
-<td align="right">12</td>
-<td align="right">718</td>
-<td align="right">8403</td>
-<td align="right">8150</td>
-<td align="right">6533</td>
-<td align="right">3741</td>
-<td align="right">6279</td>
-<td align="right">8546</td>
-</tr>
-<tr class="odd">
-<td align="right">4669</td>
-<td align="right">1053</td>
-<td align="right">3343</td>
-<td align="right">4889</td>
-<td align="right">9088</td>
-<td align="right">9188</td>
-<td align="right">8093</td>
-<td align="right">9496</td>
-<td align="right">8806</td>
-<td align="right">923</td>
-</tr>
-<tr class="even">
-<td align="right">4070</td>
-<td align="right">3408</td>
-<td align="right">8102</td>
-<td align="right">3012</td>
-<td align="right">9706</td>
-<td align="right">771</td>
-<td align="right">8296</td>
-<td align="right">3094</td>
-<td align="right">148</td>
-<td align="right">7244</td>
-</tr>
-<tr class="odd">
-<td align="right">4867</td>
-<td align="right">6267</td>
-<td align="right">1225</td>
-<td align="right">6539</td>
-<td align="right">7958</td>
-<td align="right">7217</td>
-<td align="right">7833</td>
-<td align="right">728</td>
-<td align="right">1610</td>
-<td align="right">5284</td>
-</tr>
-<tr class="even">
-<td align="right">4665</td>
-<td align="right">1912</td>
-<td align="right">5320</td>
-<td align="right">8563</td>
-<td align="right">1365</td>
-<td align="right">3834</td>
-<td align="right">1818</td>
-<td align="right">7791</td>
-<td align="right">7704</td>
-<td align="right">2460</td>
+<td align="center">Z*</td>
+<td align="center">0.5</td>
+<td align="center">1</td>
+<td align="center">1.5</td>
+<td align="center">2</td>
+<td align="center">2.5</td>
+<td align="center">3</td>
+<td align="center">3.5</td>
 </tr>
 </tbody>
 </table>
@@ -568,8 +404,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="ch-kansverdelingen.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="app-kritiekeZwaarden.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="app-randomgetallen.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="referenties.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -600,7 +436,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/a1randomgetallen.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/a2kritiekeZwaarden.Rmd",
 "text": "Edit"
 },
 "history": {

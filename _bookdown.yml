@@ -9,7 +9,9 @@ rmd_files: ["index.Rmd",
             "h07steekproeven.Rmd",
             "h08frequenties.Rmd",
             "h09centrumspreiding.Rmd",
+            "h10kansverdelingen.Rmd",
             "a1randomgetallen.Rmd",
+            "a2kritiekeZwaarden.Rmd",
             "referenties.Rmd"]
 output_dir: "docs"
 language:
