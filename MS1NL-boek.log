@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.3)  3 SEP 2020 23:20
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.3)  5 SEP 2020 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -983,12 +983,7 @@ Chapter 4.
 Chapter 5.
 [51
 
-] [52] [53] [54] [55] [56] [57]
-
-LaTeX Warning: Reference `ch:samenhang' on page 58 undefined on input line 2384
-.
-
-[58] [59]
+] [52] [53] [54] [55] [56] [57] [58] [59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [60] [61]
@@ -1045,10 +1040,6 @@ ne 3707.
 Underfull \hbox (badness 6032) in paragraph at lines 3711--3711
 []\TU/lmr/bx/n/14.4 Afhankelijke- en onafhankelijke-groepen-
  []
-
-
-LaTeX Warning: Reference `ch:samenhang' on page 85 undefined on input line 3743
-.
 
 [85] [86]
 Underfull \hbox (badness 2790) in paragraph at lines 3850--3860
@@ -1169,7 +1160,7 @@ Underfull \vbox (badness 5741) has occurred while \output is active []
 [118]
 
 LaTeX Warning: Reference `sec:ttoets-vrijheidsgraden' on page 119 undefined on 
-input line 5028.
+input line 5027.
 
 [119] [120]
 Missing character: There is no   in font [lmroman10-regular]:mapping=tex-text;!
@@ -1179,32 +1170,32 @@ Missing character: There is no   in font [lmroman10-regular]:mapping=tex-text;
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [122] [123] [124] [125]
-Underfull \hbox (badness 10000) in paragraph at lines 5385--5386
+Underfull \hbox (badness 10000) in paragraph at lines 5384--5385
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5391--5397
+Underfull \hbox (badness 10000) in paragraph at lines 5390--5396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5398--5399
+Underfull \hbox (badness 10000) in paragraph at lines 5397--5398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5404--5410
+Underfull \hbox (badness 10000) in paragraph at lines 5403--5409
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5411--5412
+Underfull \hbox (badness 10000) in paragraph at lines 5410--5411
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5417--5421
+Underfull \hbox (badness 10000) in paragraph at lines 5416--5420
 
  []
 
@@ -1213,7 +1204,7 @@ File: MS1NL-boek_files/figure-latex/cito-summary-boxplot-1.pdf Graphic file (ty
 pe pdf)
 <use MS1NL-boek_files/figure-latex/cito-summary-boxplot-1.pdf>
 [127]
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5550--5550
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5549--5549
 []\TU/lmtt/m/n/10 ## [1] -1.1575990  0.6776189  2.3716662 -0.3105753  0.1129365
  -0.7340872[] 
  []
@@ -1227,7 +1218,7 @@ File: MS1NL-boek_files/figure-latex/binomkansverdeling3-1.pdf Graphic file (typ
 e pdf)
 <use MS1NL-boek_files/figure-latex/binomkansverdeling3-1.pdf>
 
-Underfull \hbox (badness 1337) in paragraph at lines 5781--5785
+Underfull \hbox (badness 1337) in paragraph at lines 5780--5784
 []\TU/lmr/m/n/10 De kansverdeling van een binomiale variabele noemen we de bino
 miale
  []
@@ -1236,7 +1227,7 @@ miale
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 5791.
+(amsmath)                 on input line 5790.
 
 [134] [135]
 File: MS1NL-boek_files/figure-latex/binomkansverdeling50n500-1.pdf Graphic file
@@ -1247,13 +1238,13 @@ File: MS1NL-boek_files/figure-latex/normaalkansverdeling-1.pdf Graphic file (ty
 pe pdf)
 <use MS1NL-boek_files/figure-latex/normaalkansverdeling-1.pdf>
 [137] [138] [139]
-Overfull \hbox (11.1839pt too wide) in paragraph at lines 6112--6112
+Overfull \hbox (11.1839pt too wide) in paragraph at lines 6111--6111
 []\TU/lmr/bx/n/14.4 Heeft mijn variabele een normale kansverdel-
  []
 
 
 LaTeX Warning: Reference `fig:itunestimeshist' on page 140 undefined on input l
-ine 6117.
+ine 6116.
 
 File: MS1NL-boek_files/figure-latex/itunestimeshist-1.pdf Graphic file (type pd
 f)
@@ -1264,35 +1255,35 @@ pdf)
 <use MS1NL-boek_files/figure-latex/itunestimesqqplot-1.pdf>
 
 LaTeX Warning: Reference `fig:itunestimeshist' on page 141 undefined on input l
-ine 6151.
+ine 6150.
 
 [141]
-Underfull \hbox (badness 4084) in paragraph at lines 6213--6213
+Underfull \hbox (badness 4084) in paragraph at lines 6212--6212
 []\TU/lmr/bx/n/14.4 Wat als mijn variabele niet normaal
  []
 
 
-LaTeX Warning: Reference `ch:toetsing' on page 142 undefined on input line 6217
+LaTeX Warning: Reference `ch:toetsing' on page 142 undefined on input line 6216
 .
 
 
-LaTeX Warning: Reference `ch:power' on page 142 undefined on input line 6217.
+LaTeX Warning: Reference `ch:power' on page 142 undefined on input line 6216.
 
 
 LaTeX Warning: Reference `ch:variantieanalyse' on page 142 undefined on input l
-ine 6217.
+ine 6216.
 
 [142]
 
 LaTeX Warning: Reference `ch:chi-kwadraat-toetsen' on page 143 undefined on inp
-ut line 6241.
+ut line 6240.
 
 
 LaTeX Warning: Reference `ch:andere-nonpar-toetsen' on page 143 undefined on in
-put line 6242.
+put line 6241.
 
 
-LaTeX Warning: Reference `ch:power' on page 143 undefined on input line 6245.
+LaTeX Warning: Reference `ch:power' on page 143 undefined on input line 6244.
 
 File: MS1NL-boek_files/figure-latex/itunesmeanshist-1.pdf Graphic file (type pd
 f)
@@ -1306,7 +1297,7 @@ File: MS1NL-boek_files/figure-latex/tkansverdeling-1.pdf Graphic file (type pdf
 <use MS1NL-boek_files/figure-latex/tkansverdeling-1.pdf>
 
 LaTeX Warning: Reference `app:kritieketwaarden' on page 145 undefined on input 
-line 6381.
+line 6380.
 
 [145]
 File: MS1NL-boek_files/figure-latex/tempo95CIs-1.pdf Graphic file (type pdf)
@@ -1317,47 +1308,97 @@ Underfull \vbox (badness 2073) has occurred while \output is active []
 [146] [147]
 
 LaTeX Warning: Reference `app:kritieketwaarden' on page 148 undefined on input 
-line 6417.
+line 6416.
 
 
 LaTeX Warning: Reference `sec:ttoets-vrijheidsgraden' on page 148 undefined on 
-input line 6418.
+input line 6417.
 
 [148]
-Appendix A.
+Chapter 11.
+
+LaTeX Warning: Reference `ch:betrouwbaarheid' on page 149 undefined on input li
+ne 6434.
+
 [149
 
-] [150]
+]
+File: MS1NL-boek_files/figure-latex/cito-scatter-1.pdf Graphic file (type pdf)
+<use MS1NL-boek_files/figure-latex/cito-scatter-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[150]
+File: MS1NL-boek_files/figure-latex/cor-scatter-1.pdf Graphic file (type pdf)
+<use MS1NL-boek_files/figure-latex/cor-scatter-1.pdf>
+
+LaTeX Warning: Reference `ch:toetsing' on page 151 undefined on input line 6543
+.
+
+[151]
+Underfull \hbox (badness 2310) in paragraph at lines 6578--6578
+[]\TU/lmr/m/n/10 Table 11.1: []Correlaties tussen de drie onderdelen van de
+ []
+
+[152] [153]
+Overfull \hbox (7.90701pt too wide) in paragraph at lines 6641--6645
+[]\TU/lmr/m/n/10 Kies \TU/lmtt/m/n/10 Pearsons \TU/lmr/m/n/10 correlatiecoëffic
+iënt, vink aan: \TU/lmtt/m/n/10 Flag significant correlations\TU/lmr/m/n/10 .
+ []
+
+[154]
+File: MS1NL-boek_files/figure-latex/cito-linearmodel-1.pdf Graphic file (type p
+df)
+<use MS1NL-boek_files/figure-latex/cito-linearmodel-1.pdf>
+[155] [156] [157] [158] [159] [160] [161]
+Overfull \hbox (48.75pt too wide) in paragraph at lines 7050--7050
+[]\TU/lmtt/m/n/10 ## Warning in cor.test.default(Lezen, Rekenen, method = "spea
+rman"): Cannot[] 
+ []
+
+[162] [163] [164]
+File: figures/correlation.png Graphic file (type bmp)
+<figures/correlation.png>
+
+Overfull \hbox (5.00133pt too wide) in paragraph at lines 7231--7232
+ []\TU/lmr/m/n/10 {[] 
+ []
+
+[165] [166
+
+]
+Appendix A.
+[167] [168]
 Appendix B.
 File: MS1NL-boek_files/figure-latex/kritiekeZwaarden-hulpfiguur-1.pdf Graphic f
 ile (type pdf)
 <use MS1NL-boek_files/figure-latex/kritiekeZwaarden-hulpfiguur-1.pdf>
-(./MS1NL-boek.bbl [151
+(./MS1NL-boek.bbl [169
 
-] [152] [153
+] [170] [171
 
-] [154] [155])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6502.
-[156]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6502.
+] [172] [173])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7320.
+[174]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7320.
 (./MS1NL-boek.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6502.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6502.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7320.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7320.
 
 Package rerunfilecheck Info: File `MS1NL-boek.out' has not changed.
-(rerunfilecheck)             Checksum: CFD81EF3277F9EE3B3A07CFA0F98F8B1;12206.
+(rerunfilecheck)             Checksum: AAD8B734B03F60535CDB8B28AEDBEF9B;13291.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6502.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7320.
  ) 
 Here is how much of TeX's memory you used:
- 17942 strings out of 481666
- 318040 string characters out of 5931751
- 744471 words of memory out of 5000000
- 34786 multiletter control sequences out of 15000+600000
+ 18015 strings out of 481666
+ 319817 string characters out of 5931751
+ 747913 words of memory out of 5000000
+ 34852 multiletter control sequences out of 15000+600000
  541603 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 52i,9n,118p,1137b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,10n,118p,1137b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on MS1NL-boek.pdf (156 pages).
+Output written on MS1NL-boek.pdf (174 pages).

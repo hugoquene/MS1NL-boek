@@ -119,7 +119,7 @@
 
 \title{Methoden en Statistiek 1}
 \author{true}
-\date{Versie gecompileerd op 03 Sep 2020}
+\date{Versie gecompileerd op 05 Sep 2020}
 
 \begin{document}
 \maketitle
@@ -5015,7 +5015,6 @@ in positieve gekwadrateerde-afwijkingen. Van al die
 gekwadrateerde-afwijkingen berekenen we het gemiddelde, d.w.z. we tellen
 ze op en delen door \((n-1)\), zie voetnoot\footnote{We delen door \(n-1\) en niet door \(n\), om een betere schatting te krijgen van de spreiding in de \emph{populatie}. Op deze manier houden we rekening met het feit dat we één kenmerk van de steekproef (nl. het gemiddelde) gebruiken om de spreiding te bepalen. Als je alleen geïnteresseerd bent in de spreiding in je \emph{steekproef} van observaties, en niet in de populatie, deel dan door \(n\).}. Het resultaat noemen we
 de \emph{variantie}, aangeduid met symbool \(s^2\):
-
 \begin{equation}
   s^2 = \frac{ \sum (x_i - \overline{x})^2 } {n-1}
   \label{eq:variantie}
@@ -6416,6 +6415,825 @@ populatie-gemiddelde is
 waarbij \(t^*\) met \(n-1\) vrijheidsgraden gevonden wordt met behulp van
 Bijlage \ref{app:kritieketwaarden}, zie
 §\ref{sec:ttoets-vrijheidsgraden} voor meer uitleg hierover.
+
+\hypertarget{ch:samenhang}{%
+\chapter{Samenhang}\label{ch:samenhang}}
+
+\hypertarget{inleiding-5}{%
+\section{Inleiding}\label{inleiding-5}}
+
+Het meeste empirische onderzoek is gericht op het vaststellen van
+samenhang tussen variabelen. In experimenteel onderzoek gaat het dan
+primair om de samenhang tussen onafhankelijke en afhankelijke
+variabelen. In het volgende deel gaan we nader in op diverse manieren om
+vast te stellen of er een ``significant'' (beduidend, betekenisvol, niet
+toevallig) verband bestaat tussen de onafhankelijke en afhankelijke
+variabele. Daarnaast kan de onderzoeker geïnteresseerd zijn in de
+onderlinge samenhang tussen meerdere afhankelijke variabelen,
+bijvoorbeeld de samenhang tussen de oordelen van meerdere beoordelaars
+(zie ook Hoofdstuk \ref{ch:betrouwbaarheid}).
+
+In quasi-experimenteel onderzoek is het onderscheid tussen
+onafhankelijke en afhankelijke variabelen doorgaans minder duidelijk. Er
+worden meerdere variabelen geobserveerd, en de onderzoeker is vooral
+geïnteresseerd in de onderlinge samenhang tussen die geobserveerde
+variabelen. Wat is bijvoorbeeld de samenhang tussen de scores voor
+lezen, rekenen, en wereldoriëntatie in het CITO-onderzoek (zie
+Tabel \ref{tab:cito})? In dit hoofdstuk gaan we nader in op de manieren
+om die samenhang of correlatie uit te drukken in een getal: een
+correlatie-coëfficient. Afhankelijk van de meetniveau's van de
+variabelen zijn er verschillende correlatie-coëfficiënten, die we verder
+in dit hoofdstuk zullen behandelen.
+
+Het is raadzaam om altijd eerst een grafische weergave te maken van de
+samenhang tussen de variabelen, in de vorm van een zgn.
+\emph{spreidingsdiagram} (ook vaak aangeduid als scattergram of scatterplot),
+zoals in Figuur \ref{fig:cito-scatter}. Ieder punt in dit spreidingsdiagram
+correspondeert met een leerling (of algemener, met een eenheid van de
+steekproef). De positie van ieder punt (leerling) wordt bepaald door de
+geobserveerde waarden van twee variabelen (hier is \(X\) score bij
+leestoets, \(Y\) is score bij rekentoets). Zo'n spreidingsdiagram helpt om
+een eventueel verband te interpreteren, en om te inspecteren of de
+observaties wel voldoen aan de randvoorwaarden om een correlatie te
+berekenen uit die observaties. Kijk in ieder geval naar (a) de
+aanwezigheid van een eventueel verband, (b) de vorm van dat verband
+(lineair, exponentieel, \ldots), (c) eventuele uitbijters (extreme
+observaties, zie §\ref{sec:uitbijters}), en (d) de verdeling van de twee
+variabelen, zie §\ref{sec:robuustefficient}.
+
+\begin{figure}
+
+{\centering \includegraphics{MS1NL-boek_files/figure-latex/cito-scatter-1} 
+
+}
+
+\caption{Spreidingsdiagram van de scores van een leestoets en een rekentoets; zie tekst.}\label{fig:cito-scatter}
+\end{figure}
+
+Dit spreidingsdiagram laat zien (a) dat er een verband bestaat tussen de
+scores bij lezen en bij rekenen. Het verband is (b) bij benadering lineair, d.w.z. te
+beschrijven als een rechte lijn; we komen daar op terug in
+§\ref{sec:regressie}.
+Het verband helpt ons ook om de spreiding in de twee variabelen te
+verklaren. Immers, de spreiding in de rekenscores is voor een deel te
+begrijpen of te verklaren uit de spreiding in de leestoets: leerlingen
+die een relatief goede score behalen bij lezen, doen dat ook bij
+rekenen. De observaties van de twee variabelen verschaffen dus niet
+alleen informatie over die twee variabelen zelf, maar bovendien over de
+samenhang tussen die variabelen. In dit spreidingsdiagram zien we
+overigens ook (c) dat de hoogste leesscore een uitbijter vormt (zie ook
+Fig.\ref{fig:cito-boxplot}); zulke uitbijters kunnen onevenredig
+grote invloed hebben op het gevonden verband.
+
+\hypertarget{sec:Pearson}{%
+\section{Pearson product-moment-correlatie}\label{sec:Pearson}}
+
+De Pearson product-moment-correlatiecoëfficiënt wordt aangeduid met
+symbool \(r\) (in het geval van twee variabelen). Deze coëfficiënt is te
+gebruiken als beide variabelen geobserveerd zijn op het
+interval-meetniveau
+(§\ref{sec:interval}), en als beide variabelen bij benadering
+normaal-verdeeld zijn
+(§\ref{sec:normaalverdeling}). De berekening doen we tegenwoordig
+per computer.
+
+Voor de observaties in het spreidingsdiagram in
+Fig.\ref{fig:cito-scatter} vinden we een correlatie van \(r=+.79\). De
+correlatie-coëfficiënt is een getal dat per definitie ligt tussen \(-1\)
+en \(+1\). Een positieve correlatiecoëfficient wijst op een positief
+verband: een grotere waarde van \(X\) correspondeert met een grotere
+waarde van \(Y\). Een negatieve coëfficiënt wijst op een negatief verband:
+een grotere waarde van \(X\) correspondeert met een kleinere waarde van
+\(Y\). Een waarde van \(r\) dicht bij nul wijst op een zwak of afwezig
+verband: de spreiding in \(X\) heeft niets te maken met de spreiding in
+\(Y\); er is geen of alleen zwakke correlatie. Een correlatie van
+\(.4<r<.6\) (of \(-.6 < r < -.4\)) noemen we middelmatig. Een correlatie van
+\(r>.6\) (of \(r< -.6\)) wijst op een sterke samenhang. Als \(r=1\) (of
+\(r=-1\)) dan liggen alle observaties precies op een rechte lijn.
+Figuur \ref{fig:cor-scatter} toont meerdere spreidingsdiagrammen met de
+bijbehorende correlatiecoëfficiënten.
+
+\begin{figure}
+
+{\centering \includegraphics{MS1NL-boek_files/figure-latex/cor-scatter-1} 
+
+}
+
+\caption{Meerdere spreidingsdiagrammen van observaties met bijbehorende correlatiecoëfficiënten.}\label{fig:cor-scatter}
+\end{figure}
+
+De correlatie die we zien tussen de scores van de twee variabelen (zoals
+\(r=.79\) tussen scores bij leestoets en rekentoets,
+Fig.\ref{fig:cito-scatter}) zou ook het gevolg kunnen zijn van
+toevallige variaties in de observaties. Het is immers mogelijk dat de
+leerlingen met een goede score op de leestoets, zuiver door toeval, ook
+een goede score op de rekentoets hebben behaald --- ook als er in de
+populatie eigenlijk \emph{niet} samenhang is tussen de twee variabelen. De
+onbekende correlatie in de populatie duiden we aan met de griekse letter
+\(\rho\) (``rho''); het is dus ook mogelijk dat \(\rho=0\). Ook als \(\rho=0\)
+is het mogelijk om \(n=10\) leerlingen in de steekproef te hebben die hoge
+scores op het ene onderdeel \emph{toevallig} combineren met hoge scores op
+het andere onderdeel (en om toevallig niet leerlingen in de steekproef
+te hebben die hoge scores op het ene onderdeel combineren met lage
+scores op het andere onderdeel). We kunnen schatten wat de kans \(p\) is
+om deze correlatie van \(r=0.79\) of sterker te vinden in een steekproef
+van \(n=10\) leerlingen, indien de samenhang in de populatie eigenlijk
+nihil is (d.i. indien \(\rho=0\)). Deze kans \(p\) noemen we de
+\emph{significantie} van de correlatiecoëfficiënt; we komen in
+Hoofdstuk \ref{ch:toetsing} uitgebreider terug op dit begrip
+`significantie'. Daarop vooruitlopend: als deze kans \(p\) kleiner is dan
+\(.05\), dan nemen we aan dat de gevonden correlatie \(r\) \emph{niet toevallig},
+d.i. \emph{significant} is. Vaak zien we een kleine kans \(p\) bij een sterke
+correlatie \(r\). De correlatiecoëfficiënt \(r\) geeft de richting en
+sterkte van het verband aan, en de significantie \(p\) geeft de kans aan
+om dit verband bij toeval te vinden als \(\rho=0\) in de populatie. We
+rapporteren deze bevindingen als volgt\footnote{Als de gevonden correlatie \(r\) \emph{niet} significant is, dan kan die
+  dus ook toevallig zijn, en dan laten we een interpretatie van de
+  samenhang dus achterwege. We vermelden in ons verslag dan wel de
+  gevonden correlatiecoëfficiënt en de gevonden significantie daarvan.}:
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+Voorbeeld 11.1:
+De scores van de \(n=10\) leerlingen op de deeltoetsen van de CITO-toets
+in Tabel \ref{tab:cito} laten een sterke correlatie zien tussen de scores
+bij de onderdelen Lezen en Rekenen: Pearson \(r=0.79, p=.007\). Leerlingen
+met een relatief hoge score bij het ene onderdeel behalen in het
+algemeen ook een relatief hoge score bij het andere onderdeel.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+In veel onderzoeken zijn we geïnteresseerd in de correlaties tussen meer
+dan twee variabelen. Die correlaties tussen variabelen worden dan vaak
+gerapporteerd in een zgn. correlatiematrix zoals
+Tabel \ref{tab:cito-correlaties}, dat is een tabel waar de correlaties
+vermeld worden van alle paren van correlaties (Eng. `pairwise
+correlation matrix').
+
+\begin{longtable}[]{@{}lccc@{}}
+\caption{\label{tab:cito-correlaties} Correlaties tussen de drie onderdelen van de CITO-toets, zoals
+samengevat in Tabel \ref{tab:cito}, met bijbehorende significantie-niveau
+tussen haakjes.}\tabularnewline
+\toprule
+& Lezen & Rekenen & Wereldoriëntatie\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+& Lezen & Rekenen & Wereldoriëntatie\tabularnewline
+\midrule
+\endhead
+Lezen & 1.00 & &\tabularnewline
+Rekenen & 0.79 (.007) & 1.00 &\tabularnewline
+Wereldoriëntatie & -0.51 (.131) & -0.01 (.970) & 1.00\tabularnewline
+\bottomrule
+\end{longtable}
+
+In deze matrix is alleen de onderste (linker) helft van de volledige
+matrix weergegeven. Dat is ook voldoende, want de cellen zijn gespiegeld
+rond de diagonaal: de correlatie tussen Lezen (kolom 1) en Rekenen (rij
+2) is immers hetzelfde als de correlatie tussen Rekenen (rij 2) en Lezen
+(rij 1). De correlatiematrix bevat in de cellen op de diagonaal altijd
+de waarde \(1.00\), omdat een variabele altijd perfect met zichzelf
+correleert. We rapporteren deze bevindingen als volgt:
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+Voorbeeld 11.2: De
+paarsgewijze correlaties tussen scores van de \(n=10\) leerlingen op de
+drie deeltoetsen van de CITO-toets zijn samengevat in
+Tabel \ref{tab:cito-correlaties}. We zien een sterke correlatie tussen
+de scores bij de onderdelen Lezen en Rekenen: leerlingen met een
+relatief hoge score bij het onderdeel Lezen behalen in het algemeen ook
+een relatief hoge score bij het onderdeel Rekenen. De overige
+correlaties waren niet significant.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{formules-3}{%
+\subsection{Formules}\label{formules-3}}
+
+De eenvoudigste formule voor de Pearson
+product-moment-correlatiecoëfficiënt \(r\) maakt gebruik van de
+standaard-normaal-scores die we al eerder gebruikt hebben
+(§\ref{sec:standaardscores}):
+\begin{equation}
+    r_{XY} = \frac{\sum z_X z_Y}{n-1}
+  \label{eq:pearson}
+\end{equation}
+
+Net als bij het berekenen van de variantie
+(formule \eqref{eq:variantie}) delen we weer door \((n-1)\) om een schatting
+te maken van de samenhang in de populatie.
+
+\hypertarget{spss-4}{%
+\subsection{SPSS}\label{spss-4}}
+
+Voor Pearson's product-moment-correlatiecoëfficiënt:
+
+\begin{verbatim}
+Analyze > Correlate > Bivariate...
+\end{verbatim}
+
+Kies \texttt{Pearsons} correlatiecoëfficiënt, vink aan:
+\texttt{Flag\ significant\ correlations}. Bevestig met \texttt{OK}. De resulterende
+uitvoer (tabel) voldoet niet aan de stijl-eisen; je moet de gegevens dus
+overnemen in of omzetten naar een eigen tabel die daar wel aan voldoet.
+
+\hypertarget{r-5}{%
+\subsection{R}\label{r-5}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cito \textless{}{-}}\StringTok{ }\KeywordTok{read.table}\NormalTok{(}\DataTypeTok{file=}\StringTok{"data/cito.txt"}\NormalTok{, }\DataTypeTok{header=}\OtherTok{TRUE}\NormalTok{)}
+\KeywordTok{cor}\NormalTok{( cito[,}\DecValTok{2}\OperatorTok{:}\DecValTok{4}\NormalTok{] ) }\CommentTok{\# correlatie{-}matrix van kolommen 2,3,4}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                       Lezen    Rekenen Wereldoriëntatie
+## Lezen             1.0000000 0.74921033      -0.50881738
+## Rekenen           0.7492103 1.00000000       0.06351024
+## Wereldoriëntatie -0.5088174 0.06351024       1.00000000
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{with}\NormalTok{( cito, }\KeywordTok{cor.test}\NormalTok{( Lezen, Rekenen ) )}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  Pearson's product-moment correlation
+## 
+## data:  Lezen and Rekenen
+## t = 3.1994, df = 8, p-value = 0.01262
+## alternative hypothesis: true correlation is not equal to 0
+## 95 percent confidence interval:
+##  0.2263659 0.9368863
+## sample estimates:
+##       cor 
+## 0.7492103
+\end{verbatim}
+
+\hypertarget{sec:regressie}{%
+\section{Regressie}\label{sec:regressie}}
+
+Het meest eenvoudige verband dat we kunnen onderscheiden en beschrijven
+is een lineair verband, d.w.z. een rechte lijn in het spreidingsdiagram
+(zie Fig.\ref{fig:cor-scatter}). Deze rechte lijn geeft aan welke waarde
+van \(Y_i\) voorspeld wordt, op basis van de waarde van \(X_i\). Deze
+voorspelde waarde van \(Y_i\) wordt genoteerd als \(\widehat{Y_i}\)
+(``Y-hat''). De beste voorspelling \(\widehat{Y_i}\) is gebaseerd op de
+waarde van \(X_i\) èn op het lineaire verband tussen \(X\) en \(Y\):
+\begin{equation}
+    \widehat{Y_i} = a + b {X_i} 
+  \label{eq:linearmodel2}
+\end{equation}\\
+De rechte lijn wordt beschreven met
+twee parameters, nl. het begingetal \(a\) (Eng. `intercept') en de
+hellingscoëfficiënt \(b\) (Eng. `slope')\footnote{In schoolboeken wordt deze vergelijking ook wel beschreven als
+  \(Y = a X + b\), met \(a\) als hellingscoëfficiënt en \(b\) als
+  begingetal; we houden ons hier echter aan de internationaal gangbare
+  notatie.}. De rechte lijn die het
+lineaire verband beschrijft wordt ook aangeduid als de ``regressielijn'';
+we proberen immers om de geobserveerde waarden van \(Y\) te herleiden tot
+deze lineaire functie van de waarden van \(X\).
+
+Het verschil tussen de geobserveerde waarde \(Y\) en de voorspelde waarde
+\(\widehat{Y}\) \((Y-\widehat{Y})\) wordt het \emph{residu} genoemd (symbool
+\(e\)). Anders gezegd, de geobserveerde waarde wordt beschouwd als de
+optelsom van twee componenten, nl. de voorspelde waarde en het residu:
+\begin{align}
+    Y   &= \widehat{Y} + e \\
+        &= a + b X + e 
+  \label{eq:linearmodel3}
+\end{align}
+
+Bovenstaande gedachtengang wordt geïllusteerd in het spreidingsdiagram
+in Figuur \ref{fig:cito-linearmodel}. De stippellijn geeft het lineaire
+verband aan tussen de twee toetsen:
+\begin{equation}
+    \widehat{\textrm{Rekenen}} = 12.97 + 0.52 \times \textrm{Lezen}
+  \label{eq:cito-linearmodel}
+\end{equation}
+
+\begin{figure}
+
+{\centering \includegraphics{MS1NL-boek_files/figure-latex/cito-linearmodel-1} 
+
+}
+
+\caption{Spreidingsdiagram van de scores van een leestoets en een rekentoets. In het diagram is tevens aangegeven de regressielijn (stippellijn), de voorspelde waarde (groen) en residu (rood) van de rekentoets voor leerling 2, de gemiddelden (plus-symbool), en markeringen voor leerling 2 en 3; zie tekst.}\label{fig:cito-linearmodel}
+\end{figure}
+
+Deze stippellijn geeft dus aan wat de voorspelde waarde \(\widehat{Y}\) is
+voor iedere waarde van \(X\). Voor de tweede leerling met \(X_2 = 32\)
+voorspellen we zo \(\widehat{Y_2} = 12.97 + (0.52) (32) = 29.61\)
+(voorspelde waarde, groene lijnstuk). Voor alle observaties die niet
+precies op deze regressielijn liggen (stippellijn),
+is er een afwijking tussen de voorspelde
+score \(\widehat{Y}\) en de geobserveerde score \(Y\) (residu, rode
+lijnstuk). Voor de tweede leerling is deze afwijking
+\(e_2 = (Y_2 - \widehat{Y_2}) = (36-29.61) = 6.49\) (residu, rode
+lijnstuk).
+
+Zoals gezegd worden de geobserveerde waarden van \(Y\) beschouwd als de
+optelsom van twee componenten, de voorspelde waarde \(\widehat{Y}\)
+(groen) en het residu \(e\) (rood). Op dezelfde wijze kan ook de totale
+\emph{variantie} van \(Y\) beschouwd worden als de optelsom van de twee
+\emph{varianties} van deze componenten:
+\begin{equation}
+    s^2_{Y} = s^2_{\widehat{Y}} + s^2_e
+  \label{eq:variance-pred-res}
+\end{equation}
+Van de totale variantie
+\(s^2_Y\) van Y is dus het ene deel (\(s^2_{\widehat{Y}}\)) te herleiden tot
+c.q. te verklaren uit de variantie van \(X\), via het lineaire verband
+beschreven met parameters \(a\) en \(b\) (zie
+formule \eqref{eq:linearmodel2}), en het andere deel (\(s^2_e\)) is niet te
+herleiden of te verklaren. Dat tweede deel, de niet-voorspelde variantie
+van de residuen, wordt ook wel de `residuele variantie' of `ruis'
+genoemd.
+
+Als we \(Y\) goed kunnen voorspellen uit \(X\), d.w.z. als de Pearson
+product-moment-correlatiecoëfficiënt \(r\) hoog is
+(Fig. \ref{fig:cor-scatter}, links), dan zijn de residuen \(e\) dus
+relatief klein, de observaties liggen dicht rond de regressielijn in het
+spreidingsdiagram, en dan is dus ook de residuele variantie \(s^2_e\)
+relatief gering. Omgekeerd, als we \(Y\) \emph{niet} goed kunnen voorspellen
+uit \(X\), d.w.z. als de correlatiecoëfficiënt \(r\) relatief laag is
+(Fig. \ref{fig:cor-scatter}, rechts), dan zijn de residuen \(e\) dus
+relatief groot, de observaties liggen wijd verspreid rond de
+regressielijn in het spreidingsdiagram, en dan is dus ook de residuele
+variantie \(s^2_e\) relatief groot. Het kwadraat van de Pearson
+product-moment-correlatiecoëfficiënt \(r\) geeft aan wat de relatieve
+omvang is van de twee variantie-componenten, ten opzichte van de totale
+variantie:
+\begin{align}
+    r^2 & = \frac{s^2_{\widehat{Y}}}{s^2_Y} \\
+        & = 1 - \frac{s^2_e}{s^2_Y}
+  \label{eq:r2}
+\end{align}
+Deze grootheid \(r^2\) wordt ook wel aangeduid als de
+``proportie verklaarde variantie'' of als de ``determinatie-coëfficiënt''.
+
+De waarden van de lineaire parameters \(a\) en \(b\) in
+formule \eqref{eq:linearmodel2} worden zo gekozen dat de verzamelde
+residuen zo klein mogelijk zijn, d.w.z. dat de residuele variantie
+\(s^2_e\) zo klein mogelijk is (``least squares fit''), en dus \(r^2\) zo
+groot mogelijk (zie
+§\ref{sec:regressie-formules}). Op die manier vinden we een rechte
+lijn die het beste past bij de observaties van \(X\) en \(Y\).
+
+Een lineaire regressie kan worden gerapporteerd als volgt:
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+Voorbeeld 11.3:
+Uit een lineaire-regressie-analyse blijkt dat de score bij Rekenen
+samenhangt met die bij Lezen: \(b=0.51, r=.79, p_r=.007\), over \(n=10\)
+leerlingen. Dit lineaire regressiemodel verklaart \(r^2=.51\) van de
+totale variantie in de rekenscores (de residuele standaarddeviatie is
+\(s_e= \sqrt{82.803/(n-1-1)} = 3.217\)).
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{sec:regressie-formules}{%
+\subsection{Formules}\label{sec:regressie-formules}}
+
+Bij lineaire regressie van \(y\) op \(x\) proberen we de coëfficiënten \(a\)
+en \(b\) zodanig te schatten dat (het kwadraat van) de afwijking tussen de
+voorspelde waarde \(\hat{y}\) en de geobserveerde waarde \(y\) zo klein
+mogelijk is, m.a.w. dat het kwadraat van de residuen \((y-\hat{y})\) zo
+klein mogelijk is. Dit wordt de ``least squares'' methode genoemd (zie
+\url{http://www.itl.nist.gov/div898/handbook/pmd/section4/pmd431.htm}).
+
+De beste schatting voor \(b\) is
+\[b = \frac{ \sum_{i=1}^n (x_i-\overline{x})(y_i-\overline{y}) } { \sum_{i=1}^n (x_i-\overline{x})^2 }\]
+
+De beste schatting voor \(a\) is \[a = \overline{y} - b \overline{x}\]
+
+\hypertarget{spss-5}{%
+\subsection{SPSS}\label{spss-5}}
+
+Voor lineaire regressie:
+
+\begin{verbatim}
+Analyze > Regression > Linear...
+\end{verbatim}
+
+Kies \texttt{Dependent\ variable:\ Rekenen} en kies
+\texttt{Independent\ variable:\ Lezen}. Onder de knop \texttt{Statistics}, vink aan
+\texttt{Model\ fit}, vink aan \texttt{R\ squared\ change}, kies \texttt{Estimates}, en daarna
+\texttt{Continue}.\\
+Onder de knop \texttt{Plot}, vink aan \texttt{Histogram} en vink ook aan
+\texttt{Normal\ probability\ plot}; deze keuzes zijn vereist om een numerieke(!)
+samenvatting te krijgen over de residuals.\\
+Onder de knop \texttt{Options}, kies \texttt{Include\ constant} om ook de constante
+coëfficiënt \(a\) te laten berekenen. Bevestig alle keuzes met \texttt{OK}.
+
+De resulterende uitvoer omvat meerdere tabellen en figuren; deze kan je
+niet rechtstreeks overnemen in je verslag. De tabel getiteld \emph{Model
+Summary} bevat de correlatie-coëfficiënt, hier aangeduid met hoofdletter
+\(R=.749\).\\
+De tabel getiteld \emph{Coefficients} bevat de regressie-coëfficienten. De
+regel met aanduiding \texttt{(Constant)} vermeldt coëfficient \(a=13.25\); de
+regel getiteld \texttt{Lezen} vermeldt coëfficient \(b=0.51\).\\
+De tabel getiteld \emph{Residual Statistics} geeft informatie over zowel de
+voorspelde waarden als de residuen. Controleer of het gemiddelde van de
+residuen inderdaad nul is. In deze tabel zien we ook (regel 2, kolom 4)
+dat de standaarddeviatie van de residuen \(3.212\) is.
+
+\hypertarget{r-6}{%
+\subsection{R}\label{r-6}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{summary}\NormalTok{( m1 \textless{}{-}}\StringTok{ }\KeywordTok{lm}\NormalTok{( Rekenen}\OperatorTok{\textasciitilde{}}\NormalTok{Lezen, }\DataTypeTok{data=}\NormalTok{cito ) )}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = Rekenen ~ Lezen, data = cito)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -5.5332 -1.1167 -0.5332  1.7168  6.3384 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)  
+## (Intercept)  13.2507     4.4910   2.950   0.0184 *
+## Lezen         0.5128     0.1603   3.199   0.0126 *
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 3.406 on 8 degrees of freedom
+## Multiple R-squared:  0.5613, Adjusted R-squared:  0.5065 
+## F-statistic: 10.24 on 1 and 8 DF,  p-value: 0.01262
+\end{verbatim}
+
+Het command \texttt{lm} specificeert een lineair regressiemodel, met \texttt{Rekenen}
+als afhankelijke variabele en \texttt{Lezen} als predictor. Dit model wordt
+bewaard als een object genaamd \texttt{m1}, en dat wordt meteen weer gebruikt
+als argument (invoer) om te rapporteren. In die rapportage van model
+\texttt{m1} wordt de constante coëfficient \(a\) aangeduid als \texttt{Intercept}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{sd}\NormalTok{( }\KeywordTok{resid}\NormalTok{( m1 ) ) }\CommentTok{\# s.d. van residuen volgens \textasciigrave{}m1\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 3.211533
+\end{verbatim}
+
+\hypertarget{invloedrijke-observaties}{%
+\section{Invloedrijke observaties}\label{invloedrijke-observaties}}
+
+In de vorige paragraaf zagen we dat in een correlatie-analyse of een
+regressie-analyse gestreefd wordt naar een minimale residuele variantie.
+Eerder zagen we al ook dat uitbijters of extreme observaties, per
+definitie, relatief veel bijdragen aan de variantie. Bij elkaar leidt
+dat ertoe, dat uitbijters of extreme observatie grote invloed kunnen
+hebben op de hoogte van de correlatie, of op de gevonden regressie (het
+gevonden lineaire verband). Dat is ook te zien in
+Fig.\ref{fig:cito-linearmodel}. Leerling 3 heeft een extreem hoge
+score bij Lezen (zie ook
+Fig.\ref{fig:cito-boxplot}). Als we deze leerling 3 buiten
+beschouwing laten dan zou er niet veel veranderen aan de correlatie
+(\(r_{-3}=.79\)) maar wel aan de helling van de regressielijn (\(b=0.84\),
+ruim anderhalf keer zo groot als mèt leerling 3). Deze observatie
+``trekt'' dus hard aan de regressielijn, juist omdat deze observatie een
+extreme waarde heeft voor \(X\) en daardoor veel invloed heeft.
+
+Ook niet-extreme observaties kunnen toch van grote invloed zijn op de
+correlatie en regressie, als ze ver verwijderd zijn van de regressielijn
+en dus een grote bijdrage leveren aan de residuele variantie. Ook dat is
+te zien in Fig.\ref{fig:cito-linearmodel}.
+Leerling 2 heeft geen extreme scores,
+maar heeft wel het grootste residu. Als we deze leerling 2 buiten
+beschouwing laten dan zou de correlatie aanzienlijk hoger zijn
+(\(r_{-2}=.86\)) maar de helling van de regressielijn zou slechts weinig
+veranderen (\(b=0.45\)).
+
+Bij een correlatie-analyse of regressie-analyse moet je daarom altijd
+een spreidingsdiagram maken en bestuderen, om te kijken in hoeverre de
+resultaten beïnvloed zijn door een of enkele observaties. Let daarbij
+speciaal op observaties die ver verwijderd zijn van het gemiddelde, voor
+elk van beide variabelen, en op observaties die ver verwijderd zijn van
+de regressielijn.
+
+\hypertarget{sec:Spearman}{%
+\section{Spearmans rangorde-correlatie}\label{sec:Spearman}}
+
+De beide variabelen waarvan we de correlatie willen onderzoeken, zijn
+niet altijd uitgedrukt op het interval-meetniveau
+(§\ref{sec:interval}), of de onderzoekers willen of kunnen niet aannemen dat
+de beide variabelen bij benadering normaal-verdeeld zijn
+(§\ref{sec:normaalverdeling}).
+In dat geval is de
+product-moment-correlatie minder geschikt om de samenhang te
+kwantificeren. Indien de gegevens wel op ordinaal meetniveau zijn
+uitgedrukt, dan kunnen we wel andere correlatiecoëfficiënten gebruiken
+om de samenhang uit te drukken: Spearmans rangorde-correlatiecoëfficiënt
+(\(r_s\)) en Kendalls \(\tau\) (de griekse letter ``tau''). Deze beide
+coëfficiënten zijn gebaseerd op de rangordening van de observaties; deze
+correlaties kunnen we dus altijd uitrekenen als we de observaties kunnen
+ordenen. Ook deze berekening doen we tegenwoordig per computer. In dit
+hoofdstuk bespreken we alleen de Spearmans
+rangorde-correlatiecoëfficiënt.
+
+De Spearman rangorde-correlatiecoëfficiënt is gelijk aan de Pearson
+product-moment-correlatiecoëfficiënt toegepast op de \emph{rangnummers} van de
+observaties. We zetten iedere observatie van een variabele om naar het
+volgorde-nummer, van de kleinste geobserveerde waarde (volgnummer 1)
+naar de grootste geobserveerde waarde (volgnummer \(n\)). Als twee of meer
+observaties dezelfde waarde hebben, dan krijgen ze ook hetzelfde
+(gemiddelde) rangnummer. In
+Tabel \ref{tab:cito-rangnummers} zie je de rangnummers van de scores
+voor Lezen en Rekenen, hier geordend volgens de rangnummers voor Lezen.
+
+\begin{longtable}[]{@{}lcccccccccc@{}}
+\caption{\label{tab:cito-rangnummers} Rangnummers van de scores van 10 leerlingen op onderdelen van een toets, zoals samengevat in Tabel \ref{tab:cito}, met verschil \(v_i\) tussen de twee rangnummers per leerling.}\tabularnewline
+\toprule
+Leerling & 1 & 9 & 6 & 4 & 10 & 8 & 5 & 7 & 2 & 3\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+Leerling & 1 & 9 & 6 & 4 & 10 & 8 & 5 & 7 & 2 & 3\tabularnewline
+\midrule
+\endhead
+Lezen & 1 & 2 & 3 & 4.5 & 4.5 & 6 & 7 & 8 & 9 & 10\tabularnewline
+Rekenen & 2 & 4 & 1 & 4 & 6.5 & 4 & 8 & 6.5 & 10 & 9\tabularnewline
+verschil \(v_i\) & -1 & -2 & 1 & 0.5 & -2 & 2 & -1 & 1.5 & -1 & 1\tabularnewline
+\bottomrule
+\end{longtable}
+
+De ordening in Tabel \ref{tab:cito-rangnummers} maakt in één oogopslag duidelijk dat
+de drie leerlingen met de laagste score voor Lezen (nrs. 1, 9, 6) ook
+bijna de laagste scores voor Rekenen behaalden. Dat wijst op een
+positief verband. De twee beste lezers (nrs. 2 en 3) zijn ook de twee
+beste rekenaars. Ook dat wijst op een positief verband. Er is echter
+geen sprake van een perfect positief verband (dus hier \(r_s<1\)), want
+dan zouden de beide rangordeningen perfect overeen komen.
+
+Bedenk zelf hoe Tabel \ref{tab:cito-rangnummers} er uit zou zien, als er een perfect
+negatief verband zou zijn (\(r_s=-1\)) tussen de scores bij Lezen en
+Rekenen, en hoe de tabel er uit zou zien als er geen enkel verband zou
+zijn (\(r_s=0\)) tussen deze scores.
+
+\hypertarget{formules-4}{%
+\subsection{Formules}\label{formules-4}}
+
+De samenhang tussen de rangnummers van twee variabelen wordt uitgedrukt
+in de Spearman rangorde-correlatiecoëfficiënt:
+\begin{equation}
+    r_s = 1 - \frac{6 \sum v_i^2}{n(n^2-1)}
+  \label{eq:spearman}
+\end{equation}
+waarin \(v_i\) staat voor
+het verschil in rangnummers op beide variabelen voor respondent \(i\). De
+breuk in deze formule wordt groter, en \(r_s\) wordt dus kleiner, naarmate
+de verschillen tussen de rangnummers groter zijn.
+Deze formule is echter alleen bruikbaar als er geen ``ties'' (gedeelde rangnummers) zijn in de variabelen; voor de gegevens in Tabel \ref{tab:cito-rangnummers} met ``ties'' in beide variabelen moeten we een andere formule gebruiken.
+
+Zoals blijkt is de Spearmans rangorde-correlatie \(r_s\) niet gelijk aan
+de Pearson product-momentcorrelatie \(r\) bij deze geobserveerde scores.
+Indien voldaan wordt aan de voorwaarden voor de Pearson coëfficient, dan
+geeft deze Pearson product-moment-correlatiecoëfficiënt een betere
+schatting van de samenhang dan de Spearman
+rangorde-correlatiecoëfficiënt. Maar als er \emph{niet} aan die voorwaarden
+voldaan wordt, dan is de Spearman coëfficiënt weer te prefereren. De
+Spearman coëfficiënt is onder andere minder gevoelig voor invloedrijke
+extreme observaties --- dergelijke uitschieters leggen immers minder
+gewicht in de schaal, nadat we de ruwe scores vervangen hebben door de
+rangnummers.
+
+\hypertarget{spss-6}{%
+\subsection{SPSS}\label{spss-6}}
+
+Voor Spearmans rangorde-correlatiecoëfficiënt:
+
+\begin{verbatim}
+Analyze > Correlate > Bivariate...
+\end{verbatim}
+
+Kies \texttt{Spearman} rangorde-correlatiecoëfficiënt, vink aan:
+\texttt{Flag\ significant\ correlations}. Bevestig met \texttt{OK}. De resulterende
+uitvoer (tabel) voldoet niet aan de stijl-eisen; je moet de gegevens dus
+overnemen in of omzetten naar een eigen tabel die daar wel aan voldoet,
+en rapporteren volgens de gebruikelijke conventies voor
+correlatie-analyse.
+
+\hypertarget{r-7}{%
+\subsection{R}\label{r-7}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{with}\NormalTok{(cito, }\KeywordTok{cor.test}\NormalTok{( Lezen,Rekenen, }\DataTypeTok{method=}\StringTok{"spearman"}\NormalTok{ ) )}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in cor.test.default(Lezen, Rekenen, method = "spearman"): Cannot
+## compute exact p-value with ties
+\end{verbatim}
+
+\begin{verbatim}
+## 
+##  Spearman's rank correlation rho
+## 
+## data:  Lezen and Rekenen
+## S = 25.229, p-value = 0.00198
+## alternative hypothesis: true rho is not equal to 0
+## sample estimates:
+##       rho 
+## 0.8470988
+\end{verbatim}
+
+\hypertarget{sec:Phi}{%
+\section{Phi}\label{sec:Phi}}
+
+De beide variabelen waarvan we de samenhang willen onderzoeken, zijn
+zelfs niet altijd uitgedrukt op het ordinale meetniveau
+(Hoofdstuk \ref{ch:Meetniveau}). Zelfs als beide variabelen alleen op
+nominaal niveau gemeten zijn, dan kan er nog een correlatie berekend
+worden, nl. de phi-correlatiecoëfficiënt (symbool \(r_\Phi\), met griekse
+letter ``Phi''). Deze correlatiecoëfficiënt is ook bruikbaar als één van
+de twee variabelen op nominaal niveau gemeten is, en de andere op
+ordinaal niveau.
+
+Laten we bij ons voorbeeld met de CITO-toets aannemen dat de eerste vijf
+leerlingen uit een grote stad komen, en de laatste vijf van het
+platteland. De herkomst van de leerling vormt een nominale variabele,
+met 2 categorieën, hier willekeurig aangeduid als \texttt{1} resp. \texttt{0} (zie
+§\ref{sec:nominaal}; een nominale variabele met precies 2
+categorieën wordt ook een binomiale of dichotome variabele genoemd). We
+vragen ons nu af of er enige samenhang is tussen de herkomst van een
+leerling en de score bij het onderdeel Rekenen van de CITO-toets. De
+tweede variabele is van interval-niveau. We zetten deze om naar een
+nominaal meetniveau. Dat kan op vele manieren, en het is aan de
+onderzoeker om daarbij een verstandige keuze te maken. Wij kiezen hier
+voor de vaak gebruikte `mean split': de ene categorie (laag, code \texttt{0})
+bestaat uit scores kleiner dan of gelijk aan het gemiddelde
+(§\ref{sec:gemiddelde}), en de andere categorie uit scores groter
+dan het gemiddelde (hoog, code \texttt{1}). De aantallen leerlingen in elk van
+de \(2\times 2\) categorieën vatten we samen in een kruistabel
+(Tabel \ref{tab:cito-kruis}).
+
+\begin{longtable}[]{@{}lccc@{}}
+\caption{\label{tab:cito-kruis} Kruistabel van \(n=10\) leerlingen, onderverdeeld naar herkomst
+(stad=1, platteland=0) en naar categorie van score bij het onderdeel Rekenen van een
+CITO-toets (`mean split', laag=0, hoog=1), met letter-aanduiding voor de aantallen
+observaties; zie tekst.}\tabularnewline
+\toprule
+herkomst & laag (0) & hoog (1) & totaal\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+herkomst & laag (0) & hoog (1) & totaal\tabularnewline
+\midrule
+\endhead
+platteland (0) & 5 (A) & 0 (B) & 5 (A+B)\tabularnewline
+stad (1) & 2 (C) & 3 (D) & 5 (C+D)\tabularnewline
+totaal & 7 (A+C) & 3 (B+D) & 10 (A+B+C+D)\tabularnewline
+\bottomrule
+\end{longtable}
+
+De nominale correlatiecoëfficiënt \(r_\Phi\) is gelijk aan de Pearson
+product-moment-correlatiecoëfficiënt als we die zouden toepassen op de binomiale codes
+(\texttt{0} en \texttt{1}) van de observaties. Alle 5 de leerlingen van het platteland
+hebben een score bij Rekenen gelijk aan of lager dan gemiddeld
+(\(\overline{y}=\) 27.2); van de leerlingen uit de stad hebben er 2 een score
+(gelijk aan of) lager dan gemiddeld. Er is dus samenhang tussen de
+binomiale codes van de rijen (herkomst) en die van de kolommen
+(score-categorieën) in Tabel \ref{tab:cito-kruis}.
+Die samenhang wordt gekwantificeerd in de
+correlatiecoëfficiënt \(r_\Phi=0.65\) voor deze gegevens.
+
+\hypertarget{formules-5}{%
+\subsection{Formules}\label{formules-5}}
+
+De nominale correlatiecoëfficiënt \(r_\Phi\) wordt berekend als volgt,
+waarbij de letters verwijzen naar de aantallen in de cellen van een
+kruistabel (zie Tabel \ref{tab:cito-kruis}):
+\begin{equation}
+    r_\Phi = \frac{(AD-BC)}{\sqrt{(A+B)(C+D)(A+C)(B+D)}}
+  \label{eq:phi}
+\end{equation}
+
+Voor het hierboven besproken voorbeeld vinden we dan
+\[
+    r_\Phi = \frac{(15-0)}{\sqrt{(5)(5)(7)(3)}} = \frac{15}{22.91} = 0.65
+\]
+
+\hypertarget{spss-7}{%
+\subsection{SPSS}\label{spss-7}}
+
+De dataset \texttt{cito} bevat al een variabele \texttt{StadPlat} die de herkomst van de leerlingen aangeeft. Maar volledigheidshalve leggen we toch uit hoe je zo'n variabele zelf kunt construeren.
+
+\begin{verbatim}
+Transform > Recode into different variables...
+\end{verbatim}
+
+Kies \texttt{Leerling} als oude variabele en vul als nieuwe naam \texttt{StadPlat2}
+in voor de nieuwe variabele. Geef aan dat de oude waarden in \texttt{Range} van
+1 t/m 5 (oud) omgezet moeten worden naar de nieuwe waarde 1, en evenzo
+dat leerlingen 6 t/m 10 de nieuwe waarde 0 moeten krijgen voor de nieuwe
+variabele \texttt{StadPlat}.
+
+Voor \texttt{Rekenen} is het wat ingewikkelder. Je moet eerst je eerdere
+omzettingsregels verwijderen (die betrekking hadden op \texttt{StadPlat}). Maak
+dan op dezelfde wijze weer een nieuwe variabele, genaamd \texttt{Rekenen2}.
+Alle waarden vanaf de laagste waarde tot het gemiddelde (\(27.2\)) worden
+omgezet naar nieuwe waarde 0 voor die nieuwe variabele. Alle waarden
+vanaf het gemiddelde (\(27.2\)) tot de hoogste waarde worden omgezet naar
+nieuwe waarde 1.
+
+Na dit voorbereidend werk kunnen we eindelijk \(r_\Phi\) gaan berekenen.
+
+\begin{verbatim}
+Analyze > Descriptives > Crosstabs...
+\end{verbatim}
+
+Selecteer de variabelen \texttt{StadPlat2} (in ``Rows'' paneel) en \texttt{Reken2}
+(in ``Columns'' paneel) voor
+kruistabel \ref{tab:cito-kruis}.\\
+Kies \texttt{Statistics\ldots{}} en vink optie \texttt{Phi\ and\ Cramer’s\ V}aan!\\
+Bevestig eerst met \texttt{Continue} en daarna nogmaals met \texttt{OK}.
+
+\hypertarget{r-8}{%
+\subsection{R}\label{r-8}}
+
+De dataset \texttt{cito} bevat al een variabele StadPlat die de herkomst van de leerlingen aangeeft. Maar volledigheidshalve laten we toch zien hoe je zo'n variabele zelf kunt construeren.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{StadPlat2 \textless{}{-}}\StringTok{ }\KeywordTok{ifelse}\NormalTok{( cito}\OperatorTok{$}\NormalTok{Leerling}\OperatorTok{\textless{}}\DecValTok{6}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{0}\NormalTok{) }\CommentTok{\# 1=stad, 0=plat}
+\NormalTok{Reken2 \textless{}{-}}\StringTok{ }\KeywordTok{ifelse}\NormalTok{( cito}\OperatorTok{$}\NormalTok{Rekenen}\OperatorTok{\textgreater{}}\KeywordTok{mean}\NormalTok{(cito}\OperatorTok{$}\NormalTok{Rekenen), }\DecValTok{1}\NormalTok{, }\DecValTok{0}\NormalTok{ ) }\CommentTok{\# 1=hoog, 0=laag}
+\end{Highlighting}
+\end{Shaded}
+
+Maak een nieuwe variabele \texttt{Reken2}, met de waarde 1 indien de score
+voor Rekenen groter is dan het gemiddelde, en anders de waarde 0.
+
+Ook in R maken we eerst een kruistabel (Tabel \ref{tab:cito-kruis}) en daarna berekenen we de \(r_\Phi\) over die kruistabel.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{print}\NormalTok{( }\KeywordTok{table}\NormalTok{(StadPlat2,Reken2) {-}\textgreater{}}\StringTok{ }\NormalTok{citokruistabel ) }\CommentTok{\# maak en bewaar en toon kruistabel}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          Reken2
+## StadPlat2 0 1
+##         0 5 0
+##         1 2 3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ControlFlowTok{if}\NormalTok{ (}\KeywordTok{require}\NormalTok{(psych)) \{ }\CommentTok{\# voor psych::phi}
+  \KeywordTok{phi}\NormalTok{(citokruistabel) }\CommentTok{\# eerder gemaakte kruistabel is hier invoer!}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.65
+\end{verbatim}
+
+\hypertarget{sec:correlationcausation}{%
+\section{Tenslotte}\label{sec:correlationcausation}}
+
+Bij het einde van dit hoofdstuk willen we nog eens benadrukken dat een
+samenhang of correlatie tussen twee variabelen niet noodzakelijkerwijs
+betekent dat er ook een causaal verband is tussen de variabelen, m.a.w.
+een samenhang betekent niet dat de ene variabele (bijv. behandeling) de
+oorzaak is en de andere variabele (bijv. genezing) het gevolg daarvan.
+De gangbare zegswijze daarvoor is ``correlation does not imply
+causation,'' zie ook Voorbeeld 6.1 (Hoofdstuk \ref{ch:ontwerp})
+en bijgaande Figuur \ref{fig:xkcd552}.
+
+\textbackslash begin\{figure\}
+
+\{\centering \includegraphics{figures/correlation}
+
+\}
+
+\textbackslash caption\{\emph{Correlation does not imply causation}, ontleend met toestemming aan \url{http://xkcd.com/552}.\}\label{fig:xkcd552}
+\textbackslash end\{figure\}
 
 \hypertarget{appendix-appendices}{%
 \appendix}

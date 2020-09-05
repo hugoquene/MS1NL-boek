@@ -10,6 +10,7 @@ rmd_files: ["index.Rmd",
             "h08frequenties.Rmd",
             "h09centrumspreiding.Rmd",
             "h10kansverdelingen.Rmd",
+            "h11samenhang.Rmd",
             "a1randomgetallen.Rmd",
             "a2kritiekeZwaarden.Rmd",
             "referenties.Rmd"]

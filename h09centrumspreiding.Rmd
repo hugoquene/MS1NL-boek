@@ -446,7 +446,6 @@ in positieve gekwadrateerde-afwijkingen. Van al die
 gekwadrateerde-afwijkingen berekenen we het gemiddelde, d.w.z. we tellen
 ze op en delen door $(n-1)$, zie voetnoot[^fn09-5]. Het resultaat noemen we
 de *variantie*, aangeduid met symbool $s^2$: 
-
 \begin{equation}
   s^2 = \frac{ \sum (x_i - \overline{x})^2 } {n-1}
   (\#eq:variantie)
