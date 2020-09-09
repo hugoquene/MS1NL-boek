@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.3)  5 SEP 2020 13:12
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.3)  9 SEP 2020 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -793,12 +793,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 Chapter 1.
 [11
 
-] [12] [13] [14]
-
-LaTeX Warning: Reference `ch:betrouwbaarheid' on page 15 undefined on input lin
-e 389.
-
-[15]
+] [12] [13] [14] [15]
 Underfull \hbox (badness 1622) in paragraph at lines 426--437
 \TU/lmr/m/n/10 gegevens (klankvormen, toonhoogteverloop) beschreven zijn. Vaak 
 zijn
@@ -846,12 +841,7 @@ Overfull \hbox (33.83005pt too wide) in alignment at lines 1155--1166
 
 LaTeX Warning: Reference `ch:power' on page 32 undefined on input line 1183.
 
-[32] [33] [34]
-
-LaTeX Warning: Reference `ch:betrouwbaarheid' on page 35 undefined on input lin
-e 1324.
-
-[35] [36]
+[32] [33] [34] [35] [36]
 Chapter 3.
 
 Underfull \hbox (badness 3281) in paragraph at lines 1371--1378
@@ -917,10 +907,6 @@ ut line 1503.
 
 LaTeX Warning: Reference `ch:meetniveau' on page 40 undefined on input line 153
 8.
-
-
-LaTeX Warning: Reference `ch:betrouwbaarheid' on page 40 undefined on input lin
-e 1540.
 
 [40]
 Underfull \hbox (badness 2173) in paragraph at lines 1613--1624
@@ -1296,6 +1282,10 @@ File: MS1NL-boek_files/figure-latex/tkansverdeling-1.pdf Graphic file (type pdf
 )
 <use MS1NL-boek_files/figure-latex/tkansverdeling-1.pdf>
 
+LaTeX Warning: Reference `sec:ttoets-vrijheidsgraden' on page 145 undefined on 
+input line 6356.
+
+
 LaTeX Warning: Reference `app:kritieketwaarden' on page 145 undefined on input 
 line 6380.
 
@@ -1316,10 +1306,6 @@ input line 6417.
 
 [148]
 Chapter 11.
-
-LaTeX Warning: Reference `ch:betrouwbaarheid' on page 149 undefined on input li
-ne 6434.
-
 [149
 
 ]
@@ -1367,38 +1353,111 @@ Overfull \hbox (5.00133pt too wide) in paragraph at lines 7231--7232
 [165] [166
 
 ]
+Chapter 12.
+[167]
+Underfull \hbox (badness 1688) in paragraph at lines 7297--7302
+\TU/lmr/m/n/10 verschillende vragen \TU/lmr/m/it/10 hetzelfde \TU/lmr/m/n/10 co
+nstruct meten, hier het con-
+ []
+
+[168]
+Underfull \hbox (badness 1028) in paragraph at lines 7371--7383
+[]\TU/lmr/m/n/10 Voorbeeld 12.3: ([]Lata-Caneda et al.[], []2009[]) ontwikkelde
+n een
+ []
+
+
+Underfull \hbox (badness 2158) in paragraph at lines 7371--7383
+\TU/lmr/m/n/10 Spaanstalige vragenlijst van 39 vragen, bedoeld voor afasie-
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 7371--7383
+\TU/lmr/m/n/10 tweemaal afgenomen bij een steekproef van 23 Spaanstalige
+ []
+
+[169]
+Missing character: There is no   in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no   in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no   in font [lmroman10-regular]:mapping=tex-text;!
+[170]
+Missing character: There is no   in font [lmroman8-regular]:mapping=tex-text;!
+[171]
+
+LaTeX Warning: Reference `sec:betrouwbaarheidsinterval-gemiddelde' on page 172 
+undefined on input line 7525.
+
+[172] [173] [174] [175] [176] [177] [178]
+Overfull \hbox (17.25pt too wide) in paragraph at lines 7894--7894
+[]\TU/lmtt/m/n/10 ##   raw_alpha std.alpha G6(smc) average_r S/N  ase mean  sd 
+median_r[] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 7894--7894
+[]\TU/lmtt/m/n/10 ##       0.68      0.68    0.74      0.41 2.1 0.17   72 4.6  
+   0.41[] 
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 7894--7894
+[]\TU/lmtt/m/n/10 ##    raw_alpha std.alpha G6(smc) average_r  S/N alpha se var
+.r med.r[] 
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 7894--7894
+[]\TU/lmtt/m/n/10 ## B1      0.15      0.16   0.088     0.088 0.19    0.497    
+NA 0.088[] 
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 7894--7894
+[]\TU/lmtt/m/n/10 ## B2      0.58      0.58   0.410     0.410 1.39    0.264    
+NA 0.410[] 
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 7894--7894
+[]\TU/lmtt/m/n/10 ## B3      0.84      0.85   0.745     0.745 5.84    0.095    
+NA 0.745[] 
+ []
+
+[179] [180]
 Appendix A.
-[167] [168]
+[181
+
+] [182]
 Appendix B.
 File: MS1NL-boek_files/figure-latex/kritiekeZwaarden-hulpfiguur-1.pdf Graphic f
 ile (type pdf)
 <use MS1NL-boek_files/figure-latex/kritiekeZwaarden-hulpfiguur-1.pdf>
-(./MS1NL-boek.bbl [169
+(./MS1NL-boek.bbl [183
 
-] [170] [171
+] [184] [185
 
-] [172] [173])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7320.
-[174]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 7320.
+] [186] [187])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8003.
+[188]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 8003.
 (./MS1NL-boek.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7320.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7320.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 8003.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8003.
 
 Package rerunfilecheck Info: File `MS1NL-boek.out' has not changed.
-(rerunfilecheck)             Checksum: AAD8B734B03F60535CDB8B28AEDBEF9B;13291.
+(rerunfilecheck)             Checksum: 745543EDF97509689F3262B4A17E4EFB;14833.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7320.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8003.
  ) 
 Here is how much of TeX's memory you used:
- 18015 strings out of 481666
- 319817 string characters out of 5931751
- 747913 words of memory out of 5000000
- 34852 multiletter control sequences out of 15000+600000
+ 18044 strings out of 481666
+ 320357 string characters out of 5931751
+ 750621 words of memory out of 5000000
+ 34881 multiletter control sequences out of 15000+600000
  541603 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  52i,10n,118p,1137b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on MS1NL-boek.pdf (174 pages).
+Output written on MS1NL-boek.pdf (188 pages).

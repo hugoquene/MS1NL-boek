@@ -11,6 +11,7 @@ rmd_files: ["index.Rmd",
             "h09centrumspreiding.Rmd",
             "h10kansverdelingen.Rmd",
             "h11samenhang.Rmd",
+            "h12betrouwbaarheid.Rmd",
             "a1randomgetallen.Rmd",
             "a2kritiekeZwaarden.Rmd",
             "referenties.Rmd"]
@@ -28,9 +29,9 @@ language:
     def: 'Definitie '
     exm: 'Voorbeeld '
     exr: 'Oefening '
-    proof: 'Bewijs. '
-    remark: 'Opmerking. '
-    solution: 'Oplossing. '
+    proof: 'Bewijs: '
+    remark: 'Opmerking: '
+    solution: 'Oplossing: '
   ui:
     chapter_name: "Hoofdstuk "
     appendix_name: "Appendix "

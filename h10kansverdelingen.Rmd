@@ -772,7 +772,7 @@ text( 1.1, 0.35, "n=600", col="navy", cex=1.5)
 Voor de $t$-verdeling moeten we dus weten hoe groot de steekproef was;
 deze $n$ bepaalt immers de precieze kansverdeling van $t$, en daarmee de
 kritieke waarde $t*$. We gaan daar nader op in in
-§\@ref(sec:ttoets.vrijheidsgraden). We volstaan hier met een
+§\@ref(sec:ttoets-vrijheidsgraden). We volstaan hier met een
 uitgewerkt voorbeeld.
 
 ---
