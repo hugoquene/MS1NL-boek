@@ -53,7 +53,7 @@ herhaalde meting, en zijn de metingen dus minder betrouwbaar.
 
 ---
 
-> Voorbeeld 12.1. Als we de leesvaardigheid van
+> *Voorbeeld 12.1:* Als we de leesvaardigheid van
 leerlingen in het eindexamen willen meten, dan leggen we hen een
 tekstbegriptoets met een bijbehorend aantal vragen voor. De mate waarin
 de verschillende vragen *hetzelfde* construct meten, hier het construct 'leesvaardigheid',
@@ -96,7 +96,7 @@ tweede meetmoment.
 
 ---
 
-> Voorbeeld 12.2:
+> *Voorbeeld 12.2:*
 Bij het eindexamen Nederlands moeten leerlingen een opstel schrijven,
 dat wordt beoordeeld door twee beoordelaars. De beoordelaars zijn
 stabiel, als zij na enige tijd dezelfde oordelen toekennen aan dezelfde
@@ -122,7 +122,7 @@ relatief hoge kosten en relatief geringe opbrengst.
 
 ---
 
-> Voorbeeld 12.3: 
+> *Voorbeeld 12.3:* 
 [@Lata09] ontwikkelden
 een Spaanstalige vragenlijst van 39 vragen, bedoeld voor
 afasie-patiënten om de kwaliteit van hun leven te bepalen. De kwaliteit
@@ -255,7 +255,7 @@ dat de foutscores normaal verdeeld zijn (formule \@ref(eq:normal-error)).
 
 ---
 
-> Voorbeeld 12.4:
+> *Voorbeeld 12.4:* 
 Externe inspecteurs betwijfelen of docenten de eindwerkstukken van hun
 studenten wel goed beoordelen. Als een student een 6 heeft gekregen, zou
 dat werkstuk dan misschien eigenlijk als onvoldoende beoordeeld moeten

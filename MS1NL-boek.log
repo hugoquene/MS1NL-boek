@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.3)  12 SEP 2020 11:59
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.3)  12 SEP 2020 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1362,9 +1362,9 @@ nstruct meten, hier het con-
  []
 
 [168]
-Underfull \hbox (badness 1028) in paragraph at lines 7421--7433
-[]\TU/lmr/m/n/10 Voorbeeld 12.3: ([]Lata-Caneda et al.[], []2009[]) ontwikkelde
-n een
+Underfull \hbox (badness 1189) in paragraph at lines 7421--7433
+[]\TU/lmr/m/it/10 Voorbeeld 12.3: \TU/lmr/m/n/10 ([]Lata-Caneda et al.[], []200
+9[]) ontwikkelden een
  []
 
 

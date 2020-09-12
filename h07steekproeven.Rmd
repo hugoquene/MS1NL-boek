@@ -256,7 +256,7 @@ Je kunt deze random getallen gebruiken om op aselecte wijze eenheden (bijv. proe
 
 In R kunnen we random getallen genereren met de functie `runif`. Deze functie kiest aselect (**r**andom) waarden uit een vlakke (**unif**orme) kansverdeling, d.w.z. dat elk getal tussen de ondergrens en bovengrens een gelijke kans heeft om getrokken te worden. De standaard grenzen zijn $(0,1)$. De waarden kunnen we afronden tot gehele getallen, zoals gedaan is voor Appendix \@ref(app:randomgetallen). 
 
-Als je random getallen wilt genereren volgens een normale kansverdeling (zie Hoofdstuk \@ref(ch:kansverdelingen)), gebruik dan de functie `rnorm(mean,sd)`. 
+Als je random getallen wilt genereren volgens een normale kansverdeling (zie Hoofdstuk \@ref(ch:kansverdelingen)), gebruik dan de functie `rnorm(n,mean,sd)`. 
 
 Met de opdracht `set.seed` geven we een eigen beginwaarde mee aan de "random number generator", om zo reproduceerbare analyses (en demonstraties) te kunnen maken. 
 ```{r runif}
