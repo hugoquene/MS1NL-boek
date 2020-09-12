@@ -609,17 +609,10 @@ cor( beoordelaars[ ,c("B1","B2","B3") ] ) # expliciete kolomnamen
 
 ---
 
-[^fn12-1]: $s^2_{(t+e)} = s^2_t + s^2_e + 2  r_{(t,e)} s_t s_e$, met hier
-    $r_{(t,e)}=0$ volgens
-    formule [\[eq:r.true.error\]](#eq:r.true.error){reference-type="ref"
-    reference="eq:r.true.error"}.
+[^fn12-1]: $s^2_{(t+e)} = s^2_t + s^2_e + 2  r_{(t,e)} s_t s_e$, met hier $r_{(t,e)}=0$ volgens formule \@ref(eq:r-true-error).
 
-[^fn12-2]: Een uitzondering hierop vormt de situatie indien $s^2_x=0$, en dus
-    $s^2_t=0$, ergo betrouwbaarheid $\rho=0$; de afhankelijke variabele
-    $x$ is dan niet goed geoperationaliseerd.
+[^fn12-2]: Een uitzondering hierop vormt de situatie indien $s^2_x=0$, en dus $s^2_t=0$, ergo betrouwbaarheid $\rho=0$; de afhankelijke variabele $x$ is dan niet goed geoperationaliseerd.
 
-[^fn12-3]: In ons voorbeeld zijn er slechts $k=2$ beoordelaars, dus is er
-    slechts één correlatie, en $\overline{r} = r_{1,2} = 0.75$.
+[^fn12-3]: In ons voorbeeld zijn er slechts $k=2$ beoordelaars, dus is er slechts één correlatie, en $\overline{r} = r_{1,2} = 0.75$.
 
-[^fn12-4]: De zgn. 'intra-class correlation coefficient' (ICC) voor $k$ vaste
-    beoordelaars of items is eveneens identiek aan de Cronbach's Alpha.
+[^fn12-4]: De zgn. 'intra-class correlation coefficient' (ICC) voor $k$ vaste beoordelaars of items is eveneens identiek aan de Cronbach's Alpha.

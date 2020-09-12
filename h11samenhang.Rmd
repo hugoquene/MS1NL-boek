@@ -159,7 +159,7 @@ rapporteren deze bevindingen als volgt[^fn11-1]:
 
 ---
 
-> Voorbeeld 11.1: 
+> *Voorbeeld 11.1:* 
 De scores van de $n=10$ leerlingen op de deeltoetsen van de CITO-toets
 in Tabel \@ref(tab:cito) laten een sterke correlatie zien tussen de scores
 bij de onderdelen Lezen en Rekenen: Pearson $r=0.79, p=.007$. Leerlingen
@@ -195,7 +195,7 @@ correleert. We rapporteren deze bevindingen als volgt:
 
 ---
 
-> Voorbeeld 11.2: De
+> *Voorbeeld 11.2:* De
 paarsgewijze correlaties tussen scores van de $n=10$ leerlingen op de
 drie deeltoetsen van de CITO-toets zijn samengevat in
 Tabel \@ref(tab:cito-correlaties). We zien een sterke correlatie tussen
@@ -361,7 +361,7 @@ Een lineaire regressie kan worden gerapporteerd als volgt:
 
 ---
 
-> Voorbeeld 11.3:
+> *Voorbeeld 11.3:*
 Uit een lineaire-regressie-analyse blijkt dat de score bij Rekenen
 samenhangt met die bij Lezen: $b=0.51, r=.79, p_r=.007$, over $n=10$
 leerlingen. Dit lineaire regressiemodel verklaart $r^2=.51$ van de
@@ -697,12 +697,6 @@ knitr::include_graphics("figures/correlation.png")
 ```
 
 
-[^fn11-1]: Als de gevonden correlatie $r$ *niet* significant is, dan kan die
-    dus ook toevallig zijn, en dan laten we een interpretatie van de
-    samenhang dus achterwege. We vermelden in ons verslag dan wel de
-    gevonden correlatiecoëfficiënt en de gevonden significantie daarvan.
+[^fn11-1]: Als de gevonden correlatie $r$ *niet* significant is, dan kan die dus ook toevallig zijn, en dan laten we een interpretatie van de samenhang dus achterwege. We vermelden in ons verslag dan wel de gevonden correlatiecoëfficiënt en de gevonden significantie daarvan.
 
-[^fn11-2]: In schoolboeken wordt deze vergelijking ook wel beschreven als
-    $Y = a X + b$, met $a$ als hellingscoëfficiënt en $b$ als
-    begingetal; we houden ons hier echter aan de internationaal gangbare
-    notatie.
+[^fn11-2]: In schoolboeken wordt deze vergelijking ook wel beschreven als $Y = a X + b$, met $a$ als hellingscoëfficiënt en $b$ als begingetal; we houden ons hier echter aan de internationaal gangbare notatie.

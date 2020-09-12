@@ -49,7 +49,7 @@ van $P(\textrm{A})$ en $P(\textrm{B})$:
 
 ---
 
-> Voorbeeld 10.1: 
+> *Voorbeeld 10.1:* 
 In ons Scrabble-voorbeeld is $P(\textrm{A})=\frac{6}{102}$ en
 $P(\textrm{B})=\frac{2}{102}$. De kans op uitkomst A-of-B is dan
 $P(\textrm{A of B})=P(\textrm{A})+P(\textrm{B})=6/102+2/102=8/102=.0784$.
@@ -78,7 +78,7 @@ $$
 
 ---
 
-> Voorbeeld 10.2: 
+> *Voorbeeld 10.2:* 
 In ons Scrabble-voorbeeld is $P(\textrm{A})=\frac{6}{102}$. De kans op
 uitkomst niet-A is dan
 $P(\textrm{niet-A})= 1 - P(\textrm{A}) = 1 - \frac{6}{102} = \frac{96}{102} = .9412$.
@@ -107,7 +107,7 @@ combinatie van uitkomsten door de kansen te *vermenigvuldigen*
 
 ---
 
-> Voorbeeld 10.3:
+> *Voorbeeld 10.3:* 
 In ons Scrabble-voorbeeld is $P(\textrm{A})=\frac{6}{102}$ en
 $P(\textrm{B})=\frac{2}{102}$. De kans op uitkomst A bij het eerste
 zakje *en* B bij het tweede zakje is dan
@@ -115,7 +115,7 @@ $P(\textrm{A en B})=P(\textrm{A}) \times P(\textrm{B})=\frac{6}{102} \times \fra
 
 ---
 
-> Voorbeeld 10.4:
+> *Voorbeeld 10.4:* 
 In ons Scrabble-voorbeeld is $P(\textrm{klinker})=\frac{38}{102}$. De kans
 om een klinker (A, E, I, O, U, Y) te trekken uit het eerste zakje *en*
 een klinker uit het tweede zakje is dan
@@ -236,7 +236,7 @@ $4!=4\times3\times2\times1=24$.
 
 ---
 
-> Voorbeeld 10.5: Er staan 4 stoelen voor 2 personen. Op een stoel mag maximaal 1 persoon
+> *Voorbeeld 10.5:* Er staan 4 stoelen voor 2 personen. Op een stoel mag maximaal 1 persoon
 plaatsnemen. Hoeveel verschillende ordeningen van $x=2$ personen over
 $n=4$ stoelen zijn er mogelijk?
 
@@ -279,7 +279,7 @@ zijn $$\begin{aligned}
 
 ---
 
-> Voorbeeld 10.6:
+> *Voorbeeld 10.6:*
 De binomiale kansverdeling voor $x$ treffers uit $n=3$ trekkingen met
 $p=.38$ kans op een treffer is afgebeeld in
 Figuur \@ref(fig:binomkansverdeling3). Deze binomiale kansverdeling heeft
@@ -442,7 +442,7 @@ beter gedaan dan 95% van de deelnemers.
 
 ---
 
-> Voorbeeld 10.8: 
+> *Voorbeeld 10.8:* 
 Extreme waarden komen bij een normaal-verdeelde variabele per definitie
 weinig voor. Maar wat is de grens voor een extreme waarde? Laten we
 aannemen dat we niet meer dan 5% van alle observaties als extreem willen
@@ -460,7 +460,7 @@ observatie.
 
 ---
 
-> Voorbeeld 10.9:
+> *Voorbeeld 10.9:* 
 Intelligentie wordt uitgedrukt als een IQ-score, een variabele met een
 normale kansverdeling met $\mu=100$ en $\sigma=15$. "Membership of Mensa
 is open to persons who have attained a score within the upper two
@@ -476,7 +476,7 @@ je dus een IQ-score behalen van 131 punten of hoger.
 
 ---
 
-> Voorbeeld 10.10: 
+> *Voorbeeld 10.10:* 
 Verifieer de bovengenoemde Empirical Rule met behulp van
 Bijlage \@ref(app:kritiekeZwaarden).
 
@@ -777,7 +777,7 @@ uitgewerkt voorbeeld.
 
 ---
 
-> Voorbeeld 10.11:
+> *Voorbeeld 10.11:* 
 Soms wil een onderzoeker weten hoe snel het Nederlands eigenlijk
 gesproken wordt, en hoe groot de variatie tussen sprekers is in deze
 spreeksnelheid. Deze variabele, spreeksnelheid, wordt uitgedrukt als het
@@ -866,15 +866,10 @@ waarbij $t^*$ met $n-1$ vrijheidsgraden gevonden wordt met behulp van
 Bijlage \@ref(app:kritieketwaarden), zie
 §\@ref(sec:ttoets-vrijheidsgraden) voor meer uitleg hierover.
 
-[^fn10-1]: Twee van de fiches zijn echter zonder letter; later in deze
-    paragraaf zullen we deze blanco fiches verwijderen uit het zakje.
+[^fn10-1]: Twee van de fiches zijn echter zonder letter; later in deze paragraaf zullen we deze blanco fiches verwijderen uit het zakje.
 
-[^fn10-2]: Roulettespelers kunnen gokken op 36 van de 37 mogelijke
-    uitkomsten, dus op de lange termijn ontvangt het casino $1/37$ deel
-    van alle inzetten.
+[^fn10-2]: Roulettespelers kunnen gokken op 36 van de 37 mogelijke uitkomsten, dus op de lange termijn ontvangt het casino $1/37$ deel van alle inzetten.
 
-[^fn10-3]: Dus ${n \choose x} = {n-1 \choose x} + {n-1 \choose x-1}$,
-    [@Weis15].
+[^fn10-3]: Dus ${n \choose x} = {n-1 \choose x} + {n-1 \choose x-1}$, [@Weis15].
 
-[^fn10-4]: Schattingen van parameters worden aangegeven met een "dakje"
-    erboven.
+[^fn10-4]: Schattingen van parameters worden aangegeven met een "dakje" erboven.
