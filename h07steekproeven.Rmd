@@ -180,10 +180,10 @@ steekproefgrootte, steeds het $n$-de element te selecteren. Voor de
 selectie van getallen staan de onderzoeker tabellen met toevalsgetallen
 ter beschikking (zie Appendix \@ref(app:randomgetallen)). 
 Ook rekenmachines, computers,
-spreadsheet-programma's e.d. kunnen random getallen genereren. (Het
-verdient aanbeveling om zulke random getallen te gebruiken, want een
+spreadsheet-programma's e.d. kunnen random getallen genereren (zie secties hieronder). 
+Het verdient aanbeveling om zulke random getallen te gebruiken, want een
 door mensen geconstrueerde "random" volgorde is niet werkelijk
-"random".) Een voorwaarde voor de toepassing van deze methode is echter
+"random". Een voorwaarde voor de toepassing van deze methode is echter
 wel dat de elementen van de populatie (steekproefruimte) vooraf
 geregistreerd zijn (of worden), zodat ze op enigerlei wijze van een
 nummer voorzien kunnen worden.
@@ -228,6 +228,44 @@ signatuur heeft. We trekken uit de steekproefruimte nu meerdere aselecte
 'stratified' steekproeven, en wel zo dat de verhouding van scholen in de
 strata een juiste afspiegeling vormt van de verhoudingen van dit kenmerk
 in de steekproefruimte $(35:31:31:3)$.
+
+### SPSS
+
+Voor het aanmaken van een kolom met random getallen:
+```
+Transform > Compute...
+```
+Selecteer een bestaande variabele (sleep naar Variable(s) paneel) of geef de naam voor een nieuwe variabele. 
+Uit het paneel "Function Group", kies "Random Numbers" en daarna `RV.UNIFORM`. 
+Deze functie kiest aselect (**r**andom) waarden (**v**alues) uit een vlakke (**uniform**e) kansverdeling, d.w.z. dat elk getal tussen de ondergrens en bovengrens een gelijke kans heeft om getrokken te worden. 
+Kies als ondergrens `0` en als bovengrens `9999`, of andere grenzen naar behoefte. 
+Bevestig met `OK`.\
+Dit resulteert in een (nieuwe, of overschreven bestaande) kolom met random getallen. 
+
+Als je random getallen wilt genereren volgens een normale kansverdeling (zie Hoofdstuk \@ref(ch:kansverdelingen)), gebruik dan de functie `RV.NORMAL(mean,stdev)`. 
+
+We kunnen een eigen beginwaarde meegeven aan de "random number generator", om  zo reproduceerbare analyses te kunnen maken:
+```
+Transform > Random Number Generators...
+```
+Vink in het paneel "Active Generator Initialization" de optie `Set Starting Point` aan, en vul een eigen beginwaarde in, bijvoorbeeld je lievelingsgetal. Bevestig met `OK`.
+
+Je kunt deze random getallen gebruiken om op aselecte wijze eenheden (bijv. proefpersonen) te kiezen voor een steekproef, maar uiteraard ook om op aselecte wijze de geselecteerde eenheden toe te wijzen aan condities, enzovoort. 
+
+### R
+
+In R kunnen we random getallen genereren met de functie `runif`. Deze functie kiest aselect (**r**andom) waarden uit een vlakke (**unif**orme) kansverdeling, d.w.z. dat elk getal tussen de ondergrens en bovengrens een gelijke kans heeft om getrokken te worden. De standaard grenzen zijn $(0,1)$. De waarden kunnen we afronden tot gehele getallen, zoals gedaan is voor Appendix \@ref(app:randomgetallen). 
+
+Als je random getallen wilt genereren volgens een normale kansverdeling (zie Hoofdstuk \@ref(ch:kansverdelingen)), gebruik dan de functie `rnorm(mean,sd)`. 
+
+Met de opdracht `set.seed` geven we een eigen beginwaarde mee aan de "random number generator", om zo reproduceerbare analyses (en demonstraties) te kunnen maken. 
+```{r runif}
+set.seed(20200912) # reproduceerbaar voorbeeld (bijv datum als getal)
+round ( runif( n=5, min=0, max=9999 ) )
+```
+
+Je kunt deze random getallen gebruiken om op aselecte wijze eenheden (bijv. proefpersonen) te kiezen voor een steekproef, maar uiteraard ook om op aselecte wijze de geselecteerde eenheden toe te wijzen aan condities, enzovoort. 
+
 
 ## Steekproefgrootte {#sec:steekproefgrootte}
 

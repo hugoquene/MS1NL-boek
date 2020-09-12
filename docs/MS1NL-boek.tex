@@ -119,7 +119,7 @@
 
 \title{Methoden en Statistiek 1}
 \author{true}
-\date{Versie gecompileerd op 09 Sep 2020}
+\date{Versie gecompileerd op 12 Sep 2020}
 
 \begin{document}
 \maketitle
@@ -4102,10 +4102,10 @@ steekproefgrootte, steeds het \(n\)-de element te selecteren. Voor de
 selectie van getallen staan de onderzoeker tabellen met toevalsgetallen
 ter beschikking (zie Appendix \ref{app:randomgetallen}).
 Ook rekenmachines, computers,
-spreadsheet-programma's e.d. kunnen random getallen genereren. (Het
-verdient aanbeveling om zulke random getallen te gebruiken, want een
+spreadsheet-programma's e.d. kunnen random getallen genereren (zie secties hieronder).
+Het verdient aanbeveling om zulke random getallen te gebruiken, want een
 door mensen geconstrueerde ``random'' volgorde is niet werkelijk
-``random''.) Een voorwaarde voor de toepassing van deze methode is echter
+``random''. Een voorwaarde voor de toepassing van deze methode is echter
 wel dat de elementen van de populatie (steekproefruimte) vooraf
 geregistreerd zijn (of worden), zodat ze op enigerlei wijze van een
 nummer voorzien kunnen worden.
@@ -4152,6 +4152,56 @@ signatuur heeft. We trekken uit de steekproefruimte nu meerdere aselecte
 `stratified' steekproeven, en wel zo dat de verhouding van scholen in de
 strata een juiste afspiegeling vormt van de verhoudingen van dit kenmerk
 in de steekproefruimte \((35:31:31:3)\).
+
+\hypertarget{spss}{%
+\subsection{SPSS}\label{spss}}
+
+Voor het aanmaken van een kolom met random getallen:
+
+\begin{verbatim}
+Transform > Compute...
+\end{verbatim}
+
+Selecteer een bestaande variabele (sleep naar Variable(s) paneel) of geef de naam voor een nieuwe variabele.
+Uit het paneel ``Function Group'', kies ``Random Numbers'' en daarna \texttt{RV.UNIFORM}.
+Deze functie kiest aselect (\textbf{r}andom) waarden (\textbf{v}alues) uit een vlakke (\textbf{uniform}e) kansverdeling, d.w.z. dat elk getal tussen de ondergrens en bovengrens een gelijke kans heeft om getrokken te worden.
+Kies als ondergrens \texttt{0} en als bovengrens \texttt{9999}, of andere grenzen naar behoefte.
+Bevestig met \texttt{OK}.\\
+Dit resulteert in een (nieuwe, of overschreven bestaande) kolom met random getallen.
+
+Als je random getallen wilt genereren volgens een normale kansverdeling (zie Hoofdstuk \ref{ch:kansverdelingen}), gebruik dan de functie \texttt{RV.NORMAL(mean,stdev)}.
+
+We kunnen een eigen beginwaarde meegeven aan de ``random number generator'', om zo reproduceerbare analyses te kunnen maken:
+
+\begin{verbatim}
+Transform > Random Number Generators...
+\end{verbatim}
+
+Vink in het paneel ``Active Generator Initialization'' de optie \texttt{Set\ Starting\ Point} aan, en vul een eigen beginwaarde in, bijvoorbeeld je lievelingsgetal. Bevestig met \texttt{OK}.
+
+Je kunt deze random getallen gebruiken om op aselecte wijze eenheden (bijv. proefpersonen) te kiezen voor een steekproef, maar uiteraard ook om op aselecte wijze de geselecteerde eenheden toe te wijzen aan condities, enzovoort.
+
+\hypertarget{r}{%
+\subsection{R}\label{r}}
+
+In R kunnen we random getallen genereren met de functie \texttt{runif}. Deze functie kiest aselect (\textbf{r}andom) waarden uit een vlakke (\textbf{unif}orme) kansverdeling, d.w.z. dat elk getal tussen de ondergrens en bovengrens een gelijke kans heeft om getrokken te worden. De standaard grenzen zijn \((0,1)\). De waarden kunnen we afronden tot gehele getallen, zoals gedaan is voor Appendix \ref{app:randomgetallen}.
+
+Als je random getallen wilt genereren volgens een normale kansverdeling (zie Hoofdstuk \ref{ch:kansverdelingen}), gebruik dan de functie \texttt{rnorm(mean,sd)}.
+
+Met de opdracht \texttt{set.seed} geven we een eigen beginwaarde mee aan de ``random number generator'', om zo reproduceerbare analyses (en demonstraties) te kunnen maken.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{set.seed}\NormalTok{(}\DecValTok{20200912}\NormalTok{) }\CommentTok{\# reproduceerbaar voorbeeld (bijv datum als getal)}
+\KeywordTok{round}\NormalTok{ ( }\KeywordTok{runif}\NormalTok{( }\DataTypeTok{n=}\DecValTok{5}\NormalTok{, }\DataTypeTok{min=}\DecValTok{0}\NormalTok{, }\DataTypeTok{max=}\DecValTok{9999}\NormalTok{ ) )}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 8193 7482 4206 1684 5653
+\end{verbatim}
+
+Je kunt deze random getallen gebruiken om op aselecte wijze eenheden (bijv. proefpersonen) te kiezen voor een steekproef, maar uiteraard ook om op aselecte wijze de geselecteerde eenheden toe te wijzen aan condities, enzovoort.
 
 \hypertarget{sec:steekproefgrootte}{%
 \section{Steekproefgrootte}\label{sec:steekproefgrootte}}
@@ -4408,8 +4458,8 @@ Daarbij gelden dan de volgende aanbevelingen \citep[Ch.2]{Ferg89}:
 Naarmate we de intervallen breder maken, verliezen we meer informatie
 over de precieze verdeling binnen elk interval.
 
-\hypertarget{spss}{%
-\subsection{SPSS}\label{spss}}
+\hypertarget{spss-1}{%
+\subsection{SPSS}\label{spss-1}}
 
 \begin{verbatim}
 Analyze > Descriptive Statistics > Frequencies...
@@ -4420,8 +4470,8 @@ Vink aan: \texttt{Display\ frequency\ tables}.\\
 Kies \texttt{Format}, kies: \texttt{Order\ by:\ Descending\ values}.\\
 Bevestig met \texttt{OK}.\\
 
-\hypertarget{r}{%
-\subsection{R}\label{r}}
+\hypertarget{r-1}{%
+\subsection{R}\label{r-1}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4518,8 +4568,8 @@ breedte en hoogte van een rechthoek wordt daardoor minder goed leesbaar,
 en de zichtbare oppervlakte van een beschaduwde rechthoek of van een
 balk correspondeert niet meer goed met de frequentie.
 
-\hypertarget{spss-1}{%
-\subsection{SPSS}\label{spss-1}}
+\hypertarget{spss-2}{%
+\subsection{SPSS}\label{spss-2}}
 
 \begin{verbatim}
 Analyze > Descriptive Statistics > Frequencies...
@@ -4531,8 +4581,8 @@ staafdiagram of \texttt{Chart\ type:\ Histogram} voor een histogram (zie
 bovenstaande tekst voor het verschil tussen deze opties).\\
 Bevestig met \texttt{OK}.\\
 
-\hypertarget{r-1}{%
-\subsection{R}\label{r-1}}
+\hypertarget{r-2}{%
+\subsection{R}\label{r-2}}
 
 Een staafdiagram zoals Figuur \ref{fig:klankfreq-barplot} maak je in R met de volgende commando's:
 
@@ -5365,8 +5415,8 @@ transformatie naar standaardscores alleen zinnig is, indien en voor
 zover het gemiddelde en de standaarddeviatie ook zinnige maten zijn om
 de verdeling van \(x\) te beschrijven (zie §\ref{sec:robuustefficient}).
 
-\hypertarget{spss-2}{%
-\section{SPSS}\label{spss-2}}
+\hypertarget{spss-3}{%
+\section{SPSS}\label{spss-3}}
 
 Voor \textbf{histogram, percentielen en boxplot}:
 
@@ -5418,8 +5468,8 @@ Vink aan: \texttt{Save\ standardized\ values\ as\ variables} en bevestig met \te
 De nieuwe variabele(n) met z-scores worden toegevoegd als nieuwe
 kolom(men) aan het databestand.\\
 
-\hypertarget{r-2}{%
-\section{R}\label{r-2}}
+\hypertarget{r-3}{%
+\section{R}\label{r-3}}
 
 Voor \textbf{kwartielen en boxplot} zoals Figuur \ref{fig:cito-boxplot} gebruiken we de commando's \texttt{fivenum}, \texttt{quantile}, en \texttt{boxplot}:
 
@@ -5873,8 +5923,8 @@ standaarddeviatie
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{r-3}{%
-\subsection{R}\label{r-3}}
+\hypertarget{r-4}{%
+\subsection{R}\label{r-4}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6157,8 +6207,8 @@ normaliteit. Beide toetsen onderzoeken de
 H0:\(X\sim\mathcal{N}(\bar{X},s)\) (zie
 formule \eqref{eq:normaalverdeeld}).
 
-\hypertarget{spss-3}{%
-\subsection{SPSS}\label{spss-3}}
+\hypertarget{spss-4}{%
+\subsection{SPSS}\label{spss-4}}
 
 \begin{verbatim}
 Analyze > Descriptive Statistics > Explore...
@@ -6176,8 +6226,8 @@ waarschuwing in
 dat de duren van muzieknummers niet normaal verdeeld zijn. Na deze
 toetsresultaten volgt o.a. een QQ-plot.
 
-\hypertarget{r-4}{%
-\subsection{R}\label{r-4}}
+\hypertarget{r-5}{%
+\subsection{R}\label{r-5}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6629,8 +6679,8 @@ Net als bij het berekenen van de variantie
 (formule \eqref{eq:variantie}) delen we weer door \((n-1)\) om een schatting
 te maken van de samenhang in de populatie.
 
-\hypertarget{spss-4}{%
-\subsection{SPSS}\label{spss-4}}
+\hypertarget{spss-5}{%
+\subsection{SPSS}\label{spss-5}}
 
 Voor Pearson's product-moment-correlatiecoëfficiënt:
 
@@ -6643,8 +6693,8 @@ Kies \texttt{Pearsons} correlatiecoëfficiënt, vink aan:
 uitvoer (tabel) voldoet niet aan de stijl-eisen; je moet de gegevens dus
 overnemen in of omzetten naar een eigen tabel die daar wel aan voldoet.
 
-\hypertarget{r-5}{%
-\subsection{R}\label{r-5}}
+\hypertarget{r-6}{%
+\subsection{R}\label{r-6}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6820,8 +6870,8 @@ De beste schatting voor \(b\) is
 
 De beste schatting voor \(a\) is \[a = \overline{y} - b \overline{x}\]
 
-\hypertarget{spss-5}{%
-\subsection{SPSS}\label{spss-5}}
+\hypertarget{spss-6}{%
+\subsection{SPSS}\label{spss-6}}
 
 Voor lineaire regressie:
 
@@ -6851,8 +6901,8 @@ voorspelde waarden als de residuen. Controleer of het gemiddelde van de
 residuen inderdaad nul is. In deze tabel zien we ook (regel 2, kolom 4)
 dat de standaarddeviatie van de residuen \(3.212\) is.
 
-\hypertarget{r-6}{%
-\subsection{R}\label{r-6}}
+\hypertarget{r-7}{%
+\subsection{R}\label{r-7}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -7019,8 +7069,8 @@ extreme observaties --- dergelijke uitschieters leggen immers minder
 gewicht in de schaal, nadat we de ruwe scores vervangen hebben door de
 rangnummers.
 
-\hypertarget{spss-6}{%
-\subsection{SPSS}\label{spss-6}}
+\hypertarget{spss-7}{%
+\subsection{SPSS}\label{spss-7}}
 
 Voor Spearmans rangorde-correlatiecoëfficiënt:
 
@@ -7035,8 +7085,8 @@ overnemen in of omzetten naar een eigen tabel die daar wel aan voldoet,
 en rapporteren volgens de gebruikelijke conventies voor
 correlatie-analyse.
 
-\hypertarget{r-7}{%
-\subsection{R}\label{r-7}}
+\hypertarget{r-8}{%
+\subsection{R}\label{r-8}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -7137,8 +7187,8 @@ Voor het hierboven besproken voorbeeld vinden we dan
     r_\Phi = \frac{(15-0)}{\sqrt{(5)(5)(7)(3)}} = \frac{15}{22.91} = 0.65
 \]
 
-\hypertarget{spss-7}{%
-\subsection{SPSS}\label{spss-7}}
+\hypertarget{spss-8}{%
+\subsection{SPSS}\label{spss-8}}
 
 De dataset \texttt{cito} bevat al een variabele \texttt{StadPlat} die de herkomst van de leerlingen aangeeft. Maar volledigheidshalve leggen we toch uit hoe je zo'n variabele zelf kunt construeren.
 
@@ -7172,8 +7222,8 @@ kruistabel \ref{tab:cito-kruis}.\\
 Kies \texttt{Statistics\ldots{}} en vink optie \texttt{Phi\ and\ Cramer’s\ V}aan!\\
 Bevestig eerst met \texttt{Continue} en daarna nogmaals met \texttt{OK}.
 
-\hypertarget{r-8}{%
-\subsection{R}\label{r-8}}
+\hypertarget{r-9}{%
+\subsection{R}\label{r-9}}
 
 De dataset \texttt{cito} bevat al een variabele StadPlat die de herkomst van de leerlingen aangeeft. Maar volledigheidshalve laten we toch zien hoe je zo'n variabele zelf kunt construeren.
 
@@ -7820,8 +7870,8 @@ wordt het onderscheid niet duidelijk gemaakt,
 en bespreken de onderzoekers de construct-validiteit van hun nieuwe
 vragenlijst niet expliciet.
 
-\hypertarget{spss-8}{%
-\section{SPSS}\label{spss-8}}
+\hypertarget{spss-9}{%
+\section{SPSS}\label{spss-9}}
 
 Voor een betrouwbaarheidsanalyse van de \(k=3\) oordelen over
 spreekvaardigheid in
@@ -7838,7 +7888,7 @@ beoordelaars als ``items'' die de eigenschap ``spreekvaardigheid'' meten van
 Vul als Scale label in een aanduiding van het construct, bijv.
 \texttt{Spreekvaardigheid}.\\
 Kies als Method: \texttt{Alpha} voor Cronbach's Alpha (zie formule
-@ref(eq:cronbach.corr))\\
+\eqref{eq:cronbach-corr})\\
 Kies \texttt{Statistics\ldots{}}, vink aan: Descriptives for
 \texttt{Item,\ Scale,\ Scale\ if\ item\ deleted}, Inter-Item \texttt{Correlations},
 Summaries \texttt{Means,\ Variances}, en bevestig met \texttt{Continue} en daarna
@@ -7854,8 +7904,8 @@ maar als we beoordelaar 3 zouden verwijderen dan neemt de
 betrouwbaarheid zelfs toe (van 0.68 naar 0.84). Vermoedelijk heeft deze
 beoordelaar een ander construct beoordeeld dan de anderen.
 
-\hypertarget{r-9}{%
-\section{R}\label{r-9}}
+\hypertarget{r-10}{%
+\section{R}\label{r-10}}
 
 Voor een betrouwbaarheidsanalyse van de \(k=3\) oordelen over
 spreekvaardigheid in Tabel \ref{tab:betrouwbaarheid}:\\

@@ -565,7 +565,7 @@ beoordelaars als "items" die de eigenschap "spreekvaardigheid" meten van
 Vul als Scale label in een aanduiding van het construct, bijv.
 `Spreekvaardigheid`.\
 Kies als Method: `Alpha` voor Cronbach's Alpha (zie formule
-\@ref(eq:cronbach.corr))\
+\@ref(eq:cronbach-corr))\
 Kies `Statistics…`, vink aan: Descriptives for
 `Item, Scale, Scale if item deleted`, Inter-Item `Correlations`,
 Summaries `Means, Variances`, en bevestig met `Continue` en daarna
