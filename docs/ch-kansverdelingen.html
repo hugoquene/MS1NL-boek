@@ -378,6 +378,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.8.4" data-path="ch-toetsing.html"><a href="ch-toetsing.html#betrouwbaarheidsinterval-van-de-effectgrootte"><i class="fa fa-check"></i><b>13.8.4</b> Betrouwbaarheidsinterval van de effectgrootte</a></li>
 </ul></li>
 </ul></li>
+<li class="chapter" data-level="14" data-path="ch-power.html"><a href="ch-power.html"><i class="fa fa-check"></i><b>14</b> Power</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="ch-power.html"><a href="ch-power.html#sec:power-inleiding"><i class="fa fa-check"></i><b>14.1</b> Inleiding</a></li>
+<li class="chapter" data-level="14.2" data-path="ch-power.html"><a href="ch-power.html#sec:effectgrootte-power"><i class="fa fa-check"></i><b>14.2</b> Verband tussen effectgrootte en power</a></li>
+<li class="chapter" data-level="14.3" data-path="ch-power.html"><a href="ch-power.html#sec:steekproefgrootte-power"><i class="fa fa-check"></i><b>14.3</b> Verband tussen steekproefgrootte en power</a></li>
+<li class="chapter" data-level="14.4" data-path="ch-power.html"><a href="ch-power.html#sec:significantieniveau-power"><i class="fa fa-check"></i><b>14.4</b> Verband tussen significantieniveau en power</a></li>
+<li class="chapter" data-level="14.5" data-path="ch-power.html"><a href="ch-power.html#nadelen-van-onvoldoende-power"><i class="fa fa-check"></i><b>14.5</b> Nadelen van onvoldoende power</a></li>
+</ul></li>
 <li class="appendix"><span><b>Appendices</b></span></li>
 <li class="chapter" data-level="A" data-path="app-randomgetallen.html"><a href="app-randomgetallen.html"><i class="fa fa-check"></i><b>A</b> Willekeurige getallen</a></li>
 <li class="chapter" data-level="B" data-path="app-kritiekeZwaarden.html"><a href="app-kritiekeZwaarden.html"><i class="fa fa-check"></i><b>B</b> Standaard-normale kansverdeling</a></li>
@@ -468,13 +476,12 @@ respectievelijke kansen tellen op tot precies <span class="math inline">\(1\)</s
 twee mogelijke uitkomsten van de trekking is. Als we <span class="math inline">\(P(\textrm{A})\)</span> al
 kennen kunnen we de kans op de complementaire uitkomst makkelijk
 uitrekenen:
-<span class="math display">\[
-\begin{aligned}
+<span class="math display" id="eq:complementregel">\[\begin{align}
     P(\textrm{A}) + P(\textrm{niet-A}) &amp; = &amp; 1\\
     P(\textrm{A}) &amp; = &amp; 1 - P(\textrm{niet-A})\\
     P(\textrm{niet-A}) &amp; = &amp; 1 - P(\textrm{A})
-\end{aligned}
-\]</span></p>
+    \tag{10.3}
+\end{align}\]</span></p>
 <hr />
 <blockquote>
 <p><em>Voorbeeld 10.2:</em>
@@ -500,7 +507,7 @@ combinatie van uitkomsten door de kansen te <em>vermenigvuldigen</em>
 <em>product</em> van <span class="math inline">\(P(\textrm{A})\)</span> en <span class="math inline">\(P(\textrm{B})\)</span>:
 <span class="math display" id="eq:kans-productregel">\[\begin{equation}
     P(\textrm{A en B}) = P(\textrm{A}) \times P(\textrm{B})
-  \tag{10.3}
+  \tag{10.4}
 \end{equation}\]</span></p>
 <hr />
 <blockquote>
@@ -658,13 +665,13 @@ Figuur 10.1: Kansverdeling van een binomiale variabele x met n=3 en p=.38.
 <p>De kansverdeling van een binomiale variabele noemen we de binomiale
 kansverdeling, ook aangeduid als binomiale verdeling of
 binomiaalverdeling. De exacte kansen van de binomiale kansverdeling kan
-je uitrekenen met formule <a href="ch-kansverdelingen.html#eq:prob-binomial">(10.4)</a> hieronder.</p>
+je uitrekenen met formule <a href="ch-kansverdelingen.html#eq:prob-binomial">(10.5)</a> hieronder.</p>
 <div id="formules" class="section level3" number="10.2.1">
 <h3><span class="header-section-number">10.2.1</span> formules</h3>
 <p>De kans op een <span class="math inline">\(x\)</span> aantal treffers in <span class="math inline">\(n\)</span> trekkingen is gegeven als
 <span class="math display" id="eq:prob-binomial">\[\begin{equation}
   P(x\,\mbox{treffers}) = {n \choose x} p^x (1-p)^{n-x}
-  \tag{10.4}
+  \tag{10.5}
 \end{equation}\]</span>
 waarbij <span class="math inline">\(n\)</span> is het aantal trekkingen of pogingen, <span class="math inline">\(x\)</span> is het aantal treffers (tussen
 0 en <span class="math inline">\(n\)</span>), en <span class="math inline">\(p\)</span> is de kans op een treffer.</p>
@@ -677,7 +684,7 @@ Tabel <a href="ch-kansverdelingen.html#tab:klinkerkansen">10.1</a>. Het aantal v
 ordeningen is gegeven als
 <span class="math display" id="eq:choose">\[\begin{equation}
   {n \choose x} = \frac{n!}{x!(n-x)!}
-  \tag{10.5}
+  \tag{10.6}
 \end{equation}\]</span>
 waarbij
 <span class="math inline">\(x! = x (x-1) (x-2) \dots \times 2 \times 1\)</span>, dus
@@ -951,7 +958,7 @@ Figuur <a href="ch-kansverdelingen.html#fig:normaalkansverdeling">10.3</a> is di
 kansverdeling van <span class="math inline">\(Z\)</span>, oftewel de kansverdeling van <span class="math inline">\((X-\mu)/\sigma\)</span>.</p>
 <p>De kansverdeling van een normaal verdeelde variabele <span class="math inline">\(X\)</span> zou je zelf
 kunnen uitrekenen met behulp van formule
-<a href="ch-kansverdelingen.html#eq:prob-normal">(10.7)</a> hieronder. Maar het is handiger om daarvoor
+<a href="ch-kansverdelingen.html#eq:prob-normal">(10.8)</a> hieronder. Maar het is handiger om daarvoor
 een tabel te gebruiken; die staat in
 Bijlage <a href="app-kritiekeZwaarden.html#app:kritiekeZwaarden">B</a>.
 In grafische vorm uitgelegd geven die tabellen je,
@@ -1050,19 +1057,19 @@ $Z$ volgens de kansverdeling.
 en standaarddeviatie <span class="math inline">\(\sigma\)</span>, dan wordt dat aangegeven als
 <span class="math display" id="eq:normaalverdeeld">\[\begin{equation}
   X \sim \mathcal{N}(\mu,\sigma)
-  \tag{10.6}
+  \tag{10.7}
 \end{equation}\]</span></p>
 <p>De normale kansverdeling van variabele <span class="math inline">\(X\)</span> met gemiddelde <span class="math inline">\(\mu\)</span> en
 standaarddeviatie <span class="math inline">\(\sigma\)</span> is
 <span class="math display" id="eq:prob-normal">\[\begin{equation}
   P(X) = \frac{1}{\sigma \sqrt{2\pi}} \mbox{e}^{ \frac{-(X-\mu)^2}{2\sigma^2} }.
-  \tag{10.7}
+  \tag{10.8}
 \end{equation}\]</span></p>
 <p>De standaard-normale kansverdeling van variabele <span class="math inline">\(Z\)</span> met gemiddelde
 <span class="math inline">\(\mu=0\)</span> en standaarddeviatie <span class="math inline">\(\sigma=1\)</span> is
 <span class="math display" id="eq:prob-standaardnormaal">\[\begin{equation}
     P(Z) = \frac{1}{\sqrt{2\pi}} \mbox{e}^{ \frac{-Z^2}{2} }
-  \tag{10.8}
+  \tag{10.9}
 \end{equation}\]</span></p>
 </div>
 </div>
@@ -1113,7 +1120,7 @@ de Shapiro-Wilk-toets (met toetsingsgrootheid <span class="math inline">\(W\)</s
 de Kolmogorov-Smirnov-toets (met toetsingsgrootheid <span class="math inline">\(D\)</span>) voor
 normaliteit. Beide toetsen onderzoeken de
 H0:<span class="math inline">\(X\sim\mathcal{N}(\bar{X},s)\)</span> (zie
-formule <a href="ch-kansverdelingen.html#eq:normaalverdeeld">(10.6)</a>).</p>
+formule <a href="ch-kansverdelingen.html#eq:normaalverdeeld">(10.7)</a>).</p>
 <div id="spss-4" class="section level3" number="10.4.1">
 <h3><span class="header-section-number">10.4.1</span> SPSS</h3>
 <pre><code>Analyze &gt; Descriptive Statistics &gt; Explore...</code></pre>
@@ -1152,7 +1159,7 @@ normaal verdeeld zijn.</p>
 <h2><span class="header-section-number">10.5</span> Wat als mijn variabele niet normaal verdeeld is?</h2>
 <p>In Deel III zullen we diverse statistische
 toetsen bespreken. De toetsen die we bespreken in hoofdstukken
-<a href="ch-toetsing.html#ch:toetsing">13</a> en <a href="#ch:power"><strong>??</strong></a> en <a href="#ch:variantieanalyse"><strong>??</strong></a>
+<a href="ch-toetsing.html#ch:toetsing">13</a> en <a href="ch-power.html#ch:power">14</a> en <a href="#ch:variantieanalyse"><strong>??</strong></a>
 vereisen echter dat de afhankelijke
 variabele een normale kansverdeling heeft. Als een variabele <em>niet</em> een
 (ongeveer) normale kansverdeling heeft, dan kan die variabele dus niet
@@ -1178,7 +1185,7 @@ nader op in in de hoofdstukken <a href="#ch:chi-kwadraat-toetsen"><strong>??</st
 <a href="#ch:andere-nonpar-toetsen"><strong>??</strong></a>.
 Die toetsen hebben wel als nadeel
 dat ze minder statistische power hebben (voor een bespreking van power,
-zie hoofdstuk <a href="#ch:power"><strong>??</strong></a>): ze zijn minder gevoelig, en vereisen dus grotere
+zie hoofdstuk <a href="ch-power.html#ch:power">14</a>): ze zijn minder gevoelig, en vereisen dus grotere
 steekproeven om een effect vast te stellen.</p>
 </div>
 <div id="sec:CentraalLimietTheorema" class="section level2" number="10.6">
@@ -1216,19 +1223,19 @@ gemiddelde, <span class="math inline">\(\mu_{\bar{X}}\)</span>, en een eigen sta
 <span class="math inline">\(s_{\bar{X}}\)</span>. Hiervoor geldt:
 <span class="math display" id="eq:meanofmean">\[\begin{equation}
     \mu_{\bar{X}} = \mu_X
-    \tag{10.9}
+    \tag{10.10}
 \end{equation}\]</span>
 en
 <span class="math display" id="eq:sem">\[\begin{equation}
     s_{\bar{X}} = \frac{s}{\sqrt{n}}
-    \tag{10.10}
+    \tag{10.11}
 \end{equation}\]</span>
 De standaarddeviatie van het
 gemiddelde, <span class="math inline">\(s_{\bar{X}}\)</span>, staat ook bekend als de ‘standard error of
 the mean’. De steekproefgemiddelden <span class="math inline">\(\bar{X}\)</span> hebben minder spreiding
 dan de afzonderlijke observaties <span class="math inline">\(X\)</span>, en de gemiddelden variëren ook
 minder naarmate er gemiddeld is over een grotere steekproef, zoals ook
-blijkt uit formule <a href="ch-kansverdelingen.html#eq:sem">(10.10)</a>. Je kunt deze standard error of the mean goed
+blijkt uit formule <a href="ch-kansverdelingen.html#eq:sem">(10.11)</a>. Je kunt deze standard error of the mean goed
 beschouwen als de ‘foutmarge’ bij de schatting van het
 populatiegemiddelde uit het steekproefgemiddelde.</p>
 <p>Het bijzondere is nu, dat we niet 250 herhaalde willekeurige
@@ -1305,7 +1312,7 @@ de <span class="math inline">\(t\)</span>-verdeling voor <span class="math inlin
 (zie
 Bijlage <a href="app-kritieketwaarden.html#app:kritieketwaarden">C</a>, voor <span class="math inline">\(B=95\)</span>%).
 Volgens
-formule <a href="ch-kansverdelingen.html#eq:t-onesampleCI">(10.11)</a> weten we dan met 95% betrouwbaarheid dat het onbekende populatiegemiddelde <span class="math inline">\(\mu\)</span> ligt tussen
+formule <a href="ch-kansverdelingen.html#eq:t-onesampleCI">(10.12)</a> weten we dan met 95% betrouwbaarheid dat het onbekende populatiegemiddelde <span class="math inline">\(\mu\)</span> ligt tussen
 <span class="math inline">\(\bar{x}-2.05\times s_{\bar{x}}\)</span> en <span class="math inline">\(\bar{x}+2.05\times s_{\bar{x}}\)</span>,
 oftewel tussen <span class="math inline">\(0.215-2.05\times0.0037\)</span> en <span class="math inline">\(0.215+2.05\times0.0037\)</span>,
 oftewel tussen <span class="math inline">\(0.208\)</span> en <span class="math inline">\(0.223\)</span> seconde.</p>
@@ -1332,7 +1339,7 @@ Figuur 10.8: 95%-Betrouwbaarheidsintervallen en steekproefgemiddelden, over 100 
 populatie-gemiddelde is
 <span class="math display" id="eq:t-onesampleCI">\[\begin{equation}
   \bar{X} \pm t^*_{n-1} \times \frac{s}{\sqrt{n}}
-  \tag{10.11}
+  \tag{10.12}
 \end{equation}\]</span>
 waarbij <span class="math inline">\(t^*\)</span> met <span class="math inline">\(n-1\)</span> vrijheidsgraden gevonden wordt met behulp van
 Bijlage <a href="app-kritieketwaarden.html#app:kritieketwaarden">C</a>, zie

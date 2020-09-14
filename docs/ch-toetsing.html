@@ -30,7 +30,7 @@
   
   
 <link rel="prev" href="ch-betrouwbaarheid.html"/>
-<link rel="next" href="app-randomgetallen.html"/>
+<link rel="next" href="ch-power.html"/>
 <script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -378,6 +378,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.8.4" data-path="ch-toetsing.html"><a href="ch-toetsing.html#betrouwbaarheidsinterval-van-de-effectgrootte"><i class="fa fa-check"></i><b>13.8.4</b> Betrouwbaarheidsinterval van de effectgrootte</a></li>
 </ul></li>
 </ul></li>
+<li class="chapter" data-level="14" data-path="ch-power.html"><a href="ch-power.html"><i class="fa fa-check"></i><b>14</b> Power</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="ch-power.html"><a href="ch-power.html#sec:power-inleiding"><i class="fa fa-check"></i><b>14.1</b> Inleiding</a></li>
+<li class="chapter" data-level="14.2" data-path="ch-power.html"><a href="ch-power.html#sec:effectgrootte-power"><i class="fa fa-check"></i><b>14.2</b> Verband tussen effectgrootte en power</a></li>
+<li class="chapter" data-level="14.3" data-path="ch-power.html"><a href="ch-power.html#sec:steekproefgrootte-power"><i class="fa fa-check"></i><b>14.3</b> Verband tussen steekproefgrootte en power</a></li>
+<li class="chapter" data-level="14.4" data-path="ch-power.html"><a href="ch-power.html#sec:significantieniveau-power"><i class="fa fa-check"></i><b>14.4</b> Verband tussen significantieniveau en power</a></li>
+<li class="chapter" data-level="14.5" data-path="ch-power.html"><a href="ch-power.html#nadelen-van-onvoldoende-power"><i class="fa fa-check"></i><b>14.5</b> Nadelen van onvoldoende power</a></li>
+</ul></li>
 <li class="appendix"><span><b>Appendices</b></span></li>
 <li class="chapter" data-level="A" data-path="app-randomgetallen.html"><a href="app-randomgetallen.html"><i class="fa fa-check"></i><b>A</b> Willekeurige getallen</a></li>
 <li class="chapter" data-level="B" data-path="app-kritiekeZwaarden.html"><a href="app-kritiekeZwaarden.html"><i class="fa fa-check"></i><b>B</b> Standaard-normale kansverdeling</a></li>
@@ -424,7 +432,7 @@ zijn zogenaamde verdelingsvrije toetsen. Het gevolg is dat de toetsing
 iets minder ‘gevoelig’ is, onder verder gelijke omstandigheden, d.w.z.
 dat de nulhypothese onder verder gelijke omstandigheden minder vaak
 verworpen kan worden. Deze toetsen hebben derhalve minder power (zie
-Hoofdstuk <a href="#ch:power"><strong>??</strong></a>). Onderzoekers geven daarom meestal de voorkeur
+Hoofdstuk <a href="ch-power.html#ch:power">14</a>). Onderzoekers geven daarom meestal de voorkeur
 aan parametrische toetsen.</p>
 <p>Het algemene principe van toetsing hebben we al kort besproken in
 §<a href="ch-onderzoek.html#sec:falsificatie">2.4</a> en
@@ -757,7 +765,7 @@ percentage stemmen op een bepaalde partij, zal liggen tussen <span class="math i
 <span class="math inline">\((x+2)\)</span>%.</p>
 <p>In ons voorbeeld met 30 d.f. vinden we <span class="math inline">\(t^*=2.042\)</span> voor 95%
 betrouwbaarheid. Via formule
-<a href="ch-kansverdelingen.html#eq:t-onesampleCI">(10.11)</a> komen we tot het 95%
+<a href="ch-kansverdelingen.html#eq:t-onesampleCI">(10.12)</a> komen we tot het 95%
 betrouwbaarheidsinterval <span class="math inline">\((81.5, 87.3)\)</span>. We weten met 95% zekerheid dat
 de onbekende gemiddelde score op de grammaticatoets, van de populatie
 van alle mogelijke studenten taalwetenschap groter is dan 81.5 en
@@ -790,7 +798,7 @@ Figuur 13.2: 95%-Betrouwbaarheidsintervallen en steekproefgemiddelden, over 100 
 een populatie-gemiddelde <span class="math inline">\(\overline{y}\)</span> is
 <span class="math display" id="eq:t-homoskedastic" id="eq:t-onesampleCI">\[\begin{equation}
     \overline{y} \pm t^*_{N-1} \times \frac{s}{\sqrt{N}}
-  \tag{10.11}
+  \tag{10.12}
 \end{equation}\]</span></p>
 </div>
 <div id="spss-11" class="section level3" number="13.5.2">
@@ -1429,7 +1437,7 @@ significante effect uitrekenen (zie ook
 Fig. <a href="ch-toetsing.html#fig:kleinstesignifverschil">13.3</a>); daarvoor gebruiken we de functie <code>power.t.test</code>. (Deze functie is ook gebruikt om Fig.<a href="ch-toetsing.html#fig:kleinstesignifverschil">13.3</a> te construeren.)
 Je moet bij die functie de gewenste <code>power</code> als
 argument opgeven (power = <span class="math inline">\(1-\beta\)</span>; zie
-§<a href="#sec:power-inleiding"><strong>??</strong></a>).</p>
+§<a href="ch-power.html#sec:power-inleiding">14.1</a>).</p>
 <div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="ch-toetsing.html#cb100-1" aria-hidden="true"></a><span class="kw">power.t.test</span>( <span class="dt">n=</span><span class="dv">122</span>, <span class="dt">sig=</span>.<span class="dv">05</span>, <span class="dt">power=</span>.<span class="dv">90</span>, <span class="dt">type=</span><span class="st">&quot;two.sample&quot;</span> )</span></code></pre></div>
 <pre><code>## 
 ##      Two-sample t test power calculation 
@@ -1501,7 +1509,7 @@ effectgrootte:
     d \pm t^*_{n-1} \times \textrm{se}_d 
 \end{equation}\]</span>
 (zie de overeenkomstige
-formule <a href="ch-kansverdelingen.html#eq:t-onesampleCI">(10.11)</a>).
+formule <a href="ch-kansverdelingen.html#eq:t-onesampleCI">(10.12)</a>).
 Na invullen van <span class="math inline">\(t^*_9=2.262\)</span> (zie
 Bijlage <a href="app-kritieketwaarden.html#app:kritieketwaarden">C</a>) en <span class="math inline">\(\textrm{se}_d = 0.519\)</span> vinden we
 uiteindelijk een 95%-betrouwbaarheidsinterval van <span class="math inline">\((-3.30,-0.96)\)</span>. We
@@ -1518,9 +1526,6 @@ niet verwerpen) <span class="citation">(Cumming <a href="#ref-Cumm12" role="doc-
 </div>
 </div>
 </div>
-
-
-
 <h3>Referenties</h3>
 <div id="refs" class="references">
 <div id="ref-Ande11">
@@ -1564,7 +1569,7 @@ niet verwerpen) <span class="citation">(Cumming <a href="#ref-Cumm12" role="doc-
         </div>
       </div>
 <a href="ch-betrouwbaarheid.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="app-randomgetallen.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ch-power.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

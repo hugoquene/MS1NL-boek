@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.3)  14 SEP 2020 11:40
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.3)  14 SEP 2020 21:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -836,11 +836,7 @@ Overfull \hbox (33.83005pt too wide) in alignment at lines 1155--1166
  [] [] [] 
  []
 
-[33]
-
-LaTeX Warning: Reference `ch:power' on page 34 undefined on input line 1183.
-
-[34] [35] [36] [37] [38]
+[33] [34] [35] [36] [37] [38]
 Chapter 3.
 
 Underfull \hbox (badness 3281) in paragraph at lines 1371--1378
@@ -890,9 +886,6 @@ Underfull \hbox (badness 7273) in paragraph at lines 1396--1404
 
 LaTeX Warning: Reference `sec:ttoets-effectgrootte' on page 41 undefined on inp
 ut line 1467.
-
-
-LaTeX Warning: Reference `ch:power' on page 41 undefined on input line 1476.
 
 
 LaTeX Warning: Reference `sec:ttoets-effectgrootte' on page 41 undefined on inp
@@ -1059,10 +1052,6 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 LaTeX Warning: Reference `sec:ttoets-effectgrootte' on page 99 undefined on inp
 ut line 4218.
 
-
-LaTeX Warning: Reference `sec:effectgrootte-power' on page 99 undefined on inpu
-t line 4221.
-
 [99] [100] [101
 
 ] [102]
@@ -1195,7 +1184,7 @@ File: MS1NL-boek_files/figure-latex/binomkansverdeling3-1.pdf Graphic file (typ
 e pdf)
 <use MS1NL-boek_files/figure-latex/binomkansverdeling3-1.pdf>
 
-Underfull \hbox (badness 1337) in paragraph at lines 5827--5831
+Underfull \hbox (badness 1337) in paragraph at lines 5826--5830
 []\TU/lmr/m/n/10 De kansverdeling van een binomiale variabele noemen we de bino
 miale
  []
@@ -1204,7 +1193,7 @@ miale
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 5837.
+(amsmath)                 on input line 5836.
 
 [136] [137]
 File: MS1NL-boek_files/figure-latex/binomkansverdeling50n500-1.pdf Graphic file
@@ -1215,13 +1204,13 @@ File: MS1NL-boek_files/figure-latex/normaalkansverdeling-1.pdf Graphic file (ty
 pe pdf)
 <use MS1NL-boek_files/figure-latex/normaalkansverdeling-1.pdf>
 [139] [140] [141]
-Overfull \hbox (11.1839pt too wide) in paragraph at lines 6157--6157
+Overfull \hbox (11.1839pt too wide) in paragraph at lines 6156--6156
 []\TU/lmr/bx/n/14.4 Heeft mijn variabele een normale kansverdel-
  []
 
 
 LaTeX Warning: Reference `fig:itunestimeshist' on page 142 undefined on input l
-ine 6162.
+ine 6161.
 
 File: MS1NL-boek_files/figure-latex/itunestimeshist-1.pdf Graphic file (type pd
 f)
@@ -1232,31 +1221,25 @@ pdf)
 <use MS1NL-boek_files/figure-latex/itunestimesqqplot-1.pdf>
 
 LaTeX Warning: Reference `fig:itunestimeshist' on page 143 undefined on input l
-ine 6196.
+ine 6195.
 
 [143]
-Underfull \hbox (badness 4084) in paragraph at lines 6258--6258
+Underfull \hbox (badness 4084) in paragraph at lines 6257--6257
 []\TU/lmr/bx/n/14.4 Wat als mijn variabele niet normaal
  []
 
 
-LaTeX Warning: Reference `ch:power' on page 144 undefined on input line 6262.
-
-
 LaTeX Warning: Reference `ch:variantieanalyse' on page 144 undefined on input l
-ine 6262.
+ine 6261.
 
 [144]
 
 LaTeX Warning: Reference `ch:chi-kwadraat-toetsen' on page 145 undefined on inp
-ut line 6286.
+ut line 6285.
 
 
 LaTeX Warning: Reference `ch:andere-nonpar-toetsen' on page 145 undefined on in
-put line 6287.
-
-
-LaTeX Warning: Reference `ch:power' on page 145 undefined on input line 6290.
+put line 6286.
 
 File: MS1NL-boek_files/figure-latex/itunesmeanshist-1.pdf Graphic file (type pd
 f)
@@ -1288,12 +1271,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: MS1NL-boek_files/figure-latex/cor-scatter-1.pdf Graphic file (type pdf)
 <use MS1NL-boek_files/figure-latex/cor-scatter-1.pdf>
 [153]
-Underfull \hbox (badness 2310) in paragraph at lines 6620--6620
+Underfull \hbox (badness 2310) in paragraph at lines 6619--6619
 []\TU/lmr/m/n/10 Table 11.1: []Correlaties tussen de drie onderdelen van de
  []
 
 [154] [155]
-Overfull \hbox (7.90701pt too wide) in paragraph at lines 6683--6687
+Overfull \hbox (7.90701pt too wide) in paragraph at lines 6682--6686
 []\TU/lmr/m/n/10 Kies \TU/lmtt/m/n/10 Pearsons \TU/lmr/m/n/10 correlatiecoëffic
 iënt, vink aan: \TU/lmtt/m/n/10 Flag significant correlations\TU/lmr/m/n/10 .
  []
@@ -1303,7 +1286,7 @@ File: MS1NL-boek_files/figure-latex/cito-linearmodel-1.pdf Graphic file (type p
 df)
 <use MS1NL-boek_files/figure-latex/cito-linearmodel-1.pdf>
 [157] [158] [159] [160] [161] [162] [163]
-Overfull \hbox (48.75pt too wide) in paragraph at lines 7089--7089
+Overfull \hbox (48.75pt too wide) in paragraph at lines 7088--7088
 []\TU/lmtt/m/n/10 ## Warning in cor.test.default(Lezen, Rekenen, method = "spea
 rman"): Cannot[] 
  []
@@ -1312,7 +1295,7 @@ rman"): Cannot[]
 File: figures/correlation.png Graphic file (type bmp)
 <figures/correlation.png>
 
-Overfull \hbox (5.00133pt too wide) in paragraph at lines 7270--7271
+Overfull \hbox (5.00133pt too wide) in paragraph at lines 7269--7270
  []\TU/lmr/m/n/10 {[] 
  []
 
@@ -1321,24 +1304,24 @@ Overfull \hbox (5.00133pt too wide) in paragraph at lines 7270--7271
 ]
 Chapter 12.
 [169]
-Underfull \hbox (badness 1688) in paragraph at lines 7336--7341
+Underfull \hbox (badness 1688) in paragraph at lines 7335--7340
 \TU/lmr/m/n/10 verschillende vragen \TU/lmr/m/it/10 hetzelfde \TU/lmr/m/n/10 co
 nstruct meten, hier het con-
  []
 
 [170]
-Underfull \hbox (badness 1189) in paragraph at lines 7410--7422
+Underfull \hbox (badness 1189) in paragraph at lines 7409--7421
 []\TU/lmr/m/it/10 Voorbeeld 12.3: \TU/lmr/m/n/10 ([]Lata-Caneda et al.[], []200
 9[]) ontwikkelden een
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 7410--7422
+Underfull \hbox (badness 2158) in paragraph at lines 7409--7421
 \TU/lmr/m/n/10 Spaanstalige vragenlijst van 39 vragen, bedoeld voor afasie-
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 7410--7422
+Underfull \hbox (badness 2671) in paragraph at lines 7409--7421
 \TU/lmr/m/n/10 tweemaal afgenomen bij een steekproef van 23 Spaanstalige
  []
 
@@ -1349,37 +1332,37 @@ Missing character: There is no   in font [lmroman10-regular]:mapping=tex-text;
 [172]
 Missing character: There is no   in font [lmroman8-regular]:mapping=tex-text;!
 [173] [174] [175] [176] [177] [178] [179] [180]
-Overfull \hbox (17.25pt too wide) in paragraph at lines 7927--7927
+Overfull \hbox (17.25pt too wide) in paragraph at lines 7926--7926
 []\TU/lmtt/m/n/10 ##   raw_alpha std.alpha G6(smc) average_r S/N  ase mean  sd 
 median_r[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 7927--7927
+Overfull \hbox (12.0pt too wide) in paragraph at lines 7926--7926
 []\TU/lmtt/m/n/10 ##       0.68      0.68    0.74      0.41 2.1 0.17   72 4.6  
    0.41[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 7927--7927
+Overfull \hbox (17.25pt too wide) in paragraph at lines 7926--7926
 []\TU/lmtt/m/n/10 ##    raw_alpha std.alpha G6(smc) average_r  S/N alpha se var
 .r med.r[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 7927--7927
+Overfull \hbox (17.25pt too wide) in paragraph at lines 7926--7926
 []\TU/lmtt/m/n/10 ## B1      0.15      0.16   0.088     0.088 0.19    0.497    
 NA 0.088[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 7927--7927
+Overfull \hbox (17.25pt too wide) in paragraph at lines 7926--7926
 []\TU/lmtt/m/n/10 ## B2      0.58      0.58   0.410     0.410 1.39    0.264    
 NA 0.410[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 7927--7927
+Overfull \hbox (17.25pt too wide) in paragraph at lines 7926--7926
 []\TU/lmtt/m/n/10 ## B3      0.84      0.85   0.745     0.745 5.84    0.095    
 NA 0.745[] 
  []
@@ -1388,9 +1371,6 @@ NA 0.745[]
 
 ] [184]
 Chapter 13.
-
-LaTeX Warning: Reference `ch:power' on page 185 undefined on input line 7982.
-
 [185
 
 ]
@@ -1399,22 +1379,22 @@ File: MS1NL-boek_files/figure-latex/gramm2013onesample-1.pdf Graphic file (type
 <use MS1NL-boek_files/figure-latex/gramm2013onesample-1.pdf>
 [186] [187]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 8091.
+(Font)              scaled to size 14.4pt on input line 8090.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.4013pt on input line 8091.
+(Font)              scaled to size 14.4013pt on input line 8090.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 8091.
+(Font)              scaled to size 14.39845pt on input line 8090.
 [188] [189] [190]
 Underfull \vbox (badness 1147) has occurred while \output is active []
 
 [191]
-Underfull \hbox (badness 1152) in paragraph at lines 8344--8347
+Underfull \hbox (badness 1152) in paragraph at lines 8343--8346
 []\TU/lmr/m/n/10 De gemiddelde score van de studenten Taalwetenschap (licht-
  []
 
 
 LaTeX Warning: Reference `betrouwbaarheidsinterval-gemiddelde' on page 192 unde
-fined on input line 8356.
+fined on input line 8355.
 
 [192]
 File: MS1NL-boek_files/figure-latex/gramm2013CIs-1.pdf Graphic file (type pdf)
@@ -1422,19 +1402,19 @@ File: MS1NL-boek_files/figure-latex/gramm2013CIs-1.pdf Graphic file (type pdf)
 [193] [194] [195]
 
 LaTeX Warning: Reference `ch:variantieanalyse' on page 196 undefined on input l
-ine 8504.
+ine 8503.
 
 Missing character: There is no   in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no   in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no   in font [lmroman10-regular]:mapping=tex-text;!
 [196] [197] [198]
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8686--8686
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8685--8685
 []\TU/lmtt/m/n/10 ## alternative hypothesis: true difference in means is not eq
 ual to 0[] 
  []
 
 [199] [200]
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8844--8844
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8843--8843
 []\TU/lmtt/m/n/10 ## alternative hypothesis: true difference in means is not eq
 ual to 0[] 
  []
@@ -1448,87 +1428,119 @@ File: MS1NL-boek_files/figure-latex/kleinstesignifverschil-1.pdf Graphic file (
 type pdf)
 <use MS1NL-boek_files/figure-latex/kleinstesignifverschil-1.pdf>
 
-Underfull \hbox (badness 1454) in paragraph at lines 8974--8984
+Underfull \hbox (badness 1454) in paragraph at lines 8973--8983
 []\TU/lmr/m/it/10 Voorbeeld 13.3: \TU/lmr/m/n/10 Kijk nog eens naar formule [] 
 en naar
  []
 
-[204] [205] [206]
-
-LaTeX Warning: Reference `sec:power-inleiding' on page 207 undefined on input l
-ine 9118.
-
-[207] [208] [209] [210
+[204] [205] [206] [207] [208] [209] [210
 
 ]
+Chapter 14.
+[211]
+File: MS1NL-boek_files/figure-latex/powercontours-alpha01-1.pdf Graphic file (t
+ype pdf)
+<use MS1NL-boek_files/figure-latex/powercontours-alpha01-1.pdf>
+File: MS1NL-boek_files/figure-latex/powercontours-alpha05-1.pdf Graphic file (t
+ype pdf)
+<use MS1NL-boek_files/figure-latex/powercontours-alpha05-1.pdf>
+
+LaTeX Warning: Reference `sec:ttoets-effectgrootte' on page 212 undefined on in
+put line 9332.
+
+[212] [213] [214]
+
+LaTeX Warning: Reference `sec:ttoets-effectgrootte' on page 215 undefined on in
+put line 9347.
+
+[215]
+File: MS1NL-boek_files/figure-latex/underpoweredeffectsizes-1.pdf Graphic file 
+(type pdf)
+<use MS1NL-boek_files/figure-latex/underpoweredeffectsizes-1.pdf>
+
+LaTeX Warning: Reference `fig:underpoweredeffectsizes' on page 216 undefined on
+ input line 9415.
+
+
+LaTeX Warning: Reference `fig:underpoweredeffectsizes' on page 216 undefined on
+ input line 9416.
+
+[216]
+
+LaTeX Warning: Reference `fig:underpoweredeffectsizes' on page 217 undefined on
+ input line 9461.
+
+[217] [218]
 Appendix A.
-[211] [212]
+[219
+
+] [220]
 Appendix B.
 File: MS1NL-boek_files/figure-latex/kritiekeZwaarden-hulpfiguur-1.pdf Graphic f
 ile (type pdf)
 <use MS1NL-boek_files/figure-latex/kritiekeZwaarden-hulpfiguur-1.pdf>
-[213
+[221
 
-] [214]
+] [222]
 Appendix C.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 9307.
+(Font)              scaled to size 24.88pt on input line 9554.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 9307.
+(Font)              scaled to size 20.74pt on input line 9554.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 9307.
+(Font)              scaled to size 17.28pt on input line 9554.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 24.88228pt on input line 9307.
+(Font)              scaled to size 24.88228pt on input line 9554.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 20.7419pt on input line 9307.
+(Font)              scaled to size 20.7419pt on input line 9554.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 17.28157pt on input line 9307.
+(Font)              scaled to size 17.28157pt on input line 9554.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 24.87733pt on input line 9307.
+(Font)              scaled to size 24.87733pt on input line 9554.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 20.73778pt on input line 9307.
+(Font)              scaled to size 20.73778pt on input line 9554.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 17.27815pt on input line 9307.
+(Font)              scaled to size 17.27815pt on input line 9554.
 File: MS1NL-boek_files/figure-latex/kritieketwaarden-hulpfiguur-1.pdf Graphic f
 ile (type pdf)
 <use MS1NL-boek_files/figure-latex/kritieketwaarden-hulpfiguur-1.pdf>
 
-Overfull \hbox (19.32014pt too wide) in paragraph at lines 9318--9364
+Overfull \hbox (19.32014pt too wide) in paragraph at lines 9565--9611
  [][] 
  []
 
 (./MS1NL-boek.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[215
+[223
 
-] [216] [217
+] [224] [225
 
-] [218] [219] [220])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 9367.
-[221]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 9367.
+] [226] [227] [228])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 9614.
+[229]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 9614.
 (./MS1NL-boek.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 9367.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 9367.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 9614.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 9614.
 
 Package rerunfilecheck Info: File `MS1NL-boek.out' has not changed.
-(rerunfilecheck)             Checksum: 7DC5BB644437CD2456B37A8DC7D4A940;17146.
+(rerunfilecheck)             Checksum: 4D802AB49C510536064FAFA9FBB4CAF0;18354.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 9367.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 9614.
  ) 
 Here is how much of TeX's memory you used:
- 18180 strings out of 481666
- 324236 string characters out of 5931751
- 762067 words of memory out of 5000000
- 35001 multiletter control sequences out of 15000+600000
- 545447 words of font info for 114 fonts, out of 8000000 for 9000
+ 18218 strings out of 481666
+ 325689 string characters out of 5931751
+ 764383 words of memory out of 5000000
+ 35034 multiletter control sequences out of 15000+600000
+ 545455 words of font info for 115 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 52i,10n,118p,1137b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,10n,118p,1137b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on MS1NL-boek.pdf (221 pages).
+Output written on MS1NL-boek.pdf (229 pages).

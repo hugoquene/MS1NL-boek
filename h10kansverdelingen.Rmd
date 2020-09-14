@@ -68,13 +68,12 @@ respectievelijke kansen tellen op tot precies $1$ =100%
 twee mogelijke uitkomsten van de trekking is. Als we $P(\textrm{A})$ al
 kennen kunnen we de kans op de complementaire uitkomst makkelijk
 uitrekenen: 
-$$
-\begin{aligned}
+\begin{align}
     P(\textrm{A}) + P(\textrm{niet-A}) & = & 1\\
     P(\textrm{A}) & = & 1 - P(\textrm{niet-A})\\
     P(\textrm{niet-A}) & = & 1 - P(\textrm{A})
-\end{aligned}
-$$
+    (\#eq:complementregel)
+\end{align}
 
 ---
 
