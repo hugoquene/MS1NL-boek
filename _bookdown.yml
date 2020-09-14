@@ -12,6 +12,7 @@ rmd_files: ["index.Rmd",
             "h10kansverdelingen.Rmd",
             "h11samenhang.Rmd",
             "h12betrouwbaarheid.Rmd",
+            "h13toetsing.Rmd",
             "a1randomgetallen.Rmd",
             "a2kritiekeZwaarden.Rmd",
             "referenties.Rmd"]

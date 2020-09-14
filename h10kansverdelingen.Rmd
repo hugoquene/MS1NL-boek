@@ -726,7 +726,7 @@ en één standaarddeviatie $s$ [@Cumm12]. Lees ook deze alinea nog eens
 aandachtig door.
 
 
-## Betrouwbaarheidsinterval van het gemiddelde {#sec:betrouwbaarheidsinterval.gemiddelde}
+## Betrouwbaarheidsinterval van het gemiddelde {#sec:betrouwbaarheidsinterval-gemiddelde}
 
 Zoals hierboven uitgelegd, kunnen we het gemiddelde van de steekproef,
 $\bar{X}$, gebruiken als een goede schatting van het onbekende
