@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.3)  14 SEP 2020 21:43
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.3)  16 SEP 2020 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -882,16 +882,7 @@ Underfull \hbox (badness 7273) in paragraph at lines 1396--1404
 
 [39
 
-] [40]
-
-LaTeX Warning: Reference `sec:ttoets-effectgrootte' on page 41 undefined on inp
-ut line 1467.
-
-
-LaTeX Warning: Reference `sec:ttoets-effectgrootte' on page 41 undefined on inp
-ut line 1503.
-
-[41]
+] [40] [41]
 
 LaTeX Warning: Reference `ch:meetniveau' on page 42 undefined on input line 153
 8.
@@ -1047,12 +1038,7 @@ Chapter 7.
 [93] [94] [95] [96] [97]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 4195.
-[98]
-
-LaTeX Warning: Reference `sec:ttoets-effectgrootte' on page 99 undefined on inp
-ut line 4218.
-
-[99] [100] [101
+[98] [99] [100] [101
 
 ] [102]
 Chapter 8.
@@ -1444,16 +1430,7 @@ ype pdf)
 File: MS1NL-boek_files/figure-latex/powercontours-alpha05-1.pdf Graphic file (t
 ype pdf)
 <use MS1NL-boek_files/figure-latex/powercontours-alpha05-1.pdf>
-
-LaTeX Warning: Reference `sec:ttoets-effectgrootte' on page 212 undefined on in
-put line 9332.
-
-[212] [213] [214]
-
-LaTeX Warning: Reference `sec:ttoets-effectgrootte' on page 215 undefined on in
-put line 9347.
-
-[215]
+[212] [213] [214] [215]
 File: MS1NL-boek_files/figure-latex/underpoweredeffectsizes-1.pdf Graphic file 
 (type pdf)
 <use MS1NL-boek_files/figure-latex/underpoweredeffectsizes-1.pdf>
@@ -1535,10 +1512,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 9614.
  ) 
 Here is how much of TeX's memory you used:
- 18218 strings out of 481666
- 325689 string characters out of 5931751
+ 18217 strings out of 481666
+ 325663 string characters out of 5931751
  764383 words of memory out of 5000000
- 35034 multiletter control sequences out of 15000+600000
+ 35033 multiletter control sequences out of 15000+600000
  545455 words of font info for 115 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  52i,10n,118p,1137b,541s stack positions out of 5000i,500n,10000p,200000b,80000s

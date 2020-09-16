@@ -821,7 +821,7 @@ ujedata <- read.table( file="data/ujedata.csv", header=TRUE, sep=";" )
 with(ujedata, t.test( cond.u, cond.je, paired=TRUE ) )
 ```
 
-## Effectgrootte {#sec:ttoets.effectgrootte}
+## Effectgrootte {#sec:ttoets-effectgrootte}
 
 Tot nu toe zijn we vooral ingegaan op toetsing als een binaire
 beslissing om H0 wel of niet te verwerpen, in het licht van de
