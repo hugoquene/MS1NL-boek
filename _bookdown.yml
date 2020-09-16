@@ -18,6 +18,7 @@ rmd_files: ["index.Rmd",
             "a1randomgetallen.Rmd",
             "a2kritiekeZwaarden.Rmd",
             "a3kritieketwaarden.Rmd",
+            "a4kritiekechi2waarden.Rmd",
             "referenties.Rmd"]
 output_dir: "docs"
 language:

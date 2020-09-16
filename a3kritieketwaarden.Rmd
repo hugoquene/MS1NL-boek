@@ -47,6 +47,7 @@ appendixt1 <- rbind(
   c( "", "B", paste(as.character(100-200*pvals),"%",sep="" ) ),
   appendixt1
 )
+# suppress first row, and use as column names
 knitr::kable(
-  appendixt1, booktabs=TRUE, col.names=rep("",ncol(appendixt1)), align="c" )
+  appendixt1[-1,], booktabs=TRUE, col.names=appendixt1[1,], align="c" )
 ```

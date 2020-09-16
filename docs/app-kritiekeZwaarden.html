@@ -415,6 +415,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="A" data-path="app-randomgetallen.html"><a href="app-randomgetallen.html"><i class="fa fa-check"></i><b>A</b> Willekeurige getallen</a></li>
 <li class="chapter" data-level="B" data-path="app-kritiekeZwaarden.html"><a href="app-kritiekeZwaarden.html"><i class="fa fa-check"></i><b>B</b> Standaard-normale kansverdeling</a></li>
 <li class="chapter" data-level="C" data-path="app-kritieketwaarden.html"><a href="app-kritieketwaarden.html"><i class="fa fa-check"></i><b>C</b> Kritieke waarden van <span class="math inline">\(t\)</span>-verdeling</a></li>
+<li class="chapter" data-level="D" data-path="app-kritiekechi2waarden.html"><a href="app-kritiekechi2waarden.html"><i class="fa fa-check"></i><b>D</b> Kritieke waarden van <span class="math inline">\(\chi^2\)</span>-verdeling</a></li>
 <li class="chapter" data-level="" data-path="referenties.html"><a href="referenties.html"><i class="fa fa-check"></i>Referenties</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Gemaakt met bookdown</a></li>
@@ -447,19 +448,21 @@ De <span class="math inline">\(Z\)</span>-verdeling is symmetrisch rond <span cl
 <hr />
 <p>De eerste tabel geeft de kritieke grenswaarden <span class="math inline">\(Z^*\)</span> voor veel gebruikte overschrijdingskansen <span class="math inline">\(p\)</span> en betrouwbaarheidsintervallen <span class="math inline">\(B\)</span>:</p>
 <table>
+<thead>
+<tr class="header">
+<th align="center">p</th>
+<th align="center">0.2</th>
+<th align="center">0.1</th>
+<th align="center">0.05</th>
+<th align="center">0.025</th>
+<th align="center">0.01</th>
+<th align="center">0.005</th>
+<th align="center">0.0025</th>
+<th align="center">0.001</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td align="center">p</td>
-<td align="center">0.2</td>
-<td align="center">0.1</td>
-<td align="center">0.05</td>
-<td align="center">0.025</td>
-<td align="center">0.01</td>
-<td align="center">0.005</td>
-<td align="center">0.0025</td>
-<td align="center">0.001</td>
-</tr>
-<tr class="even">
 <td align="center">B</td>
 <td align="center">60%</td>
 <td align="center">80%</td>
@@ -470,7 +473,7 @@ De <span class="math inline">\(Z\)</span>-verdeling is symmetrisch rond <span cl
 <td align="center">99.5%</td>
 <td align="center">99.8%</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="center">Z*</td>
 <td align="center">0.8416</td>
 <td align="center">1.282</td>
@@ -486,18 +489,20 @@ De <span class="math inline">\(Z\)</span>-verdeling is symmetrisch rond <span cl
 <hr />
 <p>De tweede tabel geeft overschrijdingskansen <span class="math inline">\(p\)</span> en betrouwbaarheidsintervallen <span class="math inline">\(B\)</span> voor afgeronde kritieke grenswaarden <span class="math inline">\(Z^*\)</span>:</p>
 <table>
+<thead>
+<tr class="header">
+<th align="center">p</th>
+<th align="center">0.3085</th>
+<th align="center">0.1587</th>
+<th align="center">0.0668</th>
+<th align="center">0.0228</th>
+<th align="center">0.0062</th>
+<th align="center">0.0013</th>
+<th align="center">0.0002</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td align="center">p</td>
-<td align="center">0.3085</td>
-<td align="center">0.1587</td>
-<td align="center">0.0668</td>
-<td align="center">0.0228</td>
-<td align="center">0.0062</td>
-<td align="center">0.0013</td>
-<td align="center">0.0002</td>
-</tr>
-<tr class="even">
 <td align="center">B</td>
 <td align="center">38.29%</td>
 <td align="center">68.27%</td>
@@ -507,7 +512,7 @@ De <span class="math inline">\(Z\)</span>-verdeling is symmetrisch rond <span cl
 <td align="center">99.73%</td>
 <td align="center">99.95%</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="center">Z*</td>
 <td align="center">0.5</td>
 <td align="center">1</td>

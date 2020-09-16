@@ -30,7 +30,7 @@
   
   
 <link rel="prev" href="app-kritiekeZwaarden.html"/>
-<link rel="next" href="referenties.html"/>
+<link rel="next" href="app-kritiekechi2waarden.html"/>
 <script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -415,6 +415,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="A" data-path="app-randomgetallen.html"><a href="app-randomgetallen.html"><i class="fa fa-check"></i><b>A</b> Willekeurige getallen</a></li>
 <li class="chapter" data-level="B" data-path="app-kritiekeZwaarden.html"><a href="app-kritiekeZwaarden.html"><i class="fa fa-check"></i><b>B</b> Standaard-normale kansverdeling</a></li>
 <li class="chapter" data-level="C" data-path="app-kritieketwaarden.html"><a href="app-kritieketwaarden.html"><i class="fa fa-check"></i><b>C</b> Kritieke waarden van <span class="math inline">\(t\)</span>-verdeling</a></li>
+<li class="chapter" data-level="D" data-path="app-kritiekechi2waarden.html"><a href="app-kritiekechi2waarden.html"><i class="fa fa-check"></i><b>D</b> Kritieke waarden van <span class="math inline">\(\chi^2\)</span>-verdeling</a></li>
 <li class="chapter" data-level="" data-path="referenties.html"><a href="referenties.html"><i class="fa fa-check"></i>Referenties</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Gemaakt met bookdown</a></li>
@@ -445,20 +446,22 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <span class="math inline">\(t=0\)</span>, dus <span class="math inline">\(P(t &lt; -t^*) = P(t &gt; t^*)\)</span>.</p>
 <p>De tabel hieronder geeft de kritieke grenswaarden <span class="math inline">\(t^*\)</span> voor veel gebruikte overschrijdingskansen <span class="math inline">\(p\)</span> en betrouwbaarheidsintervallen <span class="math inline">\(B\)</span>, voor de vrijheidsgraden aangegeven in de eerste kolom.</p>
 <table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="center">p</th>
+<th align="center">0.2</th>
+<th align="center">0.1</th>
+<th align="center">0.05</th>
+<th align="center">0.025</th>
+<th align="center">0.01</th>
+<th align="center">0.005</th>
+<th align="center">0.0025</th>
+<th align="center">0.001</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td></td>
-<td align="center">p</td>
-<td align="center">0.2</td>
-<td align="center">0.1</td>
-<td align="center">0.05</td>
-<td align="center">0.025</td>
-<td align="center">0.01</td>
-<td align="center">0.005</td>
-<td align="center">0.0025</td>
-<td align="center">0.001</td>
-</tr>
-<tr class="even">
 <td></td>
 <td align="center">B</td>
 <td align="center">60%</td>
@@ -470,7 +473,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">99.5%</td>
 <td align="center">99.8%</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>1</td>
 <td align="center"></td>
 <td align="center">1.376</td>
@@ -482,7 +485,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">127.321</td>
 <td align="center">318.309</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>2</td>
 <td align="center"></td>
 <td align="center">1.061</td>
@@ -494,7 +497,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">14.089</td>
 <td align="center">22.327</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>3</td>
 <td align="center"></td>
 <td align="center">0.9785</td>
@@ -506,7 +509,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">7.453</td>
 <td align="center">10.215</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>4</td>
 <td align="center"></td>
 <td align="center">0.941</td>
@@ -518,7 +521,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">5.598</td>
 <td align="center">7.173</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>5</td>
 <td align="center"></td>
 <td align="center">0.9195</td>
@@ -530,7 +533,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">4.773</td>
 <td align="center">5.893</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>6</td>
 <td align="center"></td>
 <td align="center">0.9057</td>
@@ -542,7 +545,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">4.317</td>
 <td align="center">5.208</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>7</td>
 <td align="center"></td>
 <td align="center">0.896</td>
@@ -554,7 +557,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">4.029</td>
 <td align="center">4.785</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>8</td>
 <td align="center"></td>
 <td align="center">0.8889</td>
@@ -566,7 +569,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.833</td>
 <td align="center">4.501</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>9</td>
 <td align="center"></td>
 <td align="center">0.8834</td>
@@ -578,7 +581,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.690</td>
 <td align="center">4.297</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>10</td>
 <td align="center"></td>
 <td align="center">0.8791</td>
@@ -590,7 +593,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.581</td>
 <td align="center">4.144</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>11</td>
 <td align="center"></td>
 <td align="center">0.8755</td>
@@ -602,7 +605,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.497</td>
 <td align="center">4.025</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>12</td>
 <td align="center"></td>
 <td align="center">0.8726</td>
@@ -614,7 +617,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.428</td>
 <td align="center">3.930</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>13</td>
 <td align="center"></td>
 <td align="center">0.8702</td>
@@ -626,7 +629,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.372</td>
 <td align="center">3.852</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>14</td>
 <td align="center"></td>
 <td align="center">0.8681</td>
@@ -638,7 +641,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.326</td>
 <td align="center">3.787</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>15</td>
 <td align="center"></td>
 <td align="center">0.8662</td>
@@ -650,7 +653,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.286</td>
 <td align="center">3.733</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>16</td>
 <td align="center"></td>
 <td align="center">0.8647</td>
@@ -662,7 +665,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.252</td>
 <td align="center">3.686</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>17</td>
 <td align="center"></td>
 <td align="center">0.8633</td>
@@ -674,7 +677,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.222</td>
 <td align="center">3.646</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>18</td>
 <td align="center"></td>
 <td align="center">0.862</td>
@@ -686,7 +689,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.197</td>
 <td align="center">3.610</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>19</td>
 <td align="center"></td>
 <td align="center">0.861</td>
@@ -698,7 +701,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.174</td>
 <td align="center">3.579</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>20</td>
 <td align="center"></td>
 <td align="center">0.860</td>
@@ -710,7 +713,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.153</td>
 <td align="center">3.552</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>21</td>
 <td align="center"></td>
 <td align="center">0.8591</td>
@@ -722,7 +725,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.135</td>
 <td align="center">3.527</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>22</td>
 <td align="center"></td>
 <td align="center">0.8583</td>
@@ -734,7 +737,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.119</td>
 <td align="center">3.505</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>23</td>
 <td align="center"></td>
 <td align="center">0.8575</td>
@@ -746,7 +749,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.104</td>
 <td align="center">3.485</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>24</td>
 <td align="center"></td>
 <td align="center">0.8569</td>
@@ -758,7 +761,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.091</td>
 <td align="center">3.467</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>25</td>
 <td align="center"></td>
 <td align="center">0.8562</td>
@@ -770,7 +773,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.078</td>
 <td align="center">3.450</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>30</td>
 <td align="center"></td>
 <td align="center">0.8538</td>
@@ -782,7 +785,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">3.030</td>
 <td align="center">3.385</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>40</td>
 <td align="center"></td>
 <td align="center">0.8507</td>
@@ -794,7 +797,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">2.971</td>
 <td align="center">3.307</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>50</td>
 <td align="center"></td>
 <td align="center">0.8489</td>
@@ -806,7 +809,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">2.937</td>
 <td align="center">3.261</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>100</td>
 <td align="center"></td>
 <td align="center">0.8452</td>
@@ -818,7 +821,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">2.871</td>
 <td align="center">3.174</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>200</td>
 <td align="center"></td>
 <td align="center">0.8434</td>
@@ -830,7 +833,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">2.839</td>
 <td align="center">3.131</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>400</td>
 <td align="center"></td>
 <td align="center">0.8425</td>
@@ -842,7 +845,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
 <td align="center">2.823</td>
 <td align="center">3.111</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>∞</td>
 <td align="center"></td>
 <td align="center">0.8416</td>
@@ -864,7 +867,7 @@ waarde tussen <span class="math inline">\((-t^*, +t^*)\)</span>. De <span class=
         </div>
       </div>
 <a href="app-kritiekeZwaarden.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="referenties.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="app-kritiekechi2waarden.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
