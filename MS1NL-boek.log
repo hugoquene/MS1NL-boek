@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.16)  16 SEP 2020 21:49
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.16)  17 SEP 2020 09:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -993,6 +993,10 @@ Underfull \hbox (badness 1365) in paragraph at lines 3465--3470
  []
 
 [81] [82] [83]
+Underfull \hbox (badness 1226) in paragraph at lines 3609--3625
+\TU/lmr/m/n/10 hogere nivo’s (synthetisch of voorspellend luisteren): hij tikt
+ []
+
 File: figures/DrakeBenElHeni2003Fig2.pdf Graphic file (type pdf)
 <use figures/DrakeBenElHeni2003Fig2.pdf>
 [84] [85] [86]
@@ -1435,10 +1439,6 @@ LaTeX Warning: Reference `fig:underpoweredeffectsizes' on page 217 undefined on
 
 [217] [218]
 Chapter 15.
-
-LaTeX Warning: Reference `sec:anova-oneway-formeel' on page 219 undefined on in
-put line 9493.
-
 [219
 
 ]
@@ -1453,34 +1453,31 @@ File: MS1NL-boek_files/figure-latex/kleurtjes-obs-1.pdf Graphic file (type pdf)
 Overfull \vbox (2.57921pt too high) has occurred while \output is active []
 
 [227] [228] [229]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6825) has occurred while \output is active []
 
-[230] [231] [232]
-Underfull \vbox (badness 1371) has occurred while \output is active []
-
-[233] [234] [235] [236]
+[230] [231] [232] [233] [234] [235] [236]
 Underfull \vbox (badness 3078) has occurred while \output is active []
 
 [237]
-Underfull \hbox (badness 1259) in paragraph at lines 10479--10491
+Underfull \hbox (badness 1259) in paragraph at lines 10481--10493
 []\TU/lmr/m/n/10 De geobserveerde spreeksnelheden verschillen significant tusse
 n
  []
 
 [238] [239] [240]
-Overfull \hbox (48.75pt too wide) in paragraph at lines 10631--10631
+Overfull \hbox (48.75pt too wide) in paragraph at lines 10633--10633
 []\TU/lmtt/m/n/10 ## Warning in replications(paste("~", xx), data = mf): non-fa
 ctors ignored:[] 
  []
 
 
-Overfull \hbox (48.75pt too wide) in paragraph at lines 10636--10636
+Overfull \hbox (48.75pt too wide) in paragraph at lines 10638--10638
 []\TU/lmtt/m/n/10 ## Warning in replications(paste("~", xx), data = mf): non-fa
 ctors ignored:[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 10652--10652
+Overfull \hbox (38.25pt too wide) in paragraph at lines 10654--10654
 []\TU/lmtt/m/n/10 ## Fit: aov(formula = syldur ~ region * sex, data = talkers, 
 subset = ok)[] 
  []
@@ -1499,28 +1496,28 @@ ile (type pdf)
 ] [246]
 Appendix C.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 10733.
+(Font)              scaled to size 24.88pt on input line 10735.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 10733.
+(Font)              scaled to size 20.74pt on input line 10735.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 10733.
+(Font)              scaled to size 17.28pt on input line 10735.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 24.88228pt on input line 10733.
+(Font)              scaled to size 24.88228pt on input line 10735.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 20.7419pt on input line 10733.
+(Font)              scaled to size 20.7419pt on input line 10735.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 17.28157pt on input line 10733.
+(Font)              scaled to size 17.28157pt on input line 10735.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 24.87733pt on input line 10733.
+(Font)              scaled to size 24.87733pt on input line 10735.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 20.73778pt on input line 10733.
+(Font)              scaled to size 20.73778pt on input line 10735.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 17.27815pt on input line 10733.
+(Font)              scaled to size 17.27815pt on input line 10735.
 File: MS1NL-boek_files/figure-latex/kritieketwaarden-hulpfiguur-1.pdf Graphic f
 ile (type pdf)
 <use MS1NL-boek_files/figure-latex/kritieketwaarden-hulpfiguur-1.pdf>
 
-Overfull \hbox (19.32014pt too wide) in paragraph at lines 10744--10789
+Overfull \hbox (19.32014pt too wide) in paragraph at lines 10746--10791
  [][] 
  []
 
@@ -1535,7 +1532,7 @@ File: MS1NL-boek_files/figure-latex/kritiekechi2waarden-hulpfiguur-1.pdf Graphi
 c file (type pdf)
 <use MS1NL-boek_files/figure-latex/kritiekechi2waarden-hulpfiguur-1.pdf>
 
-Overfull \hbox (17.80014pt too wide) in paragraph at lines 10800--10843
+Overfull \hbox (17.80014pt too wide) in paragraph at lines 10802--10845
  [][] 
  []
 
@@ -1547,12 +1544,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] [250] [251
 
 ] [252] [253] [254])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10846.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10848.
 [255]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 10846.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 10848.
 (./MS1NL-boek.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 10846.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 10846
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 10848.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 10848
 .
 Package rerunfilecheck Info: File `MS1NL-boek.out' has not changed.
 (rerunfilecheck)             Checksum: 0BD8AB048200A7AC7469C87BE0F3F123;19353.
@@ -1562,13 +1559,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 10846.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 10848.
  ) 
 Here is how much of TeX's memory you used:
- 18312 strings out of 481649
- 328004 string characters out of 5931265
- 771365 words of memory out of 5000000
- 35142 multiletter control sequences out of 15000+600000
+ 18311 strings out of 481649
+ 327978 string characters out of 5931265
+ 771349 words of memory out of 5000000
+ 35141 multiletter control sequences out of 15000+600000
  545455 words of font info for 115 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  52i,10n,118p,1137b,537s stack positions out of 5000i,500n,10000p,200000b,80000s

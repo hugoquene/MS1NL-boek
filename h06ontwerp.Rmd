@@ -447,7 +447,7 @@ waar zowel de tijd als de behandeling varieert.
 
 ---
 
-> *Voorbeeld 6.5*: [@Drake03]
+> *Voorbeeld 6.5*: @Drake03
 onderzochten de waarneming van muzikale structuur. Die waarneming kan
 indirect gemeten worden door de luisteraar te vragen om mee te tikken
 met de muziek. Als een luisteraar de muzikale structuur niet begrijpt of
@@ -479,7 +479,7 @@ luisterden, terwijl de Tunesische luisteraars daarentegen langere IOI's
 produceerden als ze naar Tunesische muziek luisterden. Alle luisteraars
 blijken dus langere IOI's te produceren als ze luisteren naar een
 muzieksoort die voor hen bekend is, en kortere IOI's als ze luisteren
-naar een onbekende muzieksoort. concluderen dat de luisteraars beter in
+naar een onbekende muzieksoort. @Drake03 concluderen dat de luisteraars beter in
 staat zijn om muzikale structuur te herkennen en te begrijpen in muziek
 van hun eigen muzikale cultuur dan in die van een andere cultuur. Dit
 patroon van resultaten is een klassiek kruislings interactie-effect,

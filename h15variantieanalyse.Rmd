@@ -26,7 +26,7 @@ Variantieanalyse is, net als de *t*-toets, een statistische
 generalisatietechniek, dat wil zeggen: een instrument dat gebruikt kan
 worden bij de formulering van uitspraken over de eigenschappen van
 populaties, op basis van gegevens ontleend aan steekproeven uit die
-populaties. In het geval van de en van ANOVA gaan die uitspraken over
+populaties. In het geval van de *t*-toets en van ANOVA gaan die uitspraken over
 het al dan niet gelijk zijn van de gemiddelden van (twee of meer)
 populaties. In deze zin kan variantieanalyse dan ook opgevat worden als
 een uitgebreide versie van de *t*-toets: met ANOVA kunnen we gegevens analyseren
@@ -330,7 +330,7 @@ daarmee nog niet welke groepen van elkaar verschillen, daarvoor is nog
 verdere (post-hoc) analyse nodig
 (§\@ref(sec:anova-oneway-posthoc) hieronder).
 
-### Een formele uitleg {#sec:anova.oneway.formeel}
+### Een formele uitleg {#sec:anova-oneway-formeel}
 
 Voor onze uitleg beginnen we met de geobserveerde scores. We nemen aan
 dat de scores zijn opgebouwd volgens een bepaald statistisch model, nl.
@@ -560,17 +560,18 @@ Elk contrast kan worden uitgedrukt in de vorm van gewichten voor iedere
 conditie. Voor de hierboven besproken contrasten kan dat in de vorm van
 deze gewichten:
 
-                  rood   grijs    blauw
-  -------------- ------ -------- --------
-    contrast 1    $-1$   $+0.5$   $+0.5$
-    contrast 2    $0$     $-1$     $+1$
+   conditie      contrast 1   contrast 2
+  ------------  ------------ ------------
+    rood             -1           0
+    grijs            +0.5        -1
+    blauw            +0.5        +1
 
 De H0 voor contrast 2 ($\mu_\textrm{grijs} = \mu_\textrm{blauw}$) is uit
 te drukken in gewichten als volgt:
 $\textrm{C2} = 0\times \mu_\textrm{rood} -1 \times \mu_\textrm{grijs} +1 \times \mu_\textrm{blauw} = 0$.
 
 Om te bepalen of twee contrasten orthogonaal zijn, vermenigvuldigen we
-hun respectievelijke gewichten voor iedere conditie (kolom):\
+hun respectievelijke gewichten voor iedere conditie (rij):\
 $( (-1)(0), (+0.5)(-1), (+0.5)(+1) )= (0, -0.5, +0.5)$.\
 Vervolgens tellen we al deze producten bij elkaar op:
 $0 -0.5 + 0.5 = 0$. Als de som van deze producten nul is, dan zijn de
@@ -610,6 +611,7 @@ en/of in een $p$-waarde van het verschil tussen twee condities.
 
 #### voorbereiding
 
+We gebruiken de gegevens in het bestand `data/kleurgroepen.txt`; deze gegevens zijn ook weergegeven in Figuur \@ref(fig:kleurtjes-obs).
 Lees eerst de benodigde gegevens, en controleer deze:
 ```
 File > Import Data > Text Data...
@@ -625,7 +627,7 @@ Bevestig het laatste keuzescherm met `Done`. De gegevens
 worden dan ingelezen.
 
 Onderzoek of de responsies normaal verdeeld zijn, met behulp van de
-technieken uit Deel II van deze syllabus (met name
+technieken uit Deel II van dit tekstboek (met name
 §\@ref(sec:isvarnormaalverdeeld)).
 
 We kunnen in SPSS niet vooraf toetsen of de varianties gelijk zijn in de
@@ -730,7 +732,7 @@ kleurgroepen <- read.table( "data/kleurgroepen.txt", header=T )
 ```
 
 Onderzoek of de responsies normaal verdeeld zijn, met behulp van de
-technieken uit Deel II van deze syllabus (met name
+technieken uit Deel II van dit tekstboek (met name
 §\@ref(sec:isvarnormaalverdeeld)).
 
 Onderzoek of de varianties gelijk zijn in de drie groepen, zoals vereist

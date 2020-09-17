@@ -396,7 +396,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="15.3" data-path="ch-variantieanalyse.html"><a href="ch-variantieanalyse.html#eén-weg-variantieanalyse"><i class="fa fa-check"></i><b>15.3</b> Eén-weg-variantieanalyse</a>
 <ul>
 <li class="chapter" data-level="15.3.1" data-path="ch-variantieanalyse.html"><a href="ch-variantieanalyse.html#sec:anova-oneway-uitleg"><i class="fa fa-check"></i><b>15.3.1</b> Een intuïtieve uitleg</a></li>
-<li class="chapter" data-level="15.3.2" data-path="ch-variantieanalyse.html"><a href="ch-variantieanalyse.html#sec:anova.oneway.formeel"><i class="fa fa-check"></i><b>15.3.2</b> Een formele uitleg</a></li>
+<li class="chapter" data-level="15.3.2" data-path="ch-variantieanalyse.html"><a href="ch-variantieanalyse.html#sec:anova-oneway-formeel"><i class="fa fa-check"></i><b>15.3.2</b> Een formele uitleg</a></li>
 <li class="chapter" data-level="15.3.3" data-path="ch-variantieanalyse.html"><a href="ch-variantieanalyse.html#sec:anova-oneway-effectgrootte"><i class="fa fa-check"></i><b>15.3.3</b> Effectgrootte</a></li>
 <li class="chapter" data-level="15.3.4" data-path="ch-variantieanalyse.html"><a href="ch-variantieanalyse.html#sec:anova-oneway-gericht"><i class="fa fa-check"></i><b>15.3.4</b> Gerichte vergelijkingen</a></li>
 <li class="chapter" data-level="15.3.5" data-path="ch-variantieanalyse.html"><a href="ch-variantieanalyse.html#sec:anova-oneway-posthoc"><i class="fa fa-check"></i><b>15.3.5</b> Post-hoc vergelijkingen</a></li>
@@ -455,7 +455,7 @@ de nieuwe terminologie, en met de voorwaarden waaronder van deze
 techniek gebruik mag worden gemaakt. In
 §<a href="ch-variantieanalyse.html#sec:anova-oneway-uitleg">15.3.1</a> introduceren we de techniek op een
 intuïtieve wijze door in te gaan op de gedachtegang achter de toets. In
-§<a href="#sec:anova-oneway-formeel"><strong>??</strong></a> leiden we een formele vorm af voor
+§<a href="ch-variantieanalyse.html#sec:anova-oneway-formeel">15.3.2</a> leiden we een formele vorm af voor
 de belangrijkste toetsingsgrootheid, de <span class="math inline">\(F\)</span>-ratio.</p>
 </div>
 <div id="sec:anova-voorbeelden" class="section level2" number="15.2">
@@ -464,7 +464,7 @@ de belangrijkste toetsingsgrootheid, de <span class="math inline">\(F\)</span>-r
 generalisatietechniek, dat wil zeggen: een instrument dat gebruikt kan
 worden bij de formulering van uitspraken over de eigenschappen van
 populaties, op basis van gegevens ontleend aan steekproeven uit die
-populaties. In het geval van de en van ANOVA gaan die uitspraken over
+populaties. In het geval van de <em>t</em>-toets en van ANOVA gaan die uitspraken over
 het al dan niet gelijk zijn van de gemiddelden van (twee of meer)
 populaties. In deze zin kan variantieanalyse dan ook opgevat worden als
 een uitgebreide versie van de <em>t</em>-toets: met ANOVA kunnen we gegevens analyseren
@@ -787,7 +787,7 @@ daarmee nog niet welke groepen van elkaar verschillen, daarvoor is nog
 verdere (post-hoc) analyse nodig
 (§<a href="ch-variantieanalyse.html#sec:anova-oneway-posthoc">15.3.5</a> hieronder).</p>
 </div>
-<div id="sec:anova.oneway.formeel" class="section level3" number="15.3.2">
+<div id="sec:anova-oneway-formeel" class="section level3" number="15.3.2">
 <h3><span class="header-section-number">15.3.2</span> Een formele uitleg</h3>
 <p>Voor onze uitleg beginnen we met de geobserveerde scores. We nemen aan
 dat de scores zijn opgebouwd volgens een bepaald statistisch model, nl.
@@ -1062,24 +1062,26 @@ deze gewichten:</p>
 <table>
 <thead>
 <tr class="header">
-<th></th>
-<th align="center">rood</th>
-<th align="center">grijs</th>
-<th align="center">blauw</th>
+<th align="center">conditie</th>
+<th align="center">contrast 1</th>
+<th align="center">contrast 2</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>  contrast 1</td>
-<td align="center"><span class="math inline">\(-1\)</span></td>
-<td align="center"><span class="math inline">\(+0.5\)</span></td>
-<td align="center"><span class="math inline">\(+0.5\)</span></td>
+<td align="center">  rood</td>
+<td align="center">-1</td>
+<td align="center">0</td>
 </tr>
 <tr class="even">
-<td>  contrast 2</td>
-<td align="center"><span class="math inline">\(0\)</span></td>
-<td align="center"><span class="math inline">\(-1\)</span></td>
-<td align="center"><span class="math inline">\(+1\)</span></td>
+<td align="center">  grijs</td>
+<td align="center">+0.5</td>
+<td align="center">-1</td>
+</tr>
+<tr class="odd">
+<td align="center">  blauw</td>
+<td align="center">+0.5</td>
+<td align="center">+1</td>
 </tr>
 </tbody>
 </table>
@@ -1087,7 +1089,7 @@ deze gewichten:</p>
 te drukken in gewichten als volgt:
 <span class="math inline">\(\textrm{C2} = 0\times \mu_\textrm{rood} -1 \times \mu_\textrm{grijs} +1 \times \mu_\textrm{blauw} = 0\)</span>.</p>
 <p>Om te bepalen of twee contrasten orthogonaal zijn, vermenigvuldigen we
-hun respectievelijke gewichten voor iedere conditie (kolom):<br />
+hun respectievelijke gewichten voor iedere conditie (rij):<br />
 <span class="math inline">\(( (-1)(0), (+0.5)(-1), (+0.5)(+1) )= (0, -0.5, +0.5)\)</span>.<br />
 Vervolgens tellen we al deze producten bij elkaar op:
 <span class="math inline">\(0 -0.5 + 0.5 = 0\)</span>. Als de som van deze producten nul is, dan zijn de
@@ -1127,7 +1129,8 @@ en/of in een <span class="math inline">\(p\)</span>-waarde van het verschil tuss
 <h3><span class="header-section-number">15.3.6</span> SPSS</h3>
 <div id="voorbereiding" class="section level4" number="15.3.6.1">
 <h4><span class="header-section-number">15.3.6.1</span> voorbereiding</h4>
-<p>Lees eerst de benodigde gegevens, en controleer deze:</p>
+<p>We gebruiken de gegevens in het bestand <code>data/kleurgroepen.txt</code>; deze gegevens zijn ook weergegeven in Figuur <a href="ch-variantieanalyse.html#fig:kleurtjes-obs">15.2</a>.
+Lees eerst de benodigde gegevens, en controleer deze:</p>
 <pre><code>File &gt; Import Data &gt; Text Data...</code></pre>
 <p>Selecteer <code>Files of type: Text</code> en selecteer bestand
 <code>data/kleurgroepen.txt</code>. Bevestig met <code>Open</code>.<br />
@@ -1139,7 +1142,7 @@ te definiëren, de standaardopties van SPSS werken hier goed.<br />
 Bevestig het laatste keuzescherm met <code>Done</code>. De gegevens
 worden dan ingelezen.</p>
 <p>Onderzoek of de responsies normaal verdeeld zijn, met behulp van de
-technieken uit Deel II van deze syllabus (met name
+technieken uit Deel II van dit tekstboek (met name
 §<a href="ch-kansverdelingen.html#sec:isvarnormaalverdeeld">10.4</a>).</p>
 <p>We kunnen in SPSS niet vooraf toetsen of de varianties gelijk zijn in de
 drie groepen, zoals vereist voor variantieanalyse. We doen dat tegelijk
@@ -1232,7 +1235,7 @@ groepen niet verschillen.</p>
 <div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="ch-variantieanalyse.html#cb107-1" aria-hidden="true"></a><span class="co"># zelfde data als gebruikt in Fig.15.2</span></span>
 <span id="cb107-2"><a href="ch-variantieanalyse.html#cb107-2" aria-hidden="true"></a>kleurgroepen &lt;-<span class="st"> </span><span class="kw">read.table</span>( <span class="st">&quot;data/kleurgroepen.txt&quot;</span>, <span class="dt">header=</span>T )</span></code></pre></div>
 <p>Onderzoek of de responsies normaal verdeeld zijn, met behulp van de
-technieken uit Deel II van deze syllabus (met name
+technieken uit Deel II van dit tekstboek (met name
 §<a href="ch-kansverdelingen.html#sec:isvarnormaalverdeeld">10.4</a>).</p>
 <p>Onderzoek of de varianties gelijk zijn in de drie groepen, zoals vereist
 voor variantieanalyse. De H0 die we daarbij toetsen luidt:

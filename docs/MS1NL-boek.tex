@@ -119,7 +119,7 @@
 
 \title{Methoden en Statistiek 1}
 \author{true}
-\date{Versie gecompileerd op 16 Sep 2020}
+\date{Versie gecompileerd op 17 Sep 2020}
 
 \begin{document}
 \maketitle
@@ -3606,7 +3606,7 @@ waar zowel de tijd als de behandeling varieert.
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \begin{quote}
-\emph{Voorbeeld 6.5}: \citep{Drake03}
+\emph{Voorbeeld 6.5}: \citet{Drake03}
 onderzochten de waarneming van muzikale structuur. Die waarneming kan
 indirect gemeten worden door de luisteraar te vragen om mee te tikken
 met de muziek. Als een luisteraar de muzikale structuur niet begrijpt of
@@ -3645,7 +3645,7 @@ luisterden, terwijl de Tunesische luisteraars daarentegen langere IOI's
 produceerden als ze naar Tunesische muziek luisterden. Alle luisteraars
 blijken dus langere IOI's te produceren als ze luisteren naar een
 muzieksoort die voor hen bekend is, en kortere IOI's als ze luisteren
-naar een onbekende muzieksoort. concluderen dat de luisteraars beter in
+naar een onbekende muzieksoort. \citet{Drake03} concluderen dat de luisteraars beter in
 staat zijn om muzikale structuur te herkennen en te begrijpen in muziek
 van hun eigen muzikale cultuur dan in die van een andere cultuur. Dit
 patroon van resultaten is een klassiek kruislings interactie-effect,
@@ -9500,7 +9500,7 @@ Variantieanalyse is, net als de \emph{t}-toets, een statistische
 generalisatietechniek, dat wil zeggen: een instrument dat gebruikt kan
 worden bij de formulering van uitspraken over de eigenschappen van
 populaties, op basis van gegevens ontleend aan steekproeven uit die
-populaties. In het geval van de en van ANOVA gaan die uitspraken over
+populaties. In het geval van de \emph{t}-toets en van ANOVA gaan die uitspraken over
 het al dan niet gelijk zijn van de gemiddelden van (twee of meer)
 populaties. In deze zin kan variantieanalyse dan ook opgevat worden als
 een uitgebreide versie van de \emph{t}-toets: met ANOVA kunnen we gegevens analyseren
@@ -9781,8 +9781,8 @@ daarmee nog niet welke groepen van elkaar verschillen, daarvoor is nog
 verdere (post-hoc) analyse nodig
 (§\ref{sec:anova-oneway-posthoc} hieronder).
 
-\hypertarget{sec:anova.oneway.formeel}{%
-\subsection{Een formele uitleg}\label{sec:anova.oneway.formeel}}
+\hypertarget{sec:anova-oneway-formeel}{%
+\subsection{Een formele uitleg}\label{sec:anova-oneway-formeel}}
 
 Voor onze uitleg beginnen we met de geobserveerde scores. We nemen aan
 dat de scores zijn opgebouwd volgens een bepaald statistisch model, nl.
@@ -10034,13 +10034,14 @@ Elk contrast kan worden uitgedrukt in de vorm van gewichten voor iedere
 conditie. Voor de hierboven besproken contrasten kan dat in de vorm van
 deze gewichten:
 
-\begin{longtable}[]{@{}lccc@{}}
+\begin{longtable}[]{@{}ccc@{}}
 \toprule
-& rood & grijs & blauw\tabularnewline
+conditie & contrast 1 & contrast 2\tabularnewline
 \midrule
 \endhead
-~~contrast 1 & \(-1\) & \(+0.5\) & \(+0.5\)\tabularnewline
-~~contrast 2 & \(0\) & \(-1\) & \(+1\)\tabularnewline
+~~rood & -1 & 0\tabularnewline
+~~grijs & +0.5 & -1\tabularnewline
+~~blauw & +0.5 & +1\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -10049,7 +10050,7 @@ te drukken in gewichten als volgt:
 \(\textrm{C2} = 0\times \mu_\textrm{rood} -1 \times \mu_\textrm{grijs} +1 \times \mu_\textrm{blauw} = 0\).
 
 Om te bepalen of twee contrasten orthogonaal zijn, vermenigvuldigen we
-hun respectievelijke gewichten voor iedere conditie (kolom):\\
+hun respectievelijke gewichten voor iedere conditie (rij):\\
 \(( (-1)(0), (+0.5)(-1), (+0.5)(+1) )= (0, -0.5, +0.5)\).\\
 Vervolgens tellen we al deze producten bij elkaar op:
 \(0 -0.5 + 0.5 = 0\). Als de som van deze producten nul is, dan zijn de
@@ -10092,6 +10093,7 @@ en/of in een \(p\)-waarde van het verschil tussen twee condities.
 \hypertarget{voorbereiding}{%
 \subsubsection{voorbereiding}\label{voorbereiding}}
 
+We gebruiken de gegevens in het bestand \texttt{data/kleurgroepen.txt}; deze gegevens zijn ook weergegeven in Figuur \ref{fig:kleurtjes-obs}.
 Lees eerst de benodigde gegevens, en controleer deze:
 
 \begin{verbatim}
@@ -10109,7 +10111,7 @@ Bevestig het laatste keuzescherm met \texttt{Done}. De gegevens
 worden dan ingelezen.
 
 Onderzoek of de responsies normaal verdeeld zijn, met behulp van de
-technieken uit Deel II van deze syllabus (met name
+technieken uit Deel II van dit tekstboek (met name
 §\ref{sec:isvarnormaalverdeeld}).
 
 We kunnen in SPSS niet vooraf toetsen of de varianties gelijk zijn in de
@@ -10223,7 +10225,7 @@ Lees eerst de benodigde gegevens, en controleer deze:
 \end{Shaded}
 
 Onderzoek of de responsies normaal verdeeld zijn, met behulp van de
-technieken uit Deel II van deze syllabus (met name
+technieken uit Deel II van dit tekstboek (met name
 §\ref{sec:isvarnormaalverdeeld}).
 
 Onderzoek of de varianties gelijk zijn in de drie groepen, zoals vereist
