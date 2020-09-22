@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.16)  22 SEP 2020 20:44
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.16)  22 SEP 2020 22:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -787,13 +787,19 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 6.99925pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 2.
-[3] [4] [5] [6])
+[3] [4] [5] [6]
+Underfull \hbox (badness 1762) in paragraph at lines 224--224
+ [][] [][]$[][]$\TU/lmr/m/n/10 -toets voor homogeniteit van een variabele in me
+erdere 
+ []
+
+[7])
 \tf@toc=\write5
 \openout5 = `MS1NL-boek.toc'.
 
-[7] [8
+[8] [9
 
-] [9] [10] [11
+] [10] [11
 
 ] [12]
 Chapter 1.
@@ -1214,10 +1220,6 @@ Underfull \hbox (badness 4084) in paragraph at lines 6256--6256
 
 [144]
 
-LaTeX Warning: Reference `ch:chi-kwadraat-toetsen' on page 145 undefined on inp
-ut line 6284.
-
-
 LaTeX Warning: Reference `ch:andere-nonpar-toetsen' on page 145 undefined on in
 put line 6285.
 
@@ -1485,89 +1487,117 @@ subset = ok)[]
 [241] [242
 
 ]
-Appendix A.
+Chapter 16.
 [243] [244]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (105.13423pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 16.4.  $[][]$-TOETS VOOR VERBAND TUSSEN TWEE VARIABELEN IN ENKE
+LE STEEKPROEF \TU/lmr/m/n/10 245
+ []
+
+[245] [246] [247] [248] [249]
+Overfull \hbox (39.03012pt too wide) in alignment at lines 11049--11054
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (39.03012pt too wide) in alignment at lines 11054--11058
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (39.03012pt too wide) in alignment at lines 11058--11063
+ [] [] [] [] [] [] [] 
+ []
+
+[250] [251] [252
+
+]
+Appendix A.
+[253] [254]
 Appendix B.
 File: MS1NL-boek_files/figure-latex/kritiekeZwaarden-hulpfiguur-1.pdf Graphic f
 ile (type pdf)
 <use MS1NL-boek_files/figure-latex/kritiekeZwaarden-hulpfiguur-1.pdf>
-[245
+[255
 
-] [246]
+] [256]
 Appendix C.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 10735.
+(Font)              scaled to size 24.88pt on input line 11174.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 10735.
+(Font)              scaled to size 20.74pt on input line 11174.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 10735.
+(Font)              scaled to size 17.28pt on input line 11174.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 24.88228pt on input line 10735.
+(Font)              scaled to size 24.88228pt on input line 11174.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 20.7419pt on input line 10735.
+(Font)              scaled to size 20.7419pt on input line 11174.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 17.28157pt on input line 10735.
+(Font)              scaled to size 17.28157pt on input line 11174.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 24.87733pt on input line 10735.
+(Font)              scaled to size 24.87733pt on input line 11174.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 20.73778pt on input line 10735.
+(Font)              scaled to size 20.73778pt on input line 11174.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 17.27815pt on input line 10735.
+(Font)              scaled to size 17.27815pt on input line 11174.
 File: MS1NL-boek_files/figure-latex/kritieketwaarden-hulpfiguur-1.pdf Graphic f
 ile (type pdf)
 <use MS1NL-boek_files/figure-latex/kritieketwaarden-hulpfiguur-1.pdf>
 
-Overfull \hbox (19.32014pt too wide) in paragraph at lines 10746--10791
+Overfull \hbox (19.32014pt too wide) in paragraph at lines 11185--11230
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[247
+[257
 
-] [248]
+] [258]
 Appendix D.
 File: MS1NL-boek_files/figure-latex/kritiekechi2waarden-hulpfiguur-1.pdf Graphi
 c file (type pdf)
 <use MS1NL-boek_files/figure-latex/kritiekechi2waarden-hulpfiguur-1.pdf>
 
-Overfull \hbox (17.80014pt too wide) in paragraph at lines 10802--10845
+Overfull \hbox (17.80014pt too wide) in paragraph at lines 11241--11284
  [][] 
  []
 
 (./MS1NL-boek.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[249
+[259
 
-] [250] [251
+] [260] [261
 
-] [252] [253] [254])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10848.
-[255]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 10848.
+] [262] [263] [264])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11287.
+[265]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 11287.
 (./MS1NL-boek.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 10848.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 10848
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 11287.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11287
 .
 Package rerunfilecheck Info: File `MS1NL-boek.out' has not changed.
-(rerunfilecheck)             Checksum: 0BD8AB048200A7AC7469C87BE0F3F123;19353.
+(rerunfilecheck)             Checksum: 7E41A9EBADE99438422BD491C48ED395;21391.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 10848.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 11287.
  ) 
 Here is how much of TeX's memory you used:
- 18311 strings out of 481649
- 327978 string characters out of 5931265
- 771349 words of memory out of 5000000
- 35141 multiletter control sequences out of 15000+600000
+ 18335 strings out of 481649
+ 328532 string characters out of 5931265
+ 775161 words of memory out of 5000000
+ 35165 multiletter control sequences out of 15000+600000
  545455 words of font info for 115 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  52i,10n,118p,1137b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on MS1NL-boek.pdf (255 pages).
+Output written on MS1NL-boek.pdf (265 pages).
