@@ -71,7 +71,7 @@ beantwoord. Maar als we menselijk (taal)gedrag meten, komen zulke
 perfect homogene toetsen eigenlijk nooit voor: respondenten die wel
 dezelfde totaalscore behalen, hebben toch niet allen dezelfde vragen
 correct beantwoord (bv. in de leesvaardigheidstoets van het eindexamen,
-voorbeeld 12.2). Dit houdt in dat de
+voorbeeld 12.1). Dit houdt in dat de
 vragen niet exact hetzelfde gemeten hebben. Dat is ook zo: de ene vraag
 betrof een parafrase van een alinea, terwijl een andere vraag betrekking
 had op een verwijswoord-antecedent-relatie. De vragen of items waren dus
@@ -219,7 +219,7 @@ om de betrouwbaarheid vast te stellen, omdat we $s^2_t$ niet kennen. We
 moeten dus eerst schatten wat de ware-score-variantie is --- of wat de
 fout-variantie is, die is immers het complement van de
 ware-score-variantie (zie
-formule \@ref(eq:var.true.error))[^fn12-2].
+formule \@ref(eq:var-true-error))[^fn12-2].
 
 De tweede aanname (in formule \@ref(eq:r-true-error)) dat er geen verband is tussen de ware
 score en de fout-score, is in de praktijk niet altijd gerechtvaardigd.
@@ -266,8 +266,8 @@ $s_x=0.75$ vertonen, en laten we eveneens aannemen dat een analyse van
 de betrouwbaarheid heeft laten zien dat $r_{xx}=0.9$. De standaard
 meetfout bedraagt dan $s_e = 0.24$ punt (naar boven afgerond). De kans
 dat de ware score $t_i$ kleiner of gelijk is aan 5.4 (onvoldoende), bij
-een geobserveerde score van $x_i=6.0$ en $s_e=0.24$, is slechts 0.006
-(voor uitleg, zie §\@ref(sec:betrouwbaarheidsinterval-gemiddelde) hieronder). 
+een geobserveerde score van $x_i=6.0$ en $s_e=0.24$, is slechts $p=0.006$
+(voor uitleg, zie §\@ref(sec:t-betrouwbaarheidsinterval-gemiddelde) hierna). 
 De voldoende beoordeling van het eindwerkstuk is met grote
 waarschijnlijkheid juist.
 

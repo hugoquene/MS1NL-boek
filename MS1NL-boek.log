@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.16)  17 SEP 2020 09:36
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.16)  22 SEP 2020 20:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1450,7 +1450,7 @@ File: MS1NL-boek_files/figure-latex/kleurtjes-obs-1.pdf Graphic file (type pdf)
 
 <use MS1NL-boek_files/figure-latex/kleurtjes-obs-1.pdf>
 [223] [224] [225] [226]
-Overfull \vbox (2.57921pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [227] [228] [229]
 Underfull \vbox (badness 6825) has occurred while \output is active []

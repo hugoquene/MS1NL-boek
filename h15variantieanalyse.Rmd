@@ -382,7 +382,7 @@ afwijkingen:
 De
 *noemers* van de varianties worden gevormd door de vrijheidsgraden
 ('degrees of freedom', afgekort `df`, zie
-§\@ref(#sec:ttoets-vrijheidsgraden)). Voor de variantie tussen
+§\@ref(sec:ttoets-vrijheidsgraden)). Voor de variantie tussen
 groepen $s^2_b$ is dat het aantal groepen of condities, minus 1 ($k-1$).
 Voor de variantie binnen groepen $s^2_w$ is dat het aantal observaties,
 minus het aantal groepen ($N-k$). Voor de totale variantie is dat het
