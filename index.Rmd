@@ -12,7 +12,7 @@ bibliography: [book.bib, packages.bib, hhmhto.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/MS1NL-boek
-description: "Tekstboek bij de cursus Methoden en Statistiek 1 (opleiding Taalwetenschap, Universiteit Utrecht)"
+description: "Tekstboek over Kwantitatieve Methoden en Statistiek, o.a. gebruikt in cursus Methoden en Statistiek 1 (TL2V17002), B Taalwetenschap, Universiteit Utrecht."
 ---
 
 # Voorwoord {-}
@@ -53,7 +53,19 @@ In aansluiting op het internationale gebruik en op de conventies van Engelstalig
 ## Licentie {-}
 
 This document is licensed under the _GNU GPL 3_ license (for details see 
-https://www.gnu.org/licenses/gpl-3.0.en.html). It was created with the `bookdown` package [@R-bookdown] in [Rstudio](https://www.rstudio.com).
+https://www.gnu.org/licenses/gpl-3.0.en.html). 
+
+## Citatie {-}
+
+Gebruik de volgende wijze om te verwijzen naar dit tekstboek (in APA-formaat):
+
+Quené, H. \& Van den Bergh, H. (2020). *Methoden en Statistiek 1*. 
+Retrieved 23 Sept 2020 from https://hugoquene.github.io/MS1NL-boek/ .
+
+## Technische details {-}
+
+De tekst is geschreven in LaTeX, en daarna omgezet naar Rmarkdown, met behulp van `pandoc` en het `bookdown` package [@R-bookdown] in [Rstudio](https://www.rstudio.com).\
+De broncode van de tekst en voorbeelden (in Rmarkdown), en de bijbehorende databestanden en figuren, zijn beschikbaar via https://github.com/hugoquene/MS1NL-boek/ . 
 
 ## Over de auteurs {-}
 
@@ -63,7 +75,7 @@ Beide auteurs zijn verbonden aan de Faculteit Geesteswetenschappen van de Univer
 # automatically create a bib database for R packages
 require(lattice)
 require(nnet)
-knitr::write_bib(c(
+knitr::write_bib( c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```

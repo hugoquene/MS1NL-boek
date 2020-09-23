@@ -1,2 +1,2 @@
 # MS1NL-boek
-tekstboek voor cursus Methoden en Statistiek 1, BA Taalwetenschap, Univ Utrecht 
+tekstboek over Kwantitatieve Methoden en Statistiek, o.a. gebruikt in cursus Methoden en Statistiek 1 (TL2V17002), B Taalwetenschap, Universiteit Utrecht. 
