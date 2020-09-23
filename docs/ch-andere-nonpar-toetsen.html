@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Appendix D Kritieke waarden van \(\chi^2\)-verdeling | Methoden en Statistiek 1</title>
+  <title>Hoofdstuk 17 Andere nonparametrische toetsen | Methoden en Statistiek 1</title>
   <meta name="description" content="Tekstboek bij de cursus Methoden en Statistiek 1 (opleiding Taalwetenschap, Universiteit Utrecht)" />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Appendix D Kritieke waarden van \(\chi^2\)-verdeling | Methoden en Statistiek 1" />
+  <meta property="og:title" content="Hoofdstuk 17 Andere nonparametrische toetsen | Methoden en Statistiek 1" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/MS1NL-boek" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Appendix D Kritieke waarden van \(\chi^2\)-verdeling | Methoden en Statistiek 1" />
+  <meta name="twitter:title" content="Hoofdstuk 17 Andere nonparametrische toetsen | Methoden en Statistiek 1" />
   
   <meta name="twitter:description" content="Tekstboek bij de cursus Methoden en Statistiek 1 (opleiding Taalwetenschap, Universiteit Utrecht)" />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="app-kritieketwaarden.html"/>
-<link rel="next" href="referenties.html"/>
+<link rel="prev" href="ch-chi-kwadraat-toetsen.html"/>
+<link rel="next" href="app-randomgetallen.html"/>
 <script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -474,411 +474,326 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="app:kritiekechi2waarden" class="section level1" number="21">
-<h1><span class="header-section-number">Appendix D</span> Kritieke waarden van <span class="math inline">\(\chi^2\)</span>-verdeling</h1>
-<p><img src="MS1NL-boek_files/figure-html/kritiekechi2waarden-hulpfiguur-1.png" width="672" /></p>
-<p>De hieronder gegeven kritieke grenswaarde <span class="math inline">\((\chi^2)^*\)</span> heeft een overschrijdingskans <span class="math inline">\(p\)</span>
-onder <span class="math inline">\(H_0\)</span>, d.w.z. <span class="math inline">\(P(\chi^2 \geq (\chi^2)^*|H_0)=p\)</span>.</p>
-<p>De tabel hieronder geeft de kritieke grenswaarden <span class="math inline">\((\chi^2)^*\)</span> voor veel gebruikte overschrijdingskansen <span class="math inline">\(p\)</span>, voor de vrijheidsgraden aangegeven in de eerste kolom.</p>
+<div id="ch:andere-nonpar-toetsen" class="section level1" number="17">
+<h1><span class="header-section-number">Hoofdstuk 17</span> Andere nonparametrische toetsen</h1>
+<div id="sec:h17inleiding" class="section level2" number="17.1">
+<h2><span class="header-section-number">17.1</span> Inleiding</h2>
+<p>In dit hoofdstuk bespreken we verschillende andere non-parametrische
+toetsen. Deze toetsen zijn bruikbaar indien de gegevens niet op
+interval-niveau gemeten zijn (zie hoofdstuk
+<a href="ch-Meetniveau.html#ch:Meetniveau">4</a>), of als de kansverdeling van de gegevens
+afwijkt van de normaalverdeling (zie
+§<a href="ch-kansverdelingen.html#sec:watalsnietnormaal">10.5</a>). De non-parametrische toetsen doen
+geen aannames over de parameters van de kansverdeling van de gegevens.</p>
+<p>We zagen al eerder dat er non-parametrische correlatie-coëffienten
+bestaan, nl. de Spearman rangorde-correlatiecoëfficient
+(§<a href="ch-samenhang.html#sec:Spearman">11.5</a>) en de (nominale) Phi-correlatiecoëfficient
+(§<a href="ch-samenhang.html#sec:Phi">11.6</a>). In
+het vorige hoofdstuk bespraken we een veelgebruikte non-parametrische
+toets, de <span class="math inline">\(\chi^2\)</span>-toets. We gaan hieronder in op een aantal andere veelgebruikte
+non-parametrische toetsen. We bespreken die in twee groepen: eerst voor
+voor gepaarde waarnemingen, en daarna voor ongepaarde waarnemingen uit
+meerdere steekproeven. Binnen elke paragraaf bespreken we eerst de
+toetsen die informatie gebruiken van nominaal niveau (tekentoetsen en
+aanverwanten) en daarna de toetsen die informatie gebruiken van ordinaal
+niveau, d.w.z. die gebaseerd zijn op de rangorde van de observaties.</p>
+</div>
+<div id="gepaarde-observaties-enkele-steekproef" class="section level2" number="17.2">
+<h2><span class="header-section-number">17.2</span> Gepaarde observaties, enkele steekproef</h2>
+<div id="sec:tekentoets" class="section level3" number="17.2.1">
+<h3><span class="header-section-number">17.2.1</span> Tekentoets</h3>
+<p>Een handige toets voor gepaarde observaties is de zgn. tekentoets (Eng: ‘sign test’).
+Deze toets is te beschouwen als een non-parametrische, nominale tegenhanger
+van de <em>t</em>-toets voor gepaarde waarnemingen
+(§<a href="ch-toetsing.html#sec:ttoets-gepaard">13.7</a>).</p>
+<p>We kijken in deze toets alleen naar het <em>teken</em> (positief of negatief)
+van het <em>verschil</em> <span class="math inline">\(D\)</span> tussen de twee gepaarde waarnemingen. Laten we
+weer het voorbeeld nemen van een denkbeeldig onderzoek naar webpagina’s
+met <em>U</em> of <em>je</em> als aanspreekvorm, met <span class="math inline">\(N=10\)</span> respondenten. In
+Tabel <a href="ch-toetsing.html#tab:data-uje-paired">13.1</a> zagen we dat alle 10 respondenten de
+voorkeur gaven aan <em>je</em>: de verschilvariabele <span class="math inline">\(D\)</span> was <span class="math inline">\(10\times\)</span>
+negatief en <span class="math inline">\(0\times\)</span> positief, of anders gezegd, alle uitkomsten van
+<span class="math inline">\(D\)</span> waren negatief.</p>
+<p>Met de tekentoets kijken we hoe waarschijnlijk deze verdeling van
+positieve en negatieve waarden van <span class="math inline">\(D\)</span> is, als H0 waar zou zijn. Volgens
+H0 verwachten we <span class="math inline">\(N/2\)</span> positieve en <span class="math inline">\(N/2\)</span> negatieve verschillen; volgens
+H0 is de kans op een positief teken van <span class="math inline">\(D\)</span> (de kans op een treffer) dus
+<span class="math inline">\(p=1/2\)</span>. We bepalen nu de kans op deze gevonden uitkomst (0 treffers)
+gegeven H0, en we gebruiken daarvoor de binomiale kansverdeling
+(§<a href="ch-kansverdelingen.html#sec:binomiaalverdeling">10.2</a>):
+<span class="math display" id="eq:prob-binom-uje">\[\begin{equation}
+  \tag{17.1}
+    P(0\,\mbox{treffers}) = {10 \choose 0} (0.5)^0 (1-0.5)^{10-0} = (1) (1) (0.000976) &lt; 0.001
+\end{equation}\]</span>
+De kans op deze uitkomst volgens H0 is dermate klein dat we in het licht
+van deze uitkomst besluiten om H0 te verwerpen, en we rapporteren dat
+als volgt:</p>
+<blockquote>
+<p>De <span class="math inline">\(N=10\)</span> respondenten geven unaniem een lager oordeel aan de
+webpagina met <em>U</em> als aanspreekvorm dan aan de vergelijkbare pagina
+met <em>je</em> als aanspreekvorm; dit is een significant verschil
+(tekentoets, <span class="math inline">\(p&lt;.001\)</span>).</p>
+</blockquote>
+</div>
+<div id="sec:Wilcoxon-signed-rank" class="section level3" number="17.2.2">
+<h3><span class="header-section-number">17.2.2</span> Wilcoxon signed-ranks test</h3>
+<p>De Wilcoxon signed-ranks test is te beschouwen als een
+non-parametrische, ordinale tegenhanger van de <em>t</em>-toets voor gepaarde
+waarnemingen (§<a href="ch-toetsing.html#sec:ttoets-gepaard">13.7</a>).</p>
+<p>Deze toets maakt gebruik van de <em>rangorde</em> van het verschil <span class="math inline">\(D\)</span> tussen
+de twee gepaarde waarnemingen. We gebruiken nogmaals het voorbeeld van
+het denkbeeldige onderzoek naar de webpagina’s met <em>U</em> of <em>je</em> als
+aanspreekvorm
+(Tabel <a href="ch-toetsing.html#tab:data-uje-paired">13.1</a>), maar nu kijken we naar de <em>rangorde</em>
+van de verschillen <span class="math inline">\(D\)</span> (rekening houdend met gelijke verschillen bij
+meerdere proefpersonen), en geven daarbij het teken (positief of
+negatief) van het verschil <span class="math inline">\(D\)</span>:
+<span class="math display">\[-2, -2, -7.5, -5, -7.5, -5, -10, -7.5, -5, -2\]</span>
+De som van de positieve rangnummers is <span class="math inline">\(W_+=0\)</span> (er zijn geen positieve rangnummers)
+en de som van de negatieve rangnummers <span class="math inline">\(W_-= -53.5\)</span>, en daarmee <span class="math inline">\(|W_-|=53.5\)</span>. De kleinste van
+deze twee sommen (<span class="math inline">\(W_+\)</span> of <span class="math inline">\(|W_-|\)</span>) vormt de toetsingsgrootheid; we gebruiken hier <span class="math inline">\(|W_-|\)</span>.
+We gaan
+hier niet in op de kansverdeling van de toetsingsgrootheid, maar we
+laten de significantie door de computer bepalen: <span class="math inline">\(P(|W_-|)=.0055\)</span>. De kans
+op deze uitkomst volgens H0 is dermate klein dat we in het licht van
+deze uitkomst wederom besluiten om H0 te verwerpen.</p>
+<p>De (ordinale) Wilcoxon signed-ranks test maakt gebruik van meer
+informatie dan de (nominale) tekentoets. Als een effect significant is
+volgens de tekentoets, zoals in dit voorbeeld, dan is het ook altijd
+significant volgens de Wilcoxon signed-ranks test. Als een effect
+significant is in de Wilcoxon signed-ranks test, dan is het ook altijd
+significant volgens de <em>t</em>-toets. Dat heeft te maken met het meetniveau: de
+tekentoets beschouwt alleen het (nominale) <em>teken</em> van de verschillen, de
+Wilcoxon signed-rank is gebaseerd op de (ordinale) <em>rangschikking</em> van de
+verschillen, en de <em>t</em>-toets is gebaseerd op de (interval) <em>omvang</em> van de
+verschillen.</p>
+<div id="formules-6" class="section level4" number="17.2.2.1">
+<h4><span class="header-section-number">17.2.2.1</span> formules</h4>
+<p>We berekenen niet alleen <span class="math inline">\(W_+\)</span> (of <span class="math inline">\(|W_-|\)</span>) op de hierboven aangegeven wijze,
+maar ook de bijbehorende waarde van <span class="math inline">\(z\)</span> <span class="citation">(Ferguson and Takane <a href="#ref-Ferg89" role="doc-biblioref">1989</a>)</span>:
+<span class="math display" id="eq:Wilcoxon-signedrank-z">\[\begin{equation}
+  \tag{17.2}
+  z = \frac{ W_+ - \frac{N(N+1)}{4} } { \sqrt{ \frac{N(N+1)(2N+1)}{24} } }
+\end{equation}\]</span>
+Daarmee kunnen we de effectgrootte uitrekenen, in de vorm van een
+correlatie <span class="citation">(Rosenthal <a href="#ref-Rose91" role="doc-biblioref">1991</a>, Eq.2.18)</span>:
+<span class="math display" id="eq:es-z2r">\[\begin{equation}
+  \tag{17.3}
+    r = \frac {z} {\sqrt{N}}
+\end{equation}\]</span>
+Voor het bovenstaande voorbeeld vinden we
+<span class="math inline">\(z=-2.803\)</span>, en <span class="math inline">\(r=-.89\)</span>, hetgeen wijst op een buitengewoon groot effect.</p>
+</div>
+</div>
+</div>
+<div id="onafhankelijke-observaties-meerdere-steekproeven" class="section level2" number="17.3">
+<h2><span class="header-section-number">17.3</span> Onafhankelijke observaties, meerdere steekproeven</h2>
+<div id="mediaantoets" class="section level3" number="17.3.1">
+<h3><span class="header-section-number">17.3.1</span> Mediaantoets</h3>
+<p>De mediaantoets (Eng. ‘median test’) is te beschouwen als een non-parametrische, nominale
+tegenhanger van de <em>t</em>-toets voor ongepaarde, onafhankelijke waarnemingen. Het is
+eigenlijk een tekentoets (zie §<a href="ch-andere-nonpar-toetsen.html#sec:tekentoets">17.2.1</a>), waarbij we toetsen of de verdeling van
+observaties boven/onder hun <em>gezamenlijke</em> mediaan
+(zie §<a href="ch-centrumenspreiding.html#sec:mediaan">9.3.2</a> voor uitleg over de mediaan) afwijkt van de verwachte verdeling volgens H0.
+De nulhypothese H0 is dat de verdelingen van de twee steekproeven niet
+van elkaar verschillen, en dat in beide steekproeven dus ongeveer de
+helft van de observaties boven de gezamenlijke mediaan ligt, en de
+andere helft er onder.</p>
+</div>
+<div id="sec:wilcoxon-rank-sum" class="section level3" number="17.3.2">
+<h3><span class="header-section-number">17.3.2</span> Wilcoxon rank sum test, ofwel Mann-Whitney U test</h3>
+<p>De Wilcoxon rank sum test is equivalent aan de Mann-Whitney U test.
+Beide zijn de beschouwen als non-parametrische, ordinale tegenhangers
+van de <em>t</em>-toets voor ongepaarde, onafhankelijke waarnemingen
+(§<a href="ch-toetsing.html#sec:ttoets-onafh">13.6</a>).</p>
+<p>Stel je voor dat we willen onderzoeken of sommige tekstkenmerken van
+invloed zijn op de subjectieve waardering van de tekst. Een
+onderzoekster trekt daartoe een aselecte steekproef van proefpersonen
+uit de populatie (zie
+§<a href="ch-steekproeftrekking.html#sec:aselectesteekproef">7.3</a>), en wijst deze proefpersonen op
+aselecte wijze toe aan twee onderzoekscondities (randomisatie, zie §<a href="ch-validiteit.html#sec:internevaliditeit">5.4</a>, punt 5).
+In de eerste conditie moeten de proefpersonen een oordeel geven over de
+originele versie van een tekst. In de tweede conditie geven de
+proefpersonen een oordeel over de herschreven versie van dezelfde tekst.
+Hoe hoger de score die gegeven wordt, hoe hoger de waardering voor de
+tekst. Eén van de proefpersonen moest helaas het onderzoek voortijdig
+staken. De oordelen van de overige 19 proefpersonen staan in
+Tabel <a href="ch-andere-nonpar-toetsen.html#tab:data-origineelherschreven">17.1</a>. Op grond van de aselecte
+steekproef en de aselecte toewijzing van proefpersonen aan condities
+zijn de oordelen te beschouwen als afkomstig van twee verschillende
+aselecte steekproeven. De nulhypothese luidt dat er geen verschil
+bestaat in waardering tussen de twee condities.</p>
 <table>
+<caption><span id="tab:data-origineelherschreven">Tabel 17.1: </span> Oordelen van <span class="math inline">\(N=19\)</span> proefpersonen over de originele en herschreven versies van een tekst.</caption>
 <thead>
 <tr class="header">
+<th align="left">Conditie</th>
 <th></th>
-<th align="center">p</th>
-<th align="center">0.2</th>
-<th align="center">0.1</th>
-<th align="center">0.05</th>
-<th align="center">0.025</th>
-<th align="center">0.01</th>
-<th align="center">0.005</th>
-<th align="center">0.0025</th>
-<th align="center">0.001</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td align="center"></td>
-<td align="center">1.64</td>
-<td align="center">2.71</td>
-<td align="center">3.84</td>
-<td align="center">5.02</td>
-<td align="center">6.63</td>
-<td align="center">7.88</td>
-<td align="center">9.14</td>
-<td align="center">10.83</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td align="center"></td>
-<td align="center">3.22</td>
-<td align="center">4.61</td>
-<td align="center">5.99</td>
-<td align="center">7.38</td>
-<td align="center">9.21</td>
-<td align="center">10.60</td>
-<td align="center">11.98</td>
-<td align="center">13.82</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td align="center"></td>
-<td align="center">4.64</td>
-<td align="center">6.25</td>
-<td align="center">7.81</td>
-<td align="center">9.35</td>
-<td align="center">11.34</td>
-<td align="center">12.84</td>
-<td align="center">14.32</td>
-<td align="center">16.27</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td align="center"></td>
-<td align="center">5.99</td>
-<td align="center">7.78</td>
-<td align="center">9.49</td>
-<td align="center">11.14</td>
-<td align="center">13.28</td>
-<td align="center">14.86</td>
-<td align="center">16.42</td>
-<td align="center">18.47</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td align="center"></td>
-<td align="center">7.29</td>
-<td align="center">9.24</td>
-<td align="center">11.07</td>
-<td align="center">12.83</td>
-<td align="center">15.09</td>
-<td align="center">16.75</td>
-<td align="center">18.39</td>
-<td align="center">20.52</td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td align="center"></td>
-<td align="center">8.56</td>
-<td align="center">10.64</td>
-<td align="center">12.59</td>
-<td align="center">14.45</td>
-<td align="center">16.81</td>
-<td align="center">18.55</td>
-<td align="center">20.25</td>
-<td align="center">22.46</td>
-</tr>
-<tr class="odd">
-<td>7</td>
-<td align="center"></td>
-<td align="center">9.80</td>
-<td align="center">12.02</td>
-<td align="center">14.07</td>
-<td align="center">16.01</td>
-<td align="center">18.48</td>
-<td align="center">20.28</td>
-<td align="center">22.04</td>
-<td align="center">24.32</td>
-</tr>
-<tr class="even">
-<td>8</td>
-<td align="center"></td>
-<td align="center">11.03</td>
-<td align="center">13.36</td>
-<td align="center">15.51</td>
-<td align="center">17.53</td>
-<td align="center">20.09</td>
-<td align="center">21.95</td>
-<td align="center">23.77</td>
-<td align="center">26.12</td>
-</tr>
-<tr class="odd">
-<td>9</td>
-<td align="center"></td>
-<td align="center">12.24</td>
-<td align="center">14.68</td>
-<td align="center">16.92</td>
-<td align="center">19.02</td>
-<td align="center">21.67</td>
-<td align="center">23.59</td>
-<td align="center">25.46</td>
-<td align="center">27.88</td>
-</tr>
-<tr class="even">
+<td align="left">Origineel</td>
 <td>10</td>
-<td align="center"></td>
-<td align="center">13.44</td>
-<td align="center">15.99</td>
-<td align="center">18.31</td>
-<td align="center">20.48</td>
-<td align="center">23.21</td>
-<td align="center">25.19</td>
-<td align="center">27.11</td>
-<td align="center">29.59</td>
-</tr>
-<tr class="odd">
-<td>11</td>
-<td align="center"></td>
-<td align="center">14.63</td>
-<td align="center">17.28</td>
-<td align="center">19.68</td>
-<td align="center">21.92</td>
-<td align="center">24.72</td>
-<td align="center">26.76</td>
-<td align="center">28.73</td>
-<td align="center">31.26</td>
-</tr>
-<tr class="even">
-<td>12</td>
-<td align="center"></td>
-<td align="center">15.81</td>
-<td align="center">18.55</td>
-<td align="center">21.03</td>
-<td align="center">23.34</td>
-<td align="center">26.22</td>
-<td align="center">28.30</td>
-<td align="center">30.32</td>
-<td align="center">32.91</td>
-</tr>
-<tr class="odd">
-<td>13</td>
-<td align="center"></td>
-<td align="center">16.98</td>
-<td align="center">19.81</td>
-<td align="center">22.36</td>
-<td align="center">24.74</td>
-<td align="center">27.69</td>
-<td align="center">29.82</td>
-<td align="center">31.88</td>
-<td align="center">34.53</td>
-</tr>
-<tr class="even">
-<td>14</td>
-<td align="center"></td>
-<td align="center">18.15</td>
-<td align="center">21.06</td>
-<td align="center">23.68</td>
-<td align="center">26.12</td>
-<td align="center">29.14</td>
-<td align="center">31.32</td>
-<td align="center">33.43</td>
-<td align="center">36.12</td>
-</tr>
-<tr class="odd">
-<td>15</td>
-<td align="center"></td>
-<td align="center">19.31</td>
-<td align="center">22.31</td>
-<td align="center">25.00</td>
-<td align="center">27.49</td>
-<td align="center">30.58</td>
-<td align="center">32.80</td>
-<td align="center">34.95</td>
-<td align="center">37.70</td>
-</tr>
-<tr class="even">
-<td>16</td>
-<td align="center"></td>
-<td align="center">20.47</td>
-<td align="center">23.54</td>
-<td align="center">26.30</td>
-<td align="center">28.85</td>
-<td align="center">32.00</td>
-<td align="center">34.27</td>
-<td align="center">36.46</td>
-<td align="center">39.25</td>
-</tr>
-<tr class="odd">
 <td>17</td>
-<td align="center"></td>
-<td align="center">21.61</td>
-<td align="center">24.77</td>
-<td align="center">27.59</td>
-<td align="center">30.19</td>
-<td align="center">33.41</td>
-<td align="center">35.72</td>
-<td align="center">37.95</td>
-<td align="center">40.79</td>
-</tr>
-<tr class="even">
-<td>18</td>
-<td align="center"></td>
-<td align="center">22.76</td>
-<td align="center">25.99</td>
-<td align="center">28.87</td>
-<td align="center">31.53</td>
-<td align="center">34.81</td>
-<td align="center">37.16</td>
-<td align="center">39.42</td>
-<td align="center">42.31</td>
-</tr>
-<tr class="odd">
+<td>35</td>
+<td>2</td>
 <td>19</td>
-<td align="center"></td>
-<td align="center">23.90</td>
-<td align="center">27.20</td>
-<td align="center">30.14</td>
-<td align="center">32.85</td>
-<td align="center">36.19</td>
-<td align="center">38.58</td>
-<td align="center">40.88</td>
-<td align="center">43.82</td>
-</tr>
-<tr class="even">
-<td>20</td>
-<td align="center"></td>
-<td align="center">25.04</td>
-<td align="center">28.41</td>
-<td align="center">31.41</td>
-<td align="center">34.17</td>
-<td align="center">37.57</td>
-<td align="center">40.00</td>
-<td align="center">42.34</td>
-<td align="center">45.31</td>
-</tr>
-<tr class="odd">
-<td>21</td>
-<td align="center"></td>
-<td align="center">26.17</td>
-<td align="center">29.62</td>
-<td align="center">32.67</td>
-<td align="center">35.48</td>
-<td align="center">38.93</td>
-<td align="center">41.40</td>
-<td align="center">43.78</td>
-<td align="center">46.80</td>
-</tr>
-<tr class="even">
-<td>22</td>
-<td align="center"></td>
-<td align="center">27.30</td>
-<td align="center">30.81</td>
-<td align="center">33.92</td>
-<td align="center">36.78</td>
-<td align="center">40.29</td>
-<td align="center">42.80</td>
-<td align="center">45.20</td>
-<td align="center">48.27</td>
-</tr>
-<tr class="odd">
-<td>23</td>
-<td align="center"></td>
-<td align="center">28.43</td>
-<td align="center">32.01</td>
-<td align="center">35.17</td>
-<td align="center">38.08</td>
-<td align="center">41.64</td>
-<td align="center">44.18</td>
-<td align="center">46.62</td>
-<td align="center">49.73</td>
-</tr>
-<tr class="even">
+<td>4</td>
+<td>18</td>
+<td>28</td>
 <td>24</td>
-<td align="center"></td>
-<td align="center">29.55</td>
-<td align="center">33.20</td>
-<td align="center">36.42</td>
-<td align="center">39.36</td>
-<td align="center">42.98</td>
-<td align="center">45.56</td>
-<td align="center">48.03</td>
-<td align="center">51.18</td>
+<td>–</td>
 </tr>
-<tr class="odd">
+<tr class="even">
+<td align="left">Herschreven</td>
+<td>15</td>
+<td>22</td>
+<td>8</td>
+<td>48</td>
+<td>29</td>
 <td>25</td>
-<td align="center"></td>
-<td align="center">30.68</td>
-<td align="center">34.38</td>
-<td align="center">37.65</td>
-<td align="center">40.65</td>
-<td align="center">44.31</td>
-<td align="center">46.93</td>
-<td align="center">49.44</td>
-<td align="center">52.62</td>
-</tr>
-<tr class="even">
-<td>30</td>
-<td align="center"></td>
-<td align="center">36.25</td>
-<td align="center">40.26</td>
-<td align="center">43.77</td>
-<td align="center">46.98</td>
-<td align="center">50.89</td>
-<td align="center">53.67</td>
-<td align="center">56.33</td>
-<td align="center">59.70</td>
-</tr>
-<tr class="odd">
-<td>40</td>
-<td align="center"></td>
-<td align="center">47.27</td>
-<td align="center">51.81</td>
-<td align="center">55.76</td>
-<td align="center">59.34</td>
-<td align="center">63.69</td>
-<td align="center">66.77</td>
-<td align="center">69.70</td>
-<td align="center">73.40</td>
-</tr>
-<tr class="even">
-<td>50</td>
-<td align="center"></td>
-<td align="center">58.16</td>
-<td align="center">63.17</td>
-<td align="center">67.50</td>
-<td align="center">71.42</td>
-<td align="center">76.15</td>
-<td align="center">79.49</td>
-<td align="center">82.66</td>
-<td align="center">86.66</td>
-</tr>
-<tr class="odd">
-<td>100</td>
-<td align="center"></td>
-<td align="center">111.67</td>
-<td align="center">118.50</td>
-<td align="center">124.34</td>
-<td align="center">129.56</td>
-<td align="center">135.81</td>
-<td align="center">140.17</td>
-<td align="center">144.29</td>
-<td align="center">149.45</td>
-</tr>
-<tr class="even">
-<td>200</td>
-<td align="center"></td>
-<td align="center">216.61</td>
-<td align="center">226.02</td>
-<td align="center">233.99</td>
-<td align="center">241.06</td>
-<td align="center">249.45</td>
-<td align="center">255.26</td>
-<td align="center">260.74</td>
-<td align="center">267.54</td>
-</tr>
-<tr class="odd">
-<td>400</td>
-<td align="center"></td>
-<td align="center">423.59</td>
-<td align="center">436.65</td>
-<td align="center">447.63</td>
-<td align="center">457.31</td>
-<td align="center">468.72</td>
-<td align="center">476.61</td>
-<td align="center">483.99</td>
-<td align="center">493.13</td>
+<td>27</td>
+<td>39</td>
+<td>31</td>
+<td>36</td>
 </tr>
 </tbody>
 </table>
+<p>De Wilcoxon rank sum test is gebaseerd op de <em>rangorde</em> van de
+observaties. Iedere observatie wordt vervangen door het rangnummer van
+die observatie, genomen over de twee condities tezamen. De laagste of
+kleinste waarde krijgt rangnummer 1. De som van de rangnummers van de
+kleinste groep (hier: van de originele conditie) duiden we aan als
+<span class="math inline">\(W_1\)</span>. De kansverdeling van <span class="math inline">\(W\)</span> onder H0 is bekend (exact voor kleine
+<span class="math inline">\(n_1\)</span> en <span class="math inline">\(n_2\)</span>, en bij benadering voor grotere steekproeven). Daarmee
+kunnen we de kans bepalen om de gevonden waarde van <span class="math inline">\(W_1\)</span> aan te
+treffen, of een meer extreme waarde, indien H0 waar is.</p>
+<p>Eerder zagen we dat de <em>t</em>-toets voor ongepaarde waarnemingen
+(§<a href="ch-toetsing.html#sec:ttoets-onafh">13.6</a>) onderzoekt of de <em>gemiddelden</em>
+verschillend zijn voor twee steekproeven. Analoog daaraan onderzoekt de
+Wilcoxon rank sum test (en de Mann-Whitney <span class="math inline">\(U\)</span> test) of de <em>medianen</em>
+verschillend zijn voor de twee steekproeven. De toets is dus robuuster
+voor uitbijters — als we het hoogste oordeel (48) zouden vervangen
+door een nog veel hoger oordeel (zeg 480), dan heeft dat geen invloed op
+de mediaan van die groep, en het heeft evenmin invloed op de
+toetsingsgrootheid of op de significantie daarvan.</p>
+<p>Voor ons voorbeeld vinden we dat de lagere rangnummers relatief vaak
+voorkomen bij de eerste conditie (originele versie), d.w.z. dat de tekst
+in deze conditie lager werd beoordeeld. De som van de rangnummers voor
+deze kleinste conditie is de toetsingsgrootheid <span class="math inline">\(W_1=67\)</span>. In sommige
+versies van de toets<a href="#fn36" class="footnote-ref" id="fnref36"><sup>36</sup></a> wordt deze ruwe som gebruikt om de
+significantie te berekenen. In andere versies van de toets<a href="#fn37" class="footnote-ref" id="fnref37"><sup>37</sup></a> wordt
+deze ruwe som eerst gecorrigeerd voor de minimale waarde van <span class="math inline">\(W_1\)</span> (zie
+de formules hieronder): de toetsingsgrootheid wordt dan
+<span class="math inline">\(U=W_1 - \textrm{min}(W_1) = 67-45=22\)</span>. Daarna wordt de significantie
+van <span class="math inline">\(W_1=67\)</span> of van <span class="math inline">\(U=22\)</span> berekend. We vinden dat <span class="math inline">\(p=.0653\)</span>. Als we
+tweezijdig toetsen (H0: oordelen in conditie 2 zijn niet hoger en niet
+lager dan in conditie 1) met <span class="math inline">\(\alpha=.05\)</span> dan is er geen reden om H0 te
+verwerpen<a href="#fn38" class="footnote-ref" id="fnref38"><sup>38</sup></a>.</p>
+<div id="formules-7" class="section level4" number="17.3.2.1">
+<h4><span class="header-section-number">17.3.2.1</span> formules</h4>
+<p>Voor de sommen van rangnummers geldt dat
+<span class="math inline">\(W_1 + W_2 = (n_1+n_2) (n_1+n_2+1) / 2\)</span>.</p>
+<p>Als in de kleinste (eerste) conditie alle laagste rangnummers zitten
+(d.w.z. alle laagste oordelen), dan heeft <span class="math inline">\(W_1\)</span> de minimale waarde van
+<span class="math inline">\(n_1 (n_1+1) /2\)</span>. Als in deze conditie alle hoogste rangnummers zitten
+(d.w.z. alle hoogste oordelen) dan heeft <span class="math inline">\(W_1\)</span> de maximale waarde van
+<span class="math inline">\(n_1 (n_1+n_2+1) / 2\)</span>. <span class="math inline">\(W_1\)</span> (en het minimum en maximum ervan) kan
+alleen gehele waarden aannemen.</p>
+<p>Het is handig om niet alleen <span class="math inline">\(W_1\)</span> of <span class="math inline">\(U\)</span> uit te rekenen, maar ook de
+bijbehorende waarde van <span class="math inline">\(z\)</span> <span class="citation">(Ferguson and Takane <a href="#ref-Ferg89" role="doc-biblioref">1989</a>)</span>:
+<span class="math display" id="eq:Wilcoxon-ranksum">\[\begin{equation}
+  \tag{17.4}
+\bar{W_1} = \frac{ n_1 (n_1+n_2+1) }{ 2 }
+\end{equation}\]</span>
+<span class="math display" id="eq:Wilcoxon-ranksum-z">\[\begin{equation}
+   \tag{17.5}
+  z = \frac{ |W_1-\bar{W_1}|-\frac{1}{2} }{ \sqrt{ \frac{n_1 n_2 (n_1+n_2+1)}{12} } }
+\end{equation}\]</span>
+Daarmee bepalen we wederom de effectgrootte volgens
+vergelijking <a href="ch-andere-nonpar-toetsen.html#eq:es-z2r">(17.3)</a>.
+Voor het bovenstaande voorbeeld vinden we zo
+<span class="math inline">\(\bar{W_1}=22.5\)</span>, <span class="math inline">\(z=1.837\)</span>, en <span class="math inline">\(r=.42\)</span>, hetgeen wijst op een ‘medium’
+effect. Dat dit aanzienlijke effect toch niet leidt tot een significant
+verschil (bij tweezijdige toetsing) is vermoedelijk een gevolg van de
+(te) kleine omvang van de twee groepen.</p>
+</div>
+</div>
+<div id="kruskall-wallis-h-test" class="section level3" number="17.3.3">
+<h3><span class="header-section-number">17.3.3</span> Kruskall-Wallis H test</h3>
+<p>De Kruskall-Wallis H test is te beschouwen als een uitbreiding van de
+Wilcoxon rank sum test (zie
+§(sec:wilcoxon-rank-sum) hierboven), voor <span class="math inline">\(k \ge 2\)</span> onafhankelijke
+steekproeven of groepen. De toets is ook bruikbaar om <span class="math inline">\(k=2\)</span> groepen te
+vergelijken; dan is de toets geheel equivalent aan de Wilcoxon rank sum
+test hierboven. De Kruskall-Wallis H test is te beschouwen als de
+non-parametrische, ordinale tegenhanger van een een-wegs
+variantie-analyse
+(zie §<a href="ch-variantieanalyse.html#sec:anova-oneway-uitleg">15.3.1</a>). Losjes gezegd: we voeren een
+soort variantie-analyse uit, niet op de observaties zelf, maar op de
+rangnummers van de observaties. We berekenen als toetsingsgrootheid <span class="math inline">\(H\)</span>,
+op basis van de rangnummers van de observaties in de <span class="math inline">\(k\)</span> verschillende
+groepen.</p>
+<div id="formule-1" class="section level4" number="17.3.3.1">
+<h4><span class="header-section-number">17.3.3.1</span> formule</h4>
+<p><span class="math display" id="eq:kruskall-wallis-H">\[\begin{equation}
+  \tag{17.6}
+    H = \frac{12}{N(N+1)} \sum^{k} (\frac{R^2_j}{n_j}) - 3(N+1)
+\end{equation}\]</span>
+waarbij <span class="math inline">\(R_j\)</span> verwijst naar de <em>som</em> van de rangnummers van de
+observaties in groep <span class="math inline">\(j\)</span>, en <span class="math inline">\(n_j\)</span> naar de omvang van groep <span class="math inline">\(j\)</span>.
+(Gemakshalve laten we hier ‘knopen’ buiten beschouwing, dat zijn
+gevallen waarin dezelfde waarde en rangnummer voorkomt in meerdere
+groepen.)</p>
+<p>De toetsingsgrootheid <span class="math inline">\(H\)</span> heeft een kansverdeling die lijkt op die van
+<span class="math inline">\(\chi^2\)</span>, met <span class="math inline">\(k-1\)</span> vrijheidsgraden. De significantie van de
+toetsingsgrootheid <span class="math inline">\(H\)</span> wordt dus bepaald via de kansverdeling van
+<span class="math inline">\(\chi^2\)</span> (zie Bijlage <a href="app-kritiekechi2waarden.html#app:kritiekechi2waarden">D</a>).
+Die benadering via <span class="math inline">\(\chi^2\)</span> werkt echter alleen indien <span class="math inline">\(k\ge3\)</span>
+en <span class="math inline">\(n_j\ge5\)</span> voor de kleinste groep <span class="citation">(Ferguson and Takane <a href="#ref-Ferg89" role="doc-biblioref">1989</a>)</span>; indien <span class="math inline">\(k=2\)</span> of <span class="math inline">\(n_j&lt;5\)</span>
+dan wordt de kans <span class="math inline">\(P(H)\)</span> exact berekend.</p>
 
+</div>
+</div>
+</div>
+</div>
+
+
+
+<h3>Referenties</h3>
+<div id="refs" class="references">
+<div id="ref-Ferg89">
+<p>Ferguson, George A., and Yoshio Takane. 1989. <em>Statistical Analysis in Psychology and Education</em>. 6e ed. New York: McGraw-Hill.</p>
+</div>
+<div id="ref-Rose91">
+<p>Rosenthal, Robert. 1991. <em>Meta-Analytic Procedures for Social Research</em>. 2nd ed. Newbury Park, CA: Sage.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="36">
+<li id="fn36"><p>Wilcoxon rank sum test in SPSS.<a href="ch-andere-nonpar-toetsen.html#fnref36" class="footnote-back">↩︎</a></p></li>
+<li id="fn37"><p>Mann-Whitney test in SPSS en in R, en Wilcoxon rank sum test in R.<a href="ch-andere-nonpar-toetsen.html#fnref37" class="footnote-back">↩︎</a></p></li>
+<li id="fn38"><p>Als we tweezijdig toetsen met <span class="math inline">\(\alpha=.10\)</span>, dan zouden we H0 wel kunnen verwerpen. Als we eenzijdig toetsen (H0: oordelen in conditie 2 zijn niet hoger dan in conditie 1), dan mogen we de berekende <span class="math inline">\(p\)</span> halveren, omdat die berekende <span class="math inline">\(p\)</span> uitgaat van tweezijdige toetsing. We zouden dan dus vinden <span class="math inline">\(p=.0653/2=.0326\)</span>, en omdat deze kans kleiner is dan <span class="math inline">\(\alpha=.05\)</span> zouden we dan wel H0 kunnen verwerpen.<a href="ch-andere-nonpar-toetsen.html#fnref38" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="app-kritieketwaarden.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="referenties.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ch-chi-kwadraat-toetsen.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="app-randomgetallen.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -909,7 +824,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/a4kritiekechi2waarden.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/h17anderenonpartoetsen.Rmd",
 "text": "Edit"
 },
 "history": {

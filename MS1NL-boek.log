@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.16)  22 SEP 2020 22:43
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.16)  23 SEP 2020 10:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1219,10 +1219,6 @@ Underfull \hbox (badness 4084) in paragraph at lines 6256--6256
  []
 
 [144]
-
-LaTeX Warning: Reference `ch:andere-nonpar-toetsen' on page 145 undefined on in
-put line 6285.
-
 File: MS1NL-boek_files/figure-latex/itunesmeanshist-1.pdf Graphic file (type pd
 f)
 <use MS1NL-boek_files/figure-latex/itunesmeanshist-1.pdf>
@@ -1515,89 +1511,108 @@ Overfull \hbox (39.03012pt too wide) in alignment at lines 11058--11063
 [250] [251] [252
 
 ]
-Appendix A.
+Chapter 17.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [253] [254]
+Overfull \hbox (15.25783pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 17.3.  ONAFHANKELIJKE OBSERVATIES, MEERDERE STEEKPROEVEN \TU/lm
+r/m/n/10 255
+ []
+
+[255] [256]
+Overfull \hbox (15.25783pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 17.3.  ONAFHANKELIJKE OBSERVATIES, MEERDERE STEEKPROEVEN \TU/lm
+r/m/n/10 257
+ []
+
+[257] [258]
+Appendix A.
+[259
+
+] [260]
 Appendix B.
 File: MS1NL-boek_files/figure-latex/kritiekeZwaarden-hulpfiguur-1.pdf Graphic f
 ile (type pdf)
 <use MS1NL-boek_files/figure-latex/kritiekeZwaarden-hulpfiguur-1.pdf>
-[255
+[261
 
-] [256]
+] [262]
 Appendix C.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 11174.
+(Font)              scaled to size 24.88pt on input line 11457.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 11174.
+(Font)              scaled to size 20.74pt on input line 11457.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 11174.
+(Font)              scaled to size 17.28pt on input line 11457.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 24.88228pt on input line 11174.
+(Font)              scaled to size 24.88228pt on input line 11457.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 20.7419pt on input line 11174.
+(Font)              scaled to size 20.7419pt on input line 11457.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 17.28157pt on input line 11174.
+(Font)              scaled to size 17.28157pt on input line 11457.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 24.87733pt on input line 11174.
+(Font)              scaled to size 24.87733pt on input line 11457.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 20.73778pt on input line 11174.
+(Font)              scaled to size 20.73778pt on input line 11457.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 17.27815pt on input line 11174.
+(Font)              scaled to size 17.27815pt on input line 11457.
 File: MS1NL-boek_files/figure-latex/kritieketwaarden-hulpfiguur-1.pdf Graphic f
 ile (type pdf)
 <use MS1NL-boek_files/figure-latex/kritieketwaarden-hulpfiguur-1.pdf>
 
-Overfull \hbox (19.32014pt too wide) in paragraph at lines 11185--11230
+Overfull \hbox (19.32014pt too wide) in paragraph at lines 11468--11513
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[257
+[263
 
-] [258]
+] [264]
 Appendix D.
 File: MS1NL-boek_files/figure-latex/kritiekechi2waarden-hulpfiguur-1.pdf Graphi
 c file (type pdf)
 <use MS1NL-boek_files/figure-latex/kritiekechi2waarden-hulpfiguur-1.pdf>
 
-Overfull \hbox (17.80014pt too wide) in paragraph at lines 11241--11284
+Overfull \hbox (17.80014pt too wide) in paragraph at lines 11524--11567
  [][] 
  []
 
 (./MS1NL-boek.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[259
+[265
 
-] [260] [261
+] [266] [267
 
-] [262] [263] [264])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11287.
-[265]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 11287.
+] [268] [269] [270] [271])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11570.
+[272]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 11570.
 (./MS1NL-boek.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 11287.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11287
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 11570.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11570
 .
 Package rerunfilecheck Info: File `MS1NL-boek.out' has not changed.
-(rerunfilecheck)             Checksum: 7E41A9EBADE99438422BD491C48ED395;21391.
+(rerunfilecheck)             Checksum: 726D90CDE3D867EABDE5609B5F4961B2;22282.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 11287.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 11570.
  ) 
 Here is how much of TeX's memory you used:
- 18335 strings out of 481649
- 328532 string characters out of 5931265
- 775161 words of memory out of 5000000
- 35165 multiletter control sequences out of 15000+600000
+ 18358 strings out of 481649
+ 328992 string characters out of 5931265
+ 778347 words of memory out of 5000000
+ 35188 multiletter control sequences out of 15000+600000
  545455 words of font info for 115 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 52i,10n,118p,1137b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,10n,118p,1137b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on MS1NL-boek.pdf (265 pages).
+Output written on MS1NL-boek.pdf (272 pages).
