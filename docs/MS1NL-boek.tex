@@ -145,11 +145,14 @@ Dit boek bevat ook aanwijzingen over hoe de besproken statistische analyses en v
 Graag willen we onze mede-docenten danken voor de vele discussies en voorbeelden die op enige wijze verwerkt zijn in dit tekstboek. Onze studenten danken we voor hun nieuwsgierigheid en nauwkeurigheid die geleid heeft tot deze versie van dit tekstboek.
 
 Ook betonen wij grote dank aan
-Willemijn Heeren, Gerrit Bloothooft, Marijn Struiksma,
+Gerrit Bloothooft,
 Margot van den Berg,
+Willemijn Heeren,
+Caspar van Lissa,
 Els Rose,
-Tobias Quené
-en Kirsten Schutter
+Tobias Quené,
+Kirsten Schutter
+en Marijn Struiksma,
 voor hun adviezen, data, en/of commentaar bij eerdere versies.
 
 Utrecht, december 2016 - september 2020
@@ -177,17 +180,20 @@ This document is licensed under the \emph{GNU GPL 3} license (for details see
 \section*{Citatie}\label{citatie}}
 \addcontentsline{toc}{section}{Citatie}
 
-Gebruik de volgende wijze om te verwijzen naar dit tekstboek (in APA-formaat):
+Gebruik een van de volgende manieren om te verwijzen naar dit tekstboek (in APA-formaat):
 
 Quené, H. \& Van den Bergh, H. (2020). \emph{Methoden en Statistiek 1}.
+Geraadpleegd op 23 sept 2020 via \url{https://hugoquene.github.io/MS1NL-boek/} .
+
+Quené, H. \& Van den Bergh, H. (2020). \emph{Methoden en Statistiek 1} {[}in Dutch{]}.
 Retrieved 23 Sept 2020 from \url{https://hugoquene.github.io/MS1NL-boek/} .
 
 \hypertarget{technische-details}{%
 \section*{Technische details}\label{technische-details}}
 \addcontentsline{toc}{section}{Technische details}
 
-De tekst is geschreven in LaTeX, en daarna omgezet naar Rmarkdown, met behulp van \texttt{pandoc} en het \texttt{bookdown} package \citep{R-bookdown} in \href{https://www.rstudio.com}{Rstudio}.\\
-De broncode van de tekst en voorbeelden (in Rmarkdown), en de bijbehorende databestanden en figuren, zijn beschikbaar via \url{https://github.com/hugoquene/MS1NL-boek/} .
+De tekst is geschreven in LaTeX, en daarna omgezet naar Rmarkdown, met behulp van \texttt{pandoc} \citep{pandoc} en het \texttt{bookdown} package \citep{R-bookdown} in \href{https://www.rstudio.com}{Rstudio}.\\
+Andere versies van dit tekstboek (EPUB, PDF, HTML), de broncode (in Rmarkdown) van de tekst inclusief voorbeelden, bijbehorende databestanden, en de figuren als afzonderlijke bestanden, zijn alle beschikbaar via \url{https://github.com/hugoquene/MS1NL-boek/} .
 
 \hypertarget{over-de-auteurs}{%
 \section*{Over de auteurs}\label{over-de-auteurs}}
@@ -9533,7 +9539,7 @@ onderzoeken we het spreektempo ofwel de spreeksnelheid van vier groepen
 sprekers, nl. afkomstig uit het Midden, Noorden, Zuiden en Westen van
 Nederland. De spreeksnelheid is uitgedrukt als de gemiddelde duur van
 een lettergreep, gemiddeld over een interview van ca 15 minuten met elke
-spreker \citep{Quene08}. Een kortere gemiddelde syllabeduur correspondeert
+spreker \citep{Quene08} \citep{R-hqmisc}. Een kortere gemiddelde syllabeduur correspondeert
 dus met een snellere spreker (vgl. de schaatssport: een kortere
 rondetijd correspondeert met een snellere schaatser). Er waren 20
 sprekers per groep, maar 1 spreker (uit het Zuiden) met een extreem hoge
@@ -11581,6 +11587,6 @@ De tabel hieronder geeft de kritieke grenswaarden \((\chi^2)^*\) voor veel gebru
 \bottomrule
 \end{tabular}
 
-  \bibliography{book.bib,packages.bib,hhmhto.bib}
+  \bibliography{book.bib,packages.bib,hhmhto.bib,pandoc.bib}
 
 \end{document}

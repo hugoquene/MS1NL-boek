@@ -42,7 +42,7 @@ onderzoeken we het spreektempo ofwel de spreeksnelheid van vier groepen
 sprekers, nl. afkomstig uit het Midden, Noorden, Zuiden en Westen van
 Nederland. De spreeksnelheid is uitgedrukt als de gemiddelde duur van
 een lettergreep, gemiddeld over een interview van ca 15 minuten met elke
-spreker [@Quene08]. Een kortere gemiddelde syllabeduur correspondeert
+spreker [@Quene08] [@R-hqmisc]. Een kortere gemiddelde syllabeduur correspondeert
 dus met een snellere spreker (vgl. de schaatssport: een kortere
 rondetijd correspondeert met een snellere schaatser). Er waren 20
 sprekers per groep, maar 1 spreker (uit het Zuiden) met een extreem hoge
