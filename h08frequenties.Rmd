@@ -29,7 +29,7 @@ zichtbaar wordt.
 
 ---
 
-> **Voorbeeld 8.1**: Studenten $(N=50)$ in een eerstejaars
+> *Voorbeeld 8.1*: Studenten $(N=50)$ in een eerstejaars
 cursus rapporteerden de volgende waarden voor hun schoenmaat, een
 variabele van het interval-meetniveau:\
 36, 36, 37, 37, 37, 37, 37, 37, 38, 38, 38, 38, 38, 38, 39, 39, 39, 39,
@@ -59,6 +59,7 @@ klankfreq <- read.table( file="data/klankfreq.txt", header=T )
 # print(klankfreq)
 knitr::kable( klankfreq, 
               booktabs=TRUE, 
+              label="klankfreq",
               caption="Frequentieverdeling 
               van fonologische klasse van spraakklanken 
               in het *Corpus Gesproken Nederlands* 
@@ -114,12 +115,12 @@ Table: (#tab:troonrede2012pauzes) Frequentieverdeling van de duren van spreekpau
 
 Voor een variabele van nominaal en ordinaal meetniveau gebruiken we
 doorgaans de oorspronkelijke categorieën om de frequentieverdeling te
-maken (zie Tabel @\ref(tab:klankfreq)), al is het wel mogelijk om categorieën samen
+maken (zie Tabel \@ref(tab:klankfreq)), al is het wel mogelijk om categorieën samen
 te voegen. Voor een variabele van interval- of ratio-meetniveau kan een
 onderzoeker zelf het aantal intervallen in de frequentieverdeling
 kiezen. Soms is dat niet nodig, bijvoorbeeld omdat de variabele een
 overzichtelijk aantal verschillende discrete waarden heeft (zie
-Tabel @\ref(tab:schoenmaat)). Maar soms sta je als onderzoeker
+Tabel \@ref(tab:schoenmaat)). Maar soms sta je als onderzoeker
 voor de keuze hoeveel intervallen te onderscheiden, en hoe de grenzen
 van die intervallen te bepalen (zie Tabel \@ref(tab:troonrede2012pauzes)). 
 Daarbij gelden dan de volgende aanbevelingen [@Ferg89, Ch.2]:

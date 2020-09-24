@@ -87,7 +87,7 @@ De gemiddelde wachttijd is $(\sum X)/N = 22/10 = 2.2$ minuten.
 ---
 
 Het gemiddelde van $X$ wordt meestal uitgedrukt met één decimaalcijfer meer dan
-de scores van $X$.
+de scores van $X$ (zie ook §\@ref(sec:significantecijfers-gemiddelde) hieronder over het aantal decimaalcijfers waarmee het gemiddelde wordt weergegeven).
 
 Het gemiddelde is op te vatten als het "balanspunt" van een verdeling:
 de observaties aan weerszijden houden elkaar "in evenwicht", zoals
