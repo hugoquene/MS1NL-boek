@@ -119,7 +119,7 @@
 
 \title{Methoden en Statistiek 1}
 \author{true}
-\date{Versie gecompileerd op 24 Sep 2020}
+\date{Versie gecompileerd op 28 Sep 2020}
 
 \begin{document}
 \maketitle
@@ -10718,11 +10718,13 @@ uitkomsten? Is de dobbelsteen wel eerlijk?
 De \(\chi^2\)-toets is gebaseerd op de verschillen tussen de verwachte en geobserveerde
 frequenties. Volgens de nul-hypothese (de dobbelsteen is eerlijk)
 verwachten we 10 uitkomsten in iedere cel (\(60/6=10\)), m.a.w. de
-verwachte frequentie is identiek voor iedere cel. De geobserveerde
+verwachte frequentie is identiek voor iedere cel (dat wordt een \emph{uniforme} verdeling genoemd).
+De geobserveerde
 uitkomsten wijken af van de verwachte frequenties van uitkomsten, met
 name omdat de uitkomst ``zes'' nauwelijks voorkomt in deze steekproef. Dat
-zou natuurlijk ook toeval kunnen zijn. De geeft aan hoe groot de kans is
-op deze ``scheve'' verdeling van uitkomsten, als H0 waar is. De verwachte
+zou natuurlijk ook toeval kunnen zijn. De \(\chi^2\)-toets geeft aan hoe groot de kans is
+op deze ``scheve'' verdeling van uitkomsten (of een nog schevere verdeling), als H0 waar is.
+De verwachte
 uitkomsten worden dus afgeleid uit een verdeling van de uitkomsten
 volgens H0, en we onderzoeken hoe goed de geobserveerde uitkomsten
 passen bij de verwachte uitkomsten. Deze vorm van de wordt daarom ook
@@ -10735,7 +10737,7 @@ vrijheidsgraden), met \(p=.0297\). We laten deze kanswaarde meestal door de
 computer uitrekenen, maar we kunnen die kans ook schatten via een tabel met kritieke \(\chi^2\)-waarden, zie Bijlage \ref{app:kritiekechi2waarden}, en voetnoot \footnote{De gevonden waarde \(\chi^2=12.44\) ligt iets onder de kritieke waarde voor 5 d.f. en \(p=.025\), (daar staat \((\chi^2)^*=12.83\)), dus de bijbehorende kans op deze waarde of een grotere waarde is iets groter dan \(0.025\).}).
 Als H0 waar is, dan hebben we slechts 3\% kans om
 deze uitslag te vinden (of een nog extremere verdeling van uitkomsten).
-De gevonden significantie \(p\) is kleiner dan \(\alpha=.05\), en dus
+Deze gevonden significantie \(p\) is kleiner dan \(\alpha=.05\), en dus
 verwerpen we H0. We concluderen dat deze dobbelsteen niet eerlijk is: de
 gevonden verdeling van uitkomsten wijkt significant af van de verwachte
 verdeling volgens H0.

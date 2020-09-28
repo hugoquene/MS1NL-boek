@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.16)  24 SEP 2020 22:31
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.16)  28 SEP 2020 11:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1472,7 +1472,7 @@ subset = ok)[]
 ]
 Chapter 16.
 [247] [248]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \vbox (22.71886pt too high) has occurred while \output is active []
 
 
 Overfull \hbox (105.13423pt too wide) has occurred while \output is active
@@ -1481,17 +1481,17 @@ LE STEEKPROEF \TU/lmr/m/n/10 249
  []
 
 [249] [250] [251] [252] [253]
-Overfull \hbox (39.03012pt too wide) in alignment at lines 11071--11076
+Overfull \hbox (39.03012pt too wide) in alignment at lines 11073--11078
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (39.03012pt too wide) in alignment at lines 11076--11080
+Overfull \hbox (39.03012pt too wide) in alignment at lines 11078--11082
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (39.03012pt too wide) in alignment at lines 11080--11085
+Overfull \hbox (39.03012pt too wide) in alignment at lines 11082--11087
  [] [] [] [] [] [] [] 
  []
 
@@ -1528,28 +1528,28 @@ ile (type pdf)
 ] [266]
 Appendix C.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 11479.
+(Font)              scaled to size 24.88pt on input line 11481.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 11479.
+(Font)              scaled to size 20.74pt on input line 11481.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 11479.
+(Font)              scaled to size 17.28pt on input line 11481.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 24.88228pt on input line 11479.
+(Font)              scaled to size 24.88228pt on input line 11481.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 20.7419pt on input line 11479.
+(Font)              scaled to size 20.7419pt on input line 11481.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 17.28157pt on input line 11479.
+(Font)              scaled to size 17.28157pt on input line 11481.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 24.87733pt on input line 11479.
+(Font)              scaled to size 24.87733pt on input line 11481.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 20.73778pt on input line 11479.
+(Font)              scaled to size 20.73778pt on input line 11481.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 17.27815pt on input line 11479.
+(Font)              scaled to size 17.27815pt on input line 11481.
 File: MS1NL-boek_files/figure-latex/kritieketwaarden-hulpfiguur-1.pdf Graphic f
 ile (type pdf)
 <use MS1NL-boek_files/figure-latex/kritieketwaarden-hulpfiguur-1.pdf>
 
-Overfull \hbox (19.32014pt too wide) in paragraph at lines 11490--11535
+Overfull \hbox (19.32014pt too wide) in paragraph at lines 11492--11537
  [][] 
  []
 
@@ -1564,7 +1564,7 @@ File: MS1NL-boek_files/figure-latex/kritiekechi2waarden-hulpfiguur-1.pdf Graphi
 c file (type pdf)
 <use MS1NL-boek_files/figure-latex/kritiekechi2waarden-hulpfiguur-1.pdf>
 
-Overfull \hbox (17.80014pt too wide) in paragraph at lines 11546--11589
+Overfull \hbox (17.80014pt too wide) in paragraph at lines 11548--11591
  [][] 
  []
 
@@ -1576,12 +1576,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] [270] [271
 
 ] [272] [273] [274] [275])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11592.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11594.
 [276]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 11592.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 11594.
 (./MS1NL-boek.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 11592.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11592
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 11594.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11594
 .
 Package rerunfilecheck Info: File `MS1NL-boek.out' has not changed.
 (rerunfilecheck)             Checksum: C4D2F8A53933AB6BB52EE6D331400CDD;22532.
@@ -1591,7 +1591,7 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 11592.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 11594.
  ) 
 Here is how much of TeX's memory you used:
  18365 strings out of 481649
